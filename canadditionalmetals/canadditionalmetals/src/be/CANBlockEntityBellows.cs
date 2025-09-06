@@ -130,6 +130,7 @@ namespace canadditionalmetals.src.be
                 return base.GetBehavior<BEBehaviorAnimatable>().animUtil;
             }
         }
+        public bool triggerServer = false;
         public float GrindSpeed
         {
             get
@@ -199,7 +200,7 @@ namespace canadditionalmetals.src.be
                     EaseOutSpeed = 1f,
                     Weight = 1f,
                     BlendMode = EnumAnimationBlendMode.Average
-                });
+                });               
             }
             this.RegisterGameTickListener(new Action<float>(this.Every500ms), 500, 0);
         }
@@ -282,23 +283,57 @@ namespace canadditionalmetals.src.be
                 //this.animUtil.StopAnimation("blow");
             }
         }
-        public void UseBellowsOnce(IPlayer player)
+        public bool UseBellowsOnce(IPlayer player)
         {
-            if (!this.animUtil.activeAnimationsByAnimCode.TryGetValue("blow", out var _))
+            if (!this.animUtil.activeAnimationsByAnimCode.TryGetValue("blow", out var _) || this.Api.Side == EnumAppSide.Server)
             {
                 AnimationMetaData meta = new AnimationMetaData
                 {
                     Animation = "blow",
                     Code = "blow",
-                    AnimationSpeed = .8f,
+                    AnimationSpeed = .5f,
                     EaseInSpeed = 5f,
                     EaseOutSpeed = 3f
                 };
                 this.animUtil.StartAnimation(meta);
                 this.Api.World.PlaySoundAt(new AssetLocation("canadditionalmetals:sounds/bellows"), this.Pos.X, this.Pos.InternalY, this.Pos.Z, player, true, 32f, 1f);
+                if(this.Api.Side == EnumAppSide.Client)
+                {
+                    return true;
+                }
+                else
+                {
+                    IncreaseTemparature();
+                    var c = 3;
+                }
             }
-            
+            return false;
             //this.MarkDirty(true);
+        }
+        public void IncreaseTemparature()
+        {
+            triggerServer = false;
+            BlockFacing facing = BlockFacing.FromCode(this.Block.Variant["side"]);
+            BlockPos secondPos = this.Pos.AddCopy(facing);
+            if (this.Api.World.BlockAccessor.GetBlockEntity(secondPos) is CANBlockEntityBloomery bloomery)
+            {
+                if(!bloomery.IsBurning)
+                {
+                    return;
+                }
+                if(bloomery.inputSlot.Empty)
+                {
+                    return;
+                }
+                var fuelStack = bloomery.fuelCombustibleOpts;
+                var maxTemp = fuelStack.BurnTemperature;
+                int additionalPerBlow = maxTemp / 25;
+                int newMaxTemp = (int)(bloomery.furnaceTemperature + additionalPerBlow);
+
+                var newTemp = Math.Min((bloomery.furnaceTemperature + additionalPerBlow), newMaxTemp);
+                bloomery.furnaceTemperature = newTemp;
+
+            }
         }
         public void SetPlayerGrinding(IPlayer player, bool playerGrinding)
         {

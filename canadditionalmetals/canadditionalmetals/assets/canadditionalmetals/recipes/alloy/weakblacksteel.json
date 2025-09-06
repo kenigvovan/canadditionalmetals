@@ -1,0 +1,26 @@
+{
+    ingredients: [
+        {
+            "type": "item",
+            "code": "game:ingot-blackbronze",
+            "minratio": 0.15,
+            "maxratio": 0.25
+        },
+        {
+            "type": "item",
+            "code": "game:ingot-nickel",
+            "minratio": 0.15,
+            "maxratio": 0.25
+        },
+        {
+            "type": "item",
+            "code": "game:ingot-steel",
+            "minratio": 0.5,
+            "maxratio": 0.7
+        }
+    ],
+    output: {
+        "type": "item",
+        "code": "canadditionalmetals:ingot-weakblacksteel"
+    }
+}

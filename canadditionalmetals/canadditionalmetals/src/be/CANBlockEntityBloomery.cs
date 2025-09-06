@@ -381,8 +381,6 @@ namespace canadditionalmetals.src.be
                 this.SetTemp(this.outputStack, value);
             }
         }
-
-        // Token: 0x06000D28 RID: 3368 RVA: 0x0008AC50 File Offset: 0x00088E50
         private float GetTemp(ItemStack stack)
         {
             if (stack == null)
@@ -407,8 +405,6 @@ namespace canadditionalmetals.src.be
             }
             return stack.Collectible.GetTemperature(this.Api.World, stack);
         }
-
-        // Token: 0x06000D29 RID: 3369 RVA: 0x0008ACF0 File Offset: 0x00088EF0
         private void SetTemp(ItemStack stack, float value)
         {
             if (stack == null)
@@ -429,8 +425,6 @@ namespace canadditionalmetals.src.be
             }
             stack.Collectible.SetTemperature(this.Api.World, stack, value, true);
         }
-
-        // Token: 0x06000D2A RID: 3370 RVA: 0x0008AD82 File Offset: 0x00088F82
         public void igniteFuel()
         {
             this.igniteWithFuel(this.fuelStack);
@@ -449,8 +443,6 @@ namespace canadditionalmetals.src.be
             this.setBlockState("lit");
             this.MarkDirty(true, null);
         }
-
-        // Token: 0x06000D2C RID: 3372 RVA: 0x0008AE24 File Offset: 0x00089024
         public void setBlockState(string state)
         {
             AssetLocation loc = base.Block.CodeWithVariant("burnstate", state);
@@ -462,8 +454,6 @@ namespace canadditionalmetals.src.be
             this.Api.World.BlockAccessor.ExchangeBlock(block.Id, this.Pos);
             base.Block = block;
         }
-
-        // Token: 0x06000D2D RID: 3373 RVA: 0x0008AE84 File Offset: 0x00089084
         public bool canHeatInput()
         {
             if (!this.canSmeltInput())
@@ -534,7 +524,7 @@ namespace canadditionalmetals.src.be
                 {
                     SyncedTreeAttribute dtree = new SyncedTreeAttribute();
                     this.SetDialogValues(dtree);
-                    this.clientDialog = new CANGuiDialogBlockEntityFirepit(this.DialogTitle, this.Inventory, this.Pos, dtree, this.Api as ICoreClientAPI);
+                    this.clientDialog = new CANGuiDialogBlockEntityFirepit(this.DialogTitle, this.inventory, this.Pos, dtree, this.Api as ICoreClientAPI);
                     return this.clientDialog;
                 });
             }
@@ -828,10 +818,13 @@ namespace canadditionalmetals.src.be
                 return false;
             }
             ItemStack contentStack = ((this.inputStack == null) ? this.outputStack : this.inputStack);
-            MeshData contentmesh = this.getContentMesh(contentStack, tesselator);
-            if (contentmesh != null)
+            if (contentStack != null && contentStack.Collectible is not BlockCookingContainer)
             {
-                mesher.AddMeshData(contentmesh, 1);
+                MeshData contentmesh = this.getContentMesh(contentStack, tesselator);
+                if (contentmesh != null)
+                {
+                    mesher.AddMeshData(contentmesh, 1);
+                }
             }
             string burnState = base.Block.Variant["burnstate"];
             string contentState = this.CurrentModel.ToString().ToLowerInvariant();

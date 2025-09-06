@@ -2,9 +2,7 @@
     {
         "ingredient": {
             "type": "item",
-            "code": "bloom-weak-*",
-            "name": "metal",
-            "allowedVariants": [ "redsteel", "blacksteel", "bluesteel" ] 
+            "code": "canadditionalmetals:ingot-weakredsteel"
         },
         "pattern": [
             [
@@ -21,7 +19,7 @@
         "name": "Colored steel ingot",
         "output": {
             "type": "item",
-            "code": "ingot-{metal}"
+            "code": "canadditionalmetals:ingot-redsteel"
         }
     }
 ]

@@ -10,6 +10,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
+using canadditionalmetals.src.Inventories;
 
 namespace canadditionalmetals.src.Guis
 {
@@ -28,7 +29,7 @@ namespace canadditionalmetals.src.Guis
 
         public override double DrawOrder => 0.2;
 
-        public CANGuiDialogBlockEntityFirepit(string dlgTitle, InventoryBase Inventory, BlockPos bePos, SyncedTreeAttribute tree, ICoreClientAPI capi) : base(dlgTitle, Inventory, bePos, capi)
+        public CANGuiDialogBlockEntityFirepit(string dlgTitle, CANInventorySmelting Inventory, BlockPos bePos, SyncedTreeAttribute tree, ICoreClientAPI capi) : base(dlgTitle, Inventory, bePos, capi)
         {
             if (IsDuplicate) return;
             tree.OnModified.Add(new TreeModifiedListener() { listener = OnAttributesModified });

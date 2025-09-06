@@ -60,7 +60,8 @@ namespace canadditionalmetals.src.Inventories
         public override bool CanContain(ItemSlot sinkSlot, ItemSlot sourceSlot)
         {
             int slotid = GetSlotId(sinkSlot);
-            if(!sourceSlot.Empty && sourceSlot.Itemstack.Collectible is ItemNugget && blockedCodes.Contains(sourceSlot.Itemstack.Collectible.Code.Path))
+            if(!sourceSlot.Empty && (sourceSlot.Itemstack.Collectible is ItemNugget && blockedCodes.Contains(sourceSlot.Itemstack.Collectible.Code.Path)) 
+                || sourceSlot.Itemstack.Collectible is BlockCookedContainer)
             {
                 return false;
             }
@@ -201,7 +202,7 @@ namespace canadditionalmetals.src.Inventories
         protected override ItemSlot NewSlot(int i)
         {
             if (i == 0) return new ItemSlotSurvival(this); // Fuel
-            if (i == 1) return new ItemSlotInput(this, 2);
+            if (i == 1) return new CANItemSlotCrucible(this, 2);
             if (i == 2) return new ItemSlotOutput(this);
 
             return new ItemSlotWatertight(this, CookingSlotCapacityLitres);

@@ -84,7 +84,7 @@
 	"variantgroups": [
 		{
 			"code": "metal",
-			"states": [ "blacksteel", "redsteel", "bluesteel" ]
+			"states": [ "blacksteel", "redsteel", "bluesteel", "weakredsteel", "weakbluesteel", "weakblacksteel", "rosegold", "sterlingsilver" ]
 		}
 	],
 	"storageFlags": 5,
@@ -105,8 +105,35 @@
 		"*-bluesteel": 7820
 	},
 	"combustiblePropsByType": {
+		"ingot-sterlingsilver": {
+			"meltingPoint": 1010,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltedStack": {
+				"type": "item",
+				"code": "ingot-sterlingsilver"
+			}
+		},
+		"ingot-rosegold": {
+			"meltingPoint": 1090,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltedStack": {
+				"type": "item",
+				"code": "ingot-rosegold"
+			}
+		},
+		"ingot-weakblacksteel": {
+			"meltingPoint": 1580,
+			"meltingDuration": 30,
+			"smeltedRatio": 20,
+			"smeltedStack": {
+				"type": "item",
+				"code": "ingot-weakblacksteel"
+			}
+		},
 		"ingot-blacksteel": {
-			"meltingPoint": 1502,
+			"meltingPoint": 1580,
 			"meltingDuration": 30,
 			"smeltedRatio": 1,
 			"smeltedStack": {
@@ -114,8 +141,17 @@
 				"code": "ingot-blacksteel"
 			}
 		},
+		"ingot-weakredsteel": {
+			"meltingPoint": 1620,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltedStack": {
+				"type": "item",
+				"code": "ingot-weakredsteel"
+			}
+		},
 		"ingot-redsteel": {
-			"meltingPoint": 1502,
+			"meltingPoint": 1620,
 			"meltingDuration": 30,
 			"smeltedRatio": 1,
 			"smeltedStack": {
@@ -123,13 +159,22 @@
 				"code": "ingot-redsteel"
 			}
 		},
-		"ingot-bluesteel": {
-			"meltingPoint": 1502,
+		"ingot-weakbluesteel": {
+			"meltingPoint": 1680,
 			"meltingDuration": 30,
 			"smeltedRatio": 1,
 			"smeltedStack": {
 				"type": "item",
-				"code": "game:ingot-copper"
+				"code": "ingot-weakbluesteel"
+			}
+		},
+		"ingot-bluesteel": {
+			"meltingPoint": 1680,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltedStack": {
+				"type": "item",
+				"code": "ingot-bluesteel"
 			}
 		}
 	},

@@ -1,3 +1,24 @@
 {
-    "hello": "hello world!"
+    "item-ingot-weakredsteel": "Weak red steel ingot",
+    "item-ingot-weakbluesteel": "Weak blue steel ingot",
+    "item-ingot-weakblacksteel": "Weak black steel ingot",
+
+    "item-ingot-redsteel": "Red steel ingot",
+    "item-ingot-bluesteel": "Blue steel ingot",
+    "item-ingot-blacksteel": "Black steel ingot",
+
+    "item-ingot-sterlingsilver": "Sterling silver ingot",
+    "item-ingot-rosegold": "Rose gold ingot",
+
+    "item-metalbit-weakredsteel": "Weak red steel bits",
+    "item-metalbit-weakbluesteel": "Weak blue steel bits",
+    "item-metalbit-weakblacksteel": "Weak black steel bits",
+    "item-metalbit-redsteel": "Red steel bits",
+    "item-metalbit-blacksteel": "Black steel bits",
+    "item-metalbit-bluesteel": "Blue steel bits",
+    "item-metalbit-sterlingsilver": "Steerling silver bits",
+    "item-metalbit-rosegold": "Rose gold bits",
+    "block-anvil-blacksteel": "Black steel anvil",
+    "block-anvil-redsteel": "Red steel anvil",
+    "block-anvil-bluesteel": "Blue steel anvil"
 }

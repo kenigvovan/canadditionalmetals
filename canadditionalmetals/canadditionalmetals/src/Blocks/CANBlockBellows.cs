@@ -133,8 +133,7 @@ namespace canadditionalmetals.src.Blocks
             CANBlockEntityBellows beQuern = world.BlockAccessor.GetBlockEntity(blockSel.Position) as CANBlockEntityBellows;
             if (beQuern != null)
             {
-                beQuern.UseBellowsOnce(byPlayer);
-                return true;
+                return beQuern.UseBellowsOnce(byPlayer);
             }
             return base.OnBlockInteractStart(world, byPlayer, blockSel);
         }
@@ -151,7 +150,7 @@ namespace canadditionalmetals.src.Blocks
             CANBlockEntityBellows beQuern = world.BlockAccessor.GetBlockEntity(blockSel.Position) as CANBlockEntityBellows;
             if (beQuern != null)
             {
-                beQuern.UseBellowsOnce(byPlayer);
+                //beQuern.UseBellowsOnce(byPlayer);
                 //beQuern.SetPlayerGrinding(byPlayer, false);
             }
             return true;

@@ -21,7 +21,7 @@
     "variantgroups": [
         {
             "code": "metal",
-            "states": [ "blacksteel", "redsteel", "bluesteel" ]
+            "states": [ "blacksteel", "redsteel", "bluesteel", "weakredsteel", "weakbluesteel", "weakblacksteel", "rosegold", "sterlingsilver" ]
         }
     ],
     "shape": { "base": "game:item/nugget" },
@@ -66,8 +66,35 @@
         "items": [ "*" ]
     },
     "combustiblePropsByType": {
+        "*-sterlingsilver": {
+            "meltingPoint": 1010,
+            "meltingDuration": 30,
+            "smeltedRatio": 1,
+            "smeltedStack": {
+                "type": "item",
+                "code": "ingot-sterlingsilver"
+            }
+        },
+        "*-rosegold": {
+            "meltingPoint": 1090,
+            "meltingDuration": 30,
+            "smeltedRatio": 1,
+            "smeltedStack": {
+                "type": "item",
+                "code": "ingot-rosegold"
+            }
+        },
+        "*-weakblacksteel": {
+            "meltingPoint": 1580,
+            "meltingDuration": 30,
+            "smeltedRatio": 20,
+            "smeltedStack": {
+                "type": "item",
+                "code": "ingot-weakblacksteel"
+            }
+        },
         "*-blacksteel": {
-            "meltingPoint": 1502,
+            "meltingPoint": 1580,
             "meltingDuration": 30,
             "smeltedRatio": 20,
             "smeltedStack": {
@@ -75,8 +102,17 @@
                 "code": "ingot-blacksteel"
             }
         },
+        "*-weakredsteel": {
+            "meltingPoint": 1620,
+            "meltingDuration": 4,
+            "smeltedRatio": 20,
+            "smeltedStack": {
+                "type": "item",
+                "code": "ingot-weakredsteel"
+            }
+        },
         "*-redsteel": {
-            "meltingPoint": 1100,
+            "meltingPoint": 1620,
             "meltingDuration": 4,
             "smeltedRatio": 20,
             "smeltedStack": {
@@ -84,8 +120,17 @@
                 "code": "ingot-redsteel"
             }
         },
+        "*-weakbluesteel": {
+            "meltingPoint": 1680,
+            "meltingDuration": 30,
+            "smeltedRatio": 20,
+            "smeltedStack": {
+                "type": "item",
+                "code": "ingot-weakbluesteel"
+            }
+        },
         "*-bluesteel": {
-            "meltingPoint": 1502,
+            "meltingPoint": 1680,
             "meltingDuration": 30,
             "smeltedRatio": 20,
             "smeltedStack": {

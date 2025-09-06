@@ -1,0 +1,32 @@
+{
+    ingredients: [
+        {
+            "type": "item",
+            "code": "game:ingot-bismuthbronze",
+            "minratio": 0.1,
+            "maxratio": 0.15
+        },
+        {
+            "type": "item",
+            "code": "canadditionalmetals:ingot-sterlingsilver",
+            "minratio": 0.1,
+            "maxratio": 0.15
+        },
+        {
+            "type": "item",
+            "code": "game:ingot-steel",
+            "minratio": 0.2,
+            "maxratio": 0.25
+        },
+        {
+            "type": "item",
+            "code": "canadditionalmetals:ingot-blacksteel",
+            "minratio": 0.5,
+            "maxratio": 0.55
+        }
+    ],
+    output: {
+        "type": "item",
+        "code": "canadditionalmetals:ingot-weakbluesteel"
+    }
+}

@@ -1,0 +1,15 @@
+{
+	ingredients: [
+		{ type: "item", code: "game:ingot-gold", minratio: 0.7, maxratio: 0.85  },
+		{
+			"type": "item",
+			"code": "game:ingot-copper",
+			"minratio": 0.15,
+			"maxratio": 0.3
+		},
+	],
+	output: {
+		"type": "item",
+		"code": "canadditionalmetals:ingot-rosegold"
+	}
+}
