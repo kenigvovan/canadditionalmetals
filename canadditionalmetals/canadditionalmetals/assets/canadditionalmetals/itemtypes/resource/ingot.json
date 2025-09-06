@@ -1,0 +1,208 @@
+{
+	"code": "ingot",
+	"class": "ItemIngot",
+	"maxstacksize": 16,
+	"behaviors": [
+		{
+			"name": "GroundStorable",
+			"properties": {
+				"layout": "Stacking",
+				"placeRemoveSound": "game:sounds/block/ingot",
+				"stackingModelByType": {
+					"*-gold": "game:block/metal/ingotpileshiny",
+					"*": "game:block/metal/ingotpile"
+				},
+				"stackingTextures": {
+					"metal": "game:block/metal/ingot/{metal}"
+				},
+				"modelItemsToStackSizeRatio": 1,
+				"upSolid": true,
+				"stackingCapacity": 64,
+				"transferQuantity": 1,
+				"bulkTransferQuantity": 4,
+				"collisionBox": {
+					"x1": 0,
+					"y1": 0,
+					"z1": 0,
+					"x2": 1,
+					"y2": 0.125,
+					"z2": 1
+				},
+				"cbScaleYByLayer": 0.125
+			}
+		}
+	],
+	"attributes": {
+		"reinforcementStrengthByType": {
+			"*-blacksteel": 2000,
+			"*-redsteel": 3000,
+			"*-bluesteel": 3000
+		},
+		"handbook": {
+			"groupBy": [ "ingot-*" ]
+		},
+		"workableTemperatureByType": {
+			"ingot-lead": 0,
+			"ingot-tin": 0,
+			"ingot-leadsolder": 0
+		},
+		"requiresAnvilTierByType": {
+			"ingot-blacksteel": 4,
+			"ingot-redsteel": 5,
+			"ingot-bluesteel": 5
+		},
+		"shatteredStack": {
+			"type": "item",
+			"code": "game:metalbit-{metal}"
+		},
+		"carburizablePropsByType": {
+
+		},
+		"displaycaseable": true,
+		"shelvable": true,
+		"onshelfTransform": {
+			"rotation": {
+				"x": 0,
+				"y": 75,
+				"z": 0
+			}
+		},
+		"onTongTransform": {
+			"translation": {
+				"x": -0.4,
+				"y": -0.53,
+				"z": -0.45
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 76
+			},
+			"scale": 1.08
+		}
+	},
+	"variantgroups": [
+		{
+			"code": "metal",
+			"states": [ "blacksteel", "redsteel", "bluesteel" ]
+		}
+	],
+	"storageFlags": 5,
+	"shapeByType": {
+		"*-gold": { "base": "game:item/ingotshiny" },
+		"*": { "base": "game:item/ingot" }
+	},
+	"textures": {
+		"metal": { "base": "canadditionalmetals:block/metal/ingot/{metal}" }
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"materialDensityByType": {
+		"*-blacksteel": 7820,
+		"*-redsteel": 7820,
+		"*-bluesteel": 7820
+	},
+	"combustiblePropsByType": {
+		"ingot-blacksteel": {
+			"meltingPoint": 1502,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltedStack": {
+				"type": "item",
+				"code": "ingot-blacksteel"
+			}
+		},
+		"ingot-redsteel": {
+			"meltingPoint": 1502,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltedStack": {
+				"type": "item",
+				"code": "ingot-redsteel"
+			}
+		},
+		"ingot-bluesteel": {
+			"meltingPoint": 1502,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltedStack": {
+				"type": "item",
+				"code": "game:ingot-copper"
+			}
+		}
+	},
+	"guiTransform": {
+		"translation": {
+			"x": 2,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 149,
+			"y": -36,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.1,
+			"z": 0.5
+		},
+		"scale": 3.5
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0.1,
+			"z": 0
+		},
+		"rotation": {
+			"x": 65,
+			"y": 21,
+			"z": -6
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.1,
+			"z": 0.5
+		},
+		"scale": 2.15
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.77,
+			"y": -0.15,
+			"z": -0.64
+		},
+		"rotation": {
+			"x": 0,
+			"y": -71,
+			"z": 18
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.1,
+			"z": 0.5
+		},
+		"scale": 0.75
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 4.8
+	}
+}

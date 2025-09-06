@@ -1,0 +1,44 @@
+{
+	"code": "sawblade",
+	"variantgroups": [
+		{ 
+		"code": "metal", "states": ["stainlesssteel", "titanium" ] 
+		}
+	],
+	"heldTpUseAnimation": "interactstatic",
+	"maxstacksize": 4,
+	"shape": { 
+		"base": "game:item/tool/saw" 
+	},
+	"textures": {
+		"metal": { "base": "game:block/metal/ingot/{metal}" },
+		"wood": { "base": "game:block/transparent" },
+		"linen": { "base": "game:block/transparent" }
+	},
+	"creativeinventory": {
+		"general": [ "*" ], "items": [ "*" ], "toolsextended": [ "*" ]
+	},
+	"fpHandTransform": {
+		"translation": { "x": 0.5, "y": -0.2, "z": 0 },
+		"rotation": { "x": -161, "y": -7, "z": 90 },
+		"scale": 2.5
+	},
+	"guiTransform": {
+		"rotate": false,
+		"translation": { "x": -2, "y": 1, "z": 0 },
+		"rotation": { "x": -29, "y": -73, "z": -180 },
+		"origin": { "x": 0.5, "y": 0.45, "z": 0.64 },
+		"scale": 3.5
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.47, "z": 0.5 },
+		"scale": 3.35
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.8, "y": -0.5, "z": -0.5 },
+		"rotation": { "x": 90, "y": -174, "z": 0 },
+		"scale": 1
+	}
+}

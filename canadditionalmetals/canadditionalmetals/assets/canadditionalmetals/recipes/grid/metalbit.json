@@ -1,0 +1,25 @@
+[
+    {
+        "ingredientPattern": "C\tI",
+        "recipeGroup": 1,
+        "ingredients": {
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true
+            },
+            "I": {
+                "type": "item",
+                "code": "ingot-*",
+                "name": "metal"
+            }
+        },
+        "width": 1,
+        "height": 2,
+        "output": {
+            "type": "item",
+            "code": "canadditionalmetals:metalbit-{metal}",
+            "quantity": 20
+        }
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "bloom-weak-*",
+            "name": "metal",
+            "allowedVariants": [ "redsteel", "blacksteel", "bluesteel" ] 
+        },
+        "pattern": [
+            [
+                "#######",
+                "#######",
+                "#######"
+            ],
+            [
+                "#######",
+                "#######",
+                "#######"
+            ]
+        ],
+        "name": "Colored steel ingot",
+        "output": {
+            "type": "item",
+            "code": "ingot-{metal}"
+        }
+    }
+]

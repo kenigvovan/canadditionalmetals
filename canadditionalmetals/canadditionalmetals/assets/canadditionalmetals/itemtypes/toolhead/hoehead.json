@@ -1,0 +1,49 @@
+{
+	"code": "hoehead",
+	"variantgroups": [
+		{
+			"code": "material", "states": ["stainlesssteel", "titanium" ] 
+		}
+	],
+	"heldTpUseAnimation": "interactstatic", 
+	"maxstacksize": 4,
+	"shapeByType": {
+		"*-stainlesssteel": { "base": "game:item/tool/hoe-copper" },
+		"*-titanium": { "base": "game:item/tool/hoe-copper" }
+	},
+	"texturesByType": {
+		"@hoehead-(stainlesssteel|titanium)": { 
+			"material": { "base": "game:block/metal/ingot/{material}" },
+			"string": { "base": "game:block/transparent" },
+			"handle": { "base": "game:block/transparent" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ], "items": [ "*" ], "toolsextended": [ "*" ]
+	},
+	"fpHandTransform": {
+		"translation": { "x": -0.3, "y": -0.6, "z": -0.3 },
+		"rotation": { "x": 37, "y": 0, "z": 92 },
+		"scale": 2.5
+	},
+	"guiTransformByType": {
+		"@hoehead-(stainlesssteel|titanium)": {
+			"rotate": false,
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -52, "y": -131, "z": -180 },
+			"origin": { "x": 0.93, "y": 0, "z": 0.5 },
+			"scale": 3.76
+		}
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": -0.28, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 180 },
+		"origin": { "x": 0.9, "y": 0.43, "z": 0.37 },
+		"scale": 4
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.4, "y": -1, "z": -0.02 },
+		"rotation": { "x": 96, "y": -85, "z": -8 },
+		"scale": 1
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"code": "cuttermattockhead",
+	"variantgroups": [
+		{
+			"code": "metal", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver",
+																		"iron", "meteoriciron", "steel", "stainlesssteel", "titanium" ]
+		}
+	],
+	"heldTpUseAnimation": "interactstatic",
+	"maxstacksize": 4,
+	"shape": { "base": "item/tool/cuttermattock" },
+	"textures": {
+		"metal": { "base": "game:block/metal/ingot/{metal}" },
+		"handle": { "base": "game:block/transparent" },
+		"wedge": { "base": "game:block/transparent" }
+	},
+	"creativeinventory": {
+		"general": ["*"], "items": ["*"], "toolsextended": ["*"]
+	},
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": -89, "y": 47, "z": 33 },
+		"origin": { "x": 1.1, "y": 0.275, "z": 0.5 },
+		"scale": 2.3
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 1, "y": 0, "z": 0.5 },
+		"scale": 4.17
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1.47, "y": 0, "z": -0.66 },
+		"rotation": { "x": 85, "y": -66, "z": 0 },
+		"origin": { "x": 1, "y": 0, "z": 0.5 },
+		"scale": 0.8
+	}
+}

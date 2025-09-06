@@ -1,0 +1,26 @@
+[
+    {
+        "file": "game:blocktypes/legacy/ingotpile.json",
+        "op": "addmerge",
+        "path": "/textures",
+        "value": {
+            "redsteel": { "base": "canadditionalmetals:block/metal/ingot/redsteel" }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-redsteel": {
+                "meltingPoint": 1530,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-redsteel"
+                }
+            }
+        }
+    }
+]
