@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using canadditionalmetals.src.Guis;
+using canadditionalmetals.src.Inventories;
 using canadditionalmetals.src.render;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -93,7 +95,7 @@ namespace canadditionalmetals.src.be
         }
         public CANBlockEntityBloomery()
         {
-            this.inventory = new InventorySmelting(null, null);
+            this.inventory = new CANInventorySmelting(null, null);
             this.inventory.SlotModified += this.OnSlotModifid;
         }
         public override void Initialize(ICoreAPI api)
@@ -438,8 +440,6 @@ namespace canadditionalmetals.src.be
                 this.fuelStack = null;
             }
         }
-
-        // Token: 0x06000D2B RID: 3371 RVA: 0x0008ADB8 File Offset: 0x00088FB8
         public void igniteWithFuel(IItemStack stack)
         {
             CombustibleProperties fuelCopts = stack.Collectible.CombustibleProps;
@@ -534,7 +534,7 @@ namespace canadditionalmetals.src.be
                 {
                     SyncedTreeAttribute dtree = new SyncedTreeAttribute();
                     this.SetDialogValues(dtree);
-                    this.clientDialog = new GuiDialogBlockEntityFirepit(this.DialogTitle, this.Inventory, this.Pos, dtree, this.Api as ICoreClientAPI);
+                    this.clientDialog = new CANGuiDialogBlockEntityFirepit(this.DialogTitle, this.Inventory, this.Pos, dtree, this.Api as ICoreClientAPI);
                     return this.clientDialog;
                 });
             }
@@ -689,7 +689,7 @@ namespace canadditionalmetals.src.be
             if (this.clientDialog != null)
             {
                 this.clientDialog.TryClose();
-                GuiDialogBlockEntityFirepit guiDialogBlockEntityFirepit = this.clientDialog;
+                CANGuiDialogBlockEntityFirepit guiDialogBlockEntityFirepit = this.clientDialog;
                 if (guiDialogBlockEntityFirepit != null)
                 {
                     guiDialogBlockEntityFirepit.Dispose();
@@ -697,9 +697,6 @@ namespace canadditionalmetals.src.be
                 this.clientDialog = null;
             }
         }
-
-        // Token: 0x170001D1 RID: 465
-        // (get) Token: 0x06000D39 RID: 3385 RVA: 0x0008B59B File Offset: 0x0008979B
         public ItemSlot fuelSlot
         {
             get
@@ -707,9 +704,6 @@ namespace canadditionalmetals.src.be
                 return this.inventory[0];
             }
         }
-
-        // Token: 0x170001D2 RID: 466
-        // (get) Token: 0x06000D3A RID: 3386 RVA: 0x0008B5A9 File Offset: 0x000897A9
         public ItemSlot inputSlot
         {
             get
@@ -717,9 +711,6 @@ namespace canadditionalmetals.src.be
                 return this.inventory[1];
             }
         }
-
-        // Token: 0x170001D3 RID: 467
-        // (get) Token: 0x06000D3B RID: 3387 RVA: 0x0008B5B7 File Offset: 0x000897B7
         public ItemSlot outputSlot
         {
             get
@@ -727,9 +718,6 @@ namespace canadditionalmetals.src.be
                 return this.inventory[2];
             }
         }
-
-        // Token: 0x170001D4 RID: 468
-        // (get) Token: 0x06000D3C RID: 3388 RVA: 0x0008B5C5 File Offset: 0x000897C5
         public ItemSlot[] otherCookingSlots
         {
             get
@@ -738,9 +726,6 @@ namespace canadditionalmetals.src.be
             }
         }
 
-        // Token: 0x170001D5 RID: 469
-        // (get) Token: 0x06000D3D RID: 3389 RVA: 0x0008B5D2 File Offset: 0x000897D2
-        // (set) Token: 0x06000D3E RID: 3390 RVA: 0x0008B5E5 File Offset: 0x000897E5
         public ItemStack fuelStack
         {
             get
@@ -754,9 +739,6 @@ namespace canadditionalmetals.src.be
             }
         }
 
-        // Token: 0x170001D6 RID: 470
-        // (get) Token: 0x06000D3F RID: 3391 RVA: 0x0008B60A File Offset: 0x0008980A
-        // (set) Token: 0x06000D40 RID: 3392 RVA: 0x0008B61D File Offset: 0x0008981D
         public ItemStack inputStack
         {
             get
@@ -769,10 +751,6 @@ namespace canadditionalmetals.src.be
                 this.inventory[1].MarkDirty();
             }
         }
-
-        // Token: 0x170001D7 RID: 471
-        // (get) Token: 0x06000D41 RID: 3393 RVA: 0x0008B642 File Offset: 0x00089842
-        // (set) Token: 0x06000D42 RID: 3394 RVA: 0x0008B655 File Offset: 0x00089855
         public ItemStack outputStack
         {
             get
@@ -785,9 +763,6 @@ namespace canadditionalmetals.src.be
                 this.inventory[2].MarkDirty();
             }
         }
-
-        // Token: 0x170001D8 RID: 472
-        // (get) Token: 0x06000D43 RID: 3395 RVA: 0x0008B67A File Offset: 0x0008987A
         public CombustibleProperties fuelCombustibleOpts
         {
             get
@@ -796,7 +771,6 @@ namespace canadditionalmetals.src.be
             }
         }
 
-        // Token: 0x06000D44 RID: 3396 RVA: 0x0008B684 File Offset: 0x00089884
         public CombustibleProperties getCombustibleOpts(int slotid)
         {
             ItemSlot slot = this.inventory[slotid];
@@ -807,7 +781,6 @@ namespace canadditionalmetals.src.be
             return slot.Itemstack.Collectible.CombustibleProps;
         }
 
-        // Token: 0x06000D45 RID: 3397 RVA: 0x0008B6B8 File Offset: 0x000898B8
         public override void OnStoreCollectibleMappings(Dictionary<int, AssetLocation> blockIdMapping, Dictionary<int, AssetLocation> itemIdMapping)
         {
             foreach (ItemSlot slot in this.Inventory)
@@ -842,7 +815,6 @@ namespace canadditionalmetals.src.be
             }
         }
 
-        // Token: 0x06000D46 RID: 3398 RVA: 0x0008B838 File Offset: 0x00089A38
         public override void OnLoadCollectibleMappings(IWorldAccessor worldForResolve, Dictionary<int, AssetLocation> oldBlockIdMapping, Dictionary<int, AssetLocation> oldItemIdMapping, int schematicSeed, bool resolveImports)
         {
             base.OnLoadCollectibleMappings(worldForResolve, oldBlockIdMapping, oldItemIdMapping, schematicSeed, resolveImports);
@@ -939,6 +911,7 @@ namespace canadditionalmetals.src.be
                 {
                     InFirePitProps inFirePitProps = contentStack.ItemAttributes["inFirePitProps"].AsObject<InFirePitProps>(null);
                     inFirePitProps.Transform.EnsureDefaultValues();
+                    inFirePitProps.Transform.Translation.Add(0, 0.5f, 0);
                     return inFirePitProps;
                 }
             }
@@ -974,7 +947,7 @@ namespace canadditionalmetals.src.be
             }
             return 0.25f;
         }
-        internal InventorySmelting inventory;
+        internal CANInventorySmelting inventory;
         public float prevFurnaceTemperature = 20f;
         public float furnaceTemperature = 20f;
         public int maxTemperature;
@@ -985,7 +958,7 @@ namespace canadditionalmetals.src.be
         public bool canIgniteFuel;
         public float cachedFuel;
         public double extinguishedTotalHours;
-        private GuiDialogBlockEntityFirepit clientDialog;
+        private CANGuiDialogBlockEntityFirepit clientDialog;
         private bool clientSidePrevBurning;
         private CANBloomeryContentsRenderer renderer;
         private bool shouldRedraw;

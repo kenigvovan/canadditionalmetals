@@ -11,7 +11,7 @@
 	"textures": {
 		"inside": "block/inside",
 		"plain": "block/plain",
-		"tinbronze": "block/tinbronze"
+		"tinbronze": "block/metal"
 	},
 	"elements": [
 		{

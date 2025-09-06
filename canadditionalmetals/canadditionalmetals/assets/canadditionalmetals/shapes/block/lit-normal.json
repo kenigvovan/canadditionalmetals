@@ -10,6 +10,7 @@
 	},
 	"textures": {
 		"base": "/Users/koeni/Desktop/tex/base",
+		"fire-orange": "/Users/koeni/Desktop/tex/fire-orange",
 		"base front": "/Users/koeni/Desktop/tex/front",
 		"inside": "/Users/koeni/Desktop/tex/inside"
 	},
@@ -125,8 +126,47 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Cube2",
+			"from": [ 4.0, 0.0, 4.0 ],
+			"to": [ 12.0, 5.0, 12.0 ],
+			"rotationOrigin": [ 4.0, 0.0, 4.0 ],
+			"faces": {
+				"north": { "texture": "#fire-orange", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+				"east": { "texture": "#fire-orange", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+				"south": { "texture": "#fire-orange", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+				"west": { "texture": "#fire-orange", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+				"up": { "texture": "#fire-orange", "uv": [ 0.0, 0.0, 8.0, 8.0 ] },
+				"down": { "texture": "#fire-orange", "uv": [ 0.0, 0.0, 8.0, 8.0 ] }
+			}
+		},
+		{
+			"name": "Cube2",
+			"from": [ 4.0, 9.0, 7.0 ],
+			"to": [ 6.0, 10.0, 9.0 ],
+			"rotationOrigin": [ 4.0, 9.0, 7.0 ],
+			"faces": {
+				"north": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"east": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"south": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"west": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"up": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+				"down": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+			}
+		},
+		{
+			"name": "Cube3",
+			"from": [ 10.0, 9.0, 7.0 ],
+			"to": [ 12.0, 10.0, 9.0 ],
+			"rotationOrigin": [ 10.0, 9.0, 7.0 ],
+			"faces": {
+				"north": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"east": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"south": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"west": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"up": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+				"down": { "texture": "#inside", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+			}
 		}
-	],
-	"animations": [
-	]
-}
+	]}

@@ -6,29 +6,37 @@
     "creativeinventory": {
 
     },
-    "creativeinventoryStacks": [
+    "attributes": {
+        "variantGroups": {
+            "metalType": [ "tinbronze", "iron" ]
+        }
+    },
+    "variantgroups": [
         {
-            "tabs": [ "general", "decorative" ],
-            "stacks": [
-                {
-                    "type": "block",
-                    "code": "bellows",
-                    "attributes": {
-                        "type": "iron"
-                    }
-                },
-                {
-                    "type": "block",
-                    "code": "bellows",
-                    "attributes": {
-                        "type": "tinbronze"
-                    }
-                }
-            ]
+            "code": "side",
+            "loadFromProperties": "abstract/horizontalorientation"
         }
     ],
+
+    "shapebytype": {
+        "*-north": {
+            "base": "block/bellows",
+            "rotateY": 90
+        },
+        "*-east": {
+            "base": "block/bellows",
+            "rotateY": 0
+        },
+        "*-south": {
+            "base": "block/bellows",
+            "rotateY": 270
+        },
+        "*-west": {
+            "base": "block/bellows",
+            "rotateY": 180
+        }
+    },
     "drawtype": "json",
-    "shape": { "base": "block/bellows" },
     "blockmaterial": "Metal",
     "replaceable": 900,
     "lightAbsorption": 0,

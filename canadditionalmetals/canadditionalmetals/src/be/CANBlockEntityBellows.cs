@@ -9,13 +9,14 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
+using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 using Vintagestory.GameContent.Mechanics;
 
 namespace canadditionalmetals.src.be
 {
-    public class CANBlockEntityBellows: BlockEntity
+    public class CANBlockEntityBellows: BlockEntity, ITexPositionSource
     {
         /* static CANBlockEntityBellows()
          {
@@ -43,30 +44,84 @@ namespace canadditionalmetals.src.be
         private CANBlockBellows ownBlock;
         public string type = "tinbronze";
         private static Vec3f origin = new Vec3f(0.5f, 0f, 0.5f);
+        private float meshangle;
+        public Size2i AtlasSize => this.capi.BlockTextureAtlas.Size;
         public virtual float MeshAngle
         {
             get
             {
-                return this.rotAngleY;
+                return this.meshangle;
             }
             set
             {
-                this.rotAngleY = value;
+                this.meshangle = value;
+                this.animRot.Y = value;
             }
         }
         private float rotAngleY;
+        private ICoreClientAPI capi;
+        private ICoreServerAPI sapi;
+        MeshData defaultMesh = null;
+        private Vec3f animRot = new Vec3f();
+        public Dictionary<string, AssetLocation> tmpAssets = new Dictionary<string, AssetLocation>();
+        public TextureAtlasPosition this[string textureCode]
+        {
+            get
+            {
+                if (tmpAssets.TryGetValue(textureCode, out var assetCode))
+                {
+                    return this.getOrCreateTexPos(assetCode);
+                }
+
+                Dictionary<string, CompositeTexture> dictionary;
+                dictionary = new Dictionary<string, CompositeTexture>();
+                foreach (var it in this.Block.Textures)
+                {
+                    dictionary.Add(it.Key, it.Value);
+                }
+                AssetLocation texturePath = (AssetLocation)null;
+                CompositeTexture compositeTexture;
+                if (dictionary.TryGetValue(textureCode, out compositeTexture))
+                    texturePath = compositeTexture.Baked.BakedName;
+                if ((object)texturePath == null && dictionary.TryGetValue("all", out compositeTexture))
+                    texturePath = compositeTexture.Baked.BakedName;
+
+                return this.getOrCreateTexPos(texturePath);
+            }
+        }
+        private TextureAtlasPosition getOrCreateTexPos(AssetLocation texturePath)
+        {
+            TextureAtlasPosition texPos = this.capi.BlockTextureAtlas[texturePath];
+            if (texPos == null)
+            {
+                IAsset asset = this.capi.Assets.TryGet(texturePath.Clone().WithPathPrefixOnce("textures/").WithPathAppendixOnce(".png"));
+                if (asset != null)
+                {
+                    BitmapRef bitmap = asset.ToBitmap(this.capi);
+                    this.capi.BlockTextureAtlas.InsertTextureCached(texturePath, (IBitmap)bitmap, out int _, out texPos);
+                }
+                else
+                {
+                    this.capi.World.Logger.Warning("For render in block " + this.Block.Code?.ToString() + ", item {0} defined texture {1}, not no such texture found.", "", (object)texturePath);
+                }
+            }
+            return texPos;
+        }
         public override void OnBlockPlaced(ItemStack byItemStack = null)
         {
             if (((byItemStack != null) ? byItemStack.Attributes : null) != null)
             {
-                string nowType = byItemStack.Attributes.GetString("type", "tinbronze");
-                if (nowType != this.type)
+                this.type = byItemStack.Attributes.GetString("type", "tinbronze");
+                string orient = this.Block.LastCodePart(0);
+
+                if (this.Api.Side == EnumAppSide.Client && this.defaultMesh == null)
                 {
-                    this.type = nowType;
-                    this.MarkDirty(false, null);
+                    this.defaultMesh = animUtil.InitializeAnimator("wiring2" + string.Concat(new string[]
+                    {
+                     orient, type
+                    }), Vintagestory.API.Common.Shape.TryGet(this.capi, "canadditionalmetals:shapes/block/bellows.json"), this, this.animRot);                 
                 }
             }
-            base.OnBlockPlaced(null);
         }
         private BlockEntityAnimationUtil animUtil
         {
@@ -115,14 +170,26 @@ namespace canadditionalmetals.src.be
         public override void Initialize(ICoreAPI api)
         {
             base.Initialize(api);
+            if (api.Side == EnumAppSide.Server)
+            {
+                this.sapi = api as ICoreServerAPI;
+                this.MeshAngle = (BlockFacing.FromCode(base.Block.LastCodePart(0)).HorizontalAngleIndex - 1) * 90;
+            }
+            else
+                this.capi = api as ICoreClientAPI;
             this.ownBlock = (base.Block as CANBlockBellows);
             if (api.Side == EnumAppSide.Client)
             {
-                if (bellowsMesh == null)
+                BlockEntityAnimationUtil animUtil = this.animUtil;
+                if (animUtil == null)
                 {
-                    bellowsMesh = GenMesh();
+                    return;
                 }
-                this.animUtil.InitializeAnimator("bellows", null, this.ownBlock, new Vec3f(0f, 0f, 0f));
+                //var rotatedIndex = (BlockFacing.FromCode(base.Block.LastCodePart(0)).HorizontalAngleIndex - 1) * 90;
+                var c2 = base.Block.LastCodePart(0);
+                this.MeshAngle = (BlockFacing.FromCode(base.Block.LastCodePart(0)).HorizontalAngleIndex - 1) * 90;
+                this.defaultMesh = this.getMesh(this.capi.Tesselator, this.animRot);
+                this.animUtil.InitializeAnimator("bellows", null, this, this.animRot);
                 this.animUtil.StartAnimation(new AnimationMetaData
                 {
                     Animation = "idle",
@@ -135,6 +202,21 @@ namespace canadditionalmetals.src.be
                 });
             }
             this.RegisterGameTickListener(new Action<float>(this.Every500ms), 500, 0);
+        }
+        public MeshData GenMesh(ICoreClientAPI capi, Shape shape = null, ITesselatorAPI tesselator = null, ITexPositionSource textureSource = null, Vec3f rotationDeg = null)
+        {
+            if (shape == null)
+            {
+                shape = Vintagestory.API.Common.Shape.TryGet(this.capi, "canadditionalmetals:shapes/block/bellows.json");
+            }
+
+            if (shape == null)
+            {
+                return null;
+            }
+
+            tesselator.TesselateShape("blockbellows", shape, out var modeldata, this, this.animRot, 0, 0, 0);
+            return modeldata;
         }
         public void updateSoundState(bool nowGrinding)
         {
@@ -154,7 +236,7 @@ namespace canadditionalmetals.src.be
                 {
                     this.ambientSound = (this.Api as ICoreClientAPI).World.LoadSound(new SoundParams
                     {
-                        Location = new AssetLocation("sounds/block/quern.ogg"),
+                        Location = new AssetLocation("sounds/bellows.ogg"),
                         ShouldLoop = true,
                         Position = this.Pos.ToVec3f().Add(0.5f, 0.25f, 0.5f),
                         DisposeOnFinish = false,
@@ -202,15 +284,20 @@ namespace canadditionalmetals.src.be
         }
         public void UseBellowsOnce(IPlayer player)
         {
-            AnimationMetaData meta = new AnimationMetaData
+            if (!this.animUtil.activeAnimationsByAnimCode.TryGetValue("blow", out var _))
             {
-                Animation = "blow",
-                Code = "blow",
-                AnimationSpeed = .8f,
-                EaseInSpeed = 5f,
-                EaseOutSpeed = 3f
-            };
-            this.animUtil.StartAnimation(meta);
+                AnimationMetaData meta = new AnimationMetaData
+                {
+                    Animation = "blow",
+                    Code = "blow",
+                    AnimationSpeed = .8f,
+                    EaseInSpeed = 5f,
+                    EaseOutSpeed = 3f
+                };
+                this.animUtil.StartAnimation(meta);
+                this.Api.World.PlaySoundAt(new AssetLocation("canadditionalmetals:sounds/bellows"), this.Pos.X, this.Pos.InternalY, this.Pos.Z, player, true, 32f, 1f);
+            }
+            
             //this.MarkDirty(true);
         }
         public void SetPlayerGrinding(IPlayer player, bool playerGrinding)
@@ -239,36 +326,33 @@ namespace canadditionalmetals.src.be
                 }
             }*/
         }
-        internal MeshData GenMesh()
+        internal MeshData getMesh(ITesselatorAPI tesselator, Vec3f rotationDeg = null)
         {
-            CANBlockBellows block = base.Block as CANBlockBellows;
-            if (base.Block == null)
-            {
-                block = (this.Api.World.BlockAccessor.GetBlock(this.Pos) as CANBlockBellows);
-                base.Block = block;
-            }
+            Dictionary<string, MeshData> lanternMeshes = ObjectCacheUtil.GetOrCreate<Dictionary<string, MeshData>>(this.Api, "bellowsBlockMeshes", () => new Dictionary<string, MeshData>());
+            MeshData mesh = null;
+            CANBlockBellows block = this.Api.World.BlockAccessor.GetBlock(this.Pos) as CANBlockBellows;
             if (block == null)
             {
                 return null;
             }
-            string cacheKey = "bellowsMeshes" + block.FirstCodePart(0);
-            Dictionary<string, MeshData> meshes = ObjectCacheUtil.GetOrCreate<Dictionary<string, MeshData>>(this.Api, cacheKey, () => new Dictionary<string, MeshData>());
-            CompositeShape cshape = this.ownBlock.Shape;
-            if (((cshape != null) ? cshape.Base : null) == null)
+            //lanternMeshes.Clear();
+            string orient = block.LastCodePart(0);
+            this.tmpAssets["tinbronze"] = new AssetLocation("game:block/metal/sheet/" + this.type + "1.png");
+            this.tmpAssets["plain"] = new AssetLocation("canadditionalmetals:block/plain.png");
+            this.tmpAssets["inside"] = new AssetLocation("canadditionalmetals:block/inside.png");
+
+            if (lanternMeshes.TryGetValue(string.Concat(new string[]
             {
-                return null;
+                orient, type
+            }), out mesh))
+            {
+                return mesh;
             }
-            string meshKey = string.Concat(new string[]
+
+            return lanternMeshes[string.Concat(new string[]
             {
-                this.type
-            });
-            MeshData mesh;
-            if (!meshes.TryGetValue(meshKey, out mesh))
-            {
-                mesh = block.GenMesh(this.Api as ICoreClientAPI, this.type, cshape, new Vec3f(cshape.rotateX, cshape.rotateY, cshape.rotateZ));
-                meshes[meshKey] = mesh;
-            }
-            return mesh;
+                orient, type
+            })] = GenMesh(this.Api as ICoreClientAPI, null, tesselator, this, rotationDeg);
         }
         public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldForResolving)
         {
@@ -277,7 +361,24 @@ namespace canadditionalmetals.src.be
             this.MeshAngle = tree.GetFloat("meshAngle", this.MeshAngle);
             if (this.Api != null && this.Api.Side == EnumAppSide.Client)
             {
-                this.GenMesh();
+                this.defaultMesh = this.getMesh(this.capi.Tesselator, this.animRot);
+                string orient = this.Block.LastCodePart(0);
+                animUtil.StopAnimation("idle");
+                this.defaultMesh = animUtil.InitializeAnimator("wiring2" + string.Concat(new string[]
+                    {
+                     orient, type
+                    }), Vintagestory.API.Common.Shape.TryGet(this.capi, "canadditionalmetals:shapes/block/bellows.json"), this, this.animRot);
+                this.animUtil.StartAnimation(new AnimationMetaData
+                {
+                    Animation = "idle",
+                    Code = "idle",
+                    AnimationSpeed = 1f,
+                    EaseInSpeed = 1f,
+                    EaseOutSpeed = 1f,
+                    Weight = 1f,
+                    BlendMode = EnumAnimationBlendMode.Average
+                });
+                // animUtil.InitializeAnimator("wiring2" + key, Vintagestory.API.Common.Shape.TryGet(canjewelry.capi, "canjewelry:shapes/block/wiretable.json"), this, this.animRot);
                 this.MarkDirty(true, null);
             }
         }
@@ -309,11 +410,19 @@ namespace canadditionalmetals.src.be
         }
         public override bool OnTesselation(ITerrainMeshPool mesher, ITesselatorAPI tesselator)
         {
-            if (base.Block == null)
+            string part = this.Block.LastCodePart(1);
+            if (!base.OnTesselation(mesher, tesselator))
             {
-                return false;
+                if (this.defaultMesh == null)
+                {
+                    this.defaultMesh = this.getMesh(tesselator);
+                    if (this.defaultMesh == null)
+                    {
+                        return false;
+                    }
+                }
+                mesher.AddMeshData(this.defaultMesh.Clone());
             }
-            mesher.AddMeshData(this.bellowsMesh, 1);
             return true;
         }
         public override void OnBlockUnloaded()

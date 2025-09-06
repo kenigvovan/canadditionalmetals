@@ -12,6 +12,9 @@ using Vintagestory.GameContent;
 using Vintagestory.GameContent.Mechanics;
 using canadditionalmetals.src.be;
 using Vintagestory.API.Util;
+using Newtonsoft.Json.Linq;
+using Vintagestory.API.Datastructures;
+using Vintagestory.Client.NoObf;
 
 namespace canadditionalmetals.src.Blocks
 {
@@ -21,13 +24,7 @@ namespace canadditionalmetals.src.Blocks
         private string curType;
         private ITextureAtlasAPI curAtlas;
         public Dictionary<string, AssetLocation> tmpAssets = new Dictionary<string, AssetLocation>();
-        public Size2i AtlasSize
-        {
-            get
-            {
-                return this.tmpTextureSource.AtlasSize;
-            }
-        }
+        public Size2i AtlasSize { get; set; }
         private TextureAtlasPosition getOrCreateTexPos(AssetLocation texturePath)
         {
             TextureAtlasPosition texPos = curAtlas[texturePath];
@@ -45,6 +42,50 @@ namespace canadditionalmetals.src.Blocks
                 }
             }
             return texPos;
+        }
+        public override bool TryPlaceBlock(IWorldAccessor world, IPlayer byPlayer, ItemStack itemstack, BlockSelection blockSel, ref string failureCode)
+        {
+            if (!world.Claims.TryAccess(byPlayer, blockSel.Position, EnumBlockAccessFlags.BuildOrBreak))
+            {
+                byPlayer.InventoryManager.ActiveHotbarSlot.MarkDirty();
+                return false;
+            }
+            if (!this.CanPlaceBlock(world, byPlayer, blockSel, ref failureCode))
+            {
+                return false;
+            }
+            BlockFacing[] horVer = Block.SuggestedHVOrientation(byPlayer, blockSel);
+            horVer[0] = horVer[0].GetCW();
+            BlockPos secondPos = blockSel.Position.AddCopy(horVer[0]);
+            BlockSelection secondBlockSel = new BlockSelection
+            {
+                Position = secondPos,
+                Face = BlockFacing.UP
+            };
+            if (!this.CanPlaceBlock(world, byPlayer, blockSel, ref failureCode))
+            {
+                return false;
+            }
+            string code = horVer[0].Code;
+            world.BlockAccessor.GetBlock(base.CodeWithParts(new string[]
+            {
+                code
+            })).DoPlaceBlock(world, byPlayer, blockSel, itemstack);
+            return true;
+        }
+        public override ItemStack OnPickBlock(IWorldAccessor world, BlockPos pos)
+        {
+            ItemStack stack = new ItemStack(this, 1);
+            CANBlockEntityBellows be = world.BlockAccessor.GetBlockEntity(pos) as CANBlockEntityBellows;
+            if (be != null)
+            {
+                stack.Attributes.SetString("type", be.type);
+            }
+            else
+            {
+                stack.Attributes.SetString("type", "tinbronze");
+            }
+            return stack;
         }
         public TextureAtlasPosition this[string textureCode]
         {
@@ -68,40 +109,7 @@ namespace canadditionalmetals.src.Blocks
         }
         public override bool DoPlaceBlock(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ItemStack byItemStack)
         {
-            bool flag = base.DoPlaceBlock(world, byPlayer, blockSel, byItemStack);
-            if (flag)
-            {
-                CANBlockEntityBellows bect = world.BlockAccessor.GetBlockEntity(blockSel.Position) as CANBlockEntityBellows;
-                if (bect != null)
-                {
-                    BlockPos targetPos = blockSel.DidOffset ? blockSel.Position.AddCopy(blockSel.Face.Opposite) : blockSel.Position;
-                    double y = byPlayer.Entity.Pos.X - ((double)targetPos.X + blockSel.HitPosition.X);
-                    double dz = (double)((float)byPlayer.Entity.Pos.Z) - ((double)targetPos.Z + blockSel.HitPosition.Z);
-                    float angleHor = (float)Math.Atan2(y, dz);
-                    string type = bect.type;
-                    string rotatatableInterval = "22.5degnot45deg";
-                    if (rotatatableInterval == "22.5degnot45deg")
-                    {
-                        float rounded90degRad = (float)((int)Math.Round((double)(angleHor / 1.5707964f))) * 1.5707964f;
-                        float deg45rad = 0.3926991f;
-                        if (Math.Abs(angleHor - rounded90degRad) >= deg45rad)
-                        {
-                            bect.MeshAngle = rounded90degRad + 0.3926991f * (float)Math.Sign(angleHor - rounded90degRad);
-                        }
-                        else
-                        {
-                            bect.MeshAngle = rounded90degRad;
-                        }
-                    }
-                    if (rotatatableInterval == "22.5deg")
-                    {
-                        float deg22dot5rad = 0.3926991f;
-                        float roundRad = (float)((int)Math.Round((double)(angleHor / deg22dot5rad))) * deg22dot5rad;
-                        bect.MeshAngle = roundRad;
-                    }
-                }
-            }
-            return flag;
+            return base.DoPlaceBlock(world, byPlayer, blockSel, byItemStack); ;
         }
         /* public override bool TryPlaceBlock(IWorldAccessor world, IPlayer byPlayer, ItemStack itemstack, BlockSelection blockSel, ref string failureCode)
          {
@@ -148,10 +156,88 @@ namespace canadditionalmetals.src.Blocks
             }
             return true;
         }
-        public MeshData GenMesh(ICoreClientAPI capi, string type, CompositeShape cshape, Vec3f rotation = null)
+        public override void OnLoaded(ICoreAPI api)
         {
+            base.OnLoaded(api);
+            AddAllTypesToCreativeInventory();
+        }
+        private JsonItemStack genJstack(string json)
+        {
+            JsonItemStack jsonItemStack = new JsonItemStack();
+            jsonItemStack.Code = this.Code;
+            jsonItemStack.Type = EnumItemClass.Block;
+            jsonItemStack.Attributes = new JsonObject(JToken.Parse(json));
+            jsonItemStack.Resolve(this.api.World, "can wire drawing bench type", true);
+            return jsonItemStack;
+        }
+        public void AddAllTypesToCreativeInventory()
+        {
+            List<JsonItemStack> stacks = new List<JsonItemStack>();
+            Dictionary<string, string[]> vg = this.Attributes["variantGroups"].AsObject<Dictionary<string, string[]>>(null);
+            Random r = new Random();
+
+            string[] woodType = vg["metalType"];
+            foreach (string loop in woodType)
+            {
+                stacks.Add(this.genJstack(string.Format("{{ type: \"{0}\" }}", loop)));
+            }
+            this.CreativeInventoryStacks = new CreativeTabAndStackList[]
+            {
+                new CreativeTabAndStackList
+                {
+                    Stacks = stacks.ToArray(),
+                    Tabs = new string[]
+                    {
+                        "general",
+                        "decorative"
+                    }
+                }
+            };
+        }
+        public MeshData GenMesh(ICoreClientAPI capi, Shape shape = null, ITesselatorAPI tesselator = null, ITexPositionSource textureSource = null, Vec3f rotationDeg = null)
+        {
+            if (tesselator == null)
+            {
+                tesselator = capi.Tesselator;
+            }
+            curAtlas = capi.BlockTextureAtlas;
+            if (textureSource != null)
+            {
+                tmpTextureSource = textureSource;
+            }
+            else
+            {
+                tmpTextureSource = tesselator.GetTextureSource(this);
+            }
+            if (shape == null)
+            {
+                shape = Vintagestory.API.Common.Shape.TryGet(capi, "canadditionalmetals:shapes/block/bellows.json");
+            }
+
+            if (shape == null)
+            {
+                return null;
+            }
+
+            AtlasSize = capi.BlockTextureAtlas.Size;
+            //var f = (BlockFacing.FromCode(base.LastCodePart(0)).HorizontalAngleIndex - 1) * 90;
+            tesselator.TesselateShape("blocklantern", shape, out var modeldata, this, rotationDeg, 0, 0, 0);
+            return modeldata;
+            /*if (tesselator == null)
+            {
+                tesselator = capi.Tesselator;
+            }
+            curAtlas = capi.BlockTextureAtlas;
+            if (textureSource != null)
+            {
+                tmpTextureSource = textureSource;
+            }
+            else
+            {
+                tmpTextureSource = tesselator.GetTextureSource(this);
+            }
             Shape shape = this.GetShape(capi, type, cshape);
-            ITesselatorAPI tesselator = capi.Tesselator;
+
             curAtlas = capi.BlockTextureAtlas;
             this.tmpAssets["tinbronze"] = new AssetLocation("game:block/metal/sheet/" + this.curType + "1.png");
             this.tmpAssets["plain"] = new AssetLocation("canadditionalmetals:block/plain.png");
@@ -169,13 +255,14 @@ namespace canadditionalmetals.src.Blocks
                                                                             : rotation);
 
 
-            return mesh;
+            return mesh;*/
         }
         public override void OnBeforeRender(ICoreClientAPI capi, ItemStack itemstack, EnumItemRenderTarget target, ref ItemRenderInfo renderinfo)
         {
             string cacheKey = "bellowsMeshRefs" + base.FirstCodePart(0);
             Dictionary<string, MultiTextureMeshRef> meshrefs = ObjectCacheUtil.GetOrCreate<Dictionary<string, MultiTextureMeshRef>>(capi, cacheKey, () => new Dictionary<string, MultiTextureMeshRef>());
-            this.tmpAssets["tinbronze"] = new AssetLocation("game:block/metal/sheet/" + this.curType + "1.png");
+            string woodType = itemstack.Attributes.GetString("type", "tinbronze");
+            this.tmpAssets["tinbronze"] = new AssetLocation("game:block/metal/sheet/" + woodType + "1.png");
             this.tmpAssets["plain"] = new AssetLocation("canadditionalmetals:block/plain.png");
             this.tmpAssets["inside"] = new AssetLocation("canadditionalmetals:block/inside.png");
             string type = itemstack.Attributes.GetString("type", "tinbronze");
@@ -185,10 +272,11 @@ namespace canadditionalmetals.src.Blocks
             });
             if (!meshrefs.TryGetValue(key, out renderinfo.ModelRef))
             {
-                CompositeShape cshape = this.Shape;
+                AssetLocation shapeloc = new AssetLocation("canadditionalmetals:shapes/block/bellows.json");
+                Shape shape = Vintagestory.API.Common.Shape.TryGet(capi, shapeloc);
                 Vec3f rot = (this.ShapeInventory == null) ? null : new Vec3f(this.ShapeInventory.rotateX, this.ShapeInventory.rotateY, this.ShapeInventory.rotateZ);
 
-                MeshData mesh = this.GenMesh(capi, type, cshape, rot);
+                MeshData mesh = this.GenMesh(capi, shape, null, this);
                 meshrefs[key] = (renderinfo.ModelRef = capi.Render.UploadMultiTextureMesh(mesh));
             }
         }

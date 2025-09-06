@@ -49,6 +49,8 @@
         "fire": { "base": "game:block/wood/firepit/fire" },
         "walnut-h": { "base": "game:block/wood/bark/walnut-h" },
         "ember": { "base": "game:block/coal/ember" },
+        "fire-orange": { "base": "block/fire-orange" },
+        "black": { "base": "block/black" },
         "iron": { "base": "block/metal/ingot/iron" },
         "inside": {
             "base": "game:block/clay/bloomery/inside"

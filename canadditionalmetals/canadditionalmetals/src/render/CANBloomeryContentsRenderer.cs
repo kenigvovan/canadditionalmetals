@@ -80,11 +80,12 @@ namespace canadditionalmetals.src.render
             contentStackRenderer?.Dispose();
             contentStackRenderer = null;
             this.transform = transform;
+            
             if (transform == null)
             {
                 this.transform = defaultTransform;
             }
-
+            this.transform.Translation.Add(0, 1, 0);
             this.transform.EnsureDefaultValues();
             meshref?.Dispose();
             meshref = null;
