@@ -1,0 +1,32 @@
+[
+	{
+		"file": "game:itemtypes/tool/cleaver.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/cleaver.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"cleaver-blacksteel": 2.85,
+			"cleaver-redsteel": 3.1,
+			"cleaver-bluesteel": 3
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/cleaver.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"cleaver-blacksteel": 2250,
+			"cleaver-redsteel": 3500,
+			"cleaver-bluesteel": 3800
+		}
+	}
+]

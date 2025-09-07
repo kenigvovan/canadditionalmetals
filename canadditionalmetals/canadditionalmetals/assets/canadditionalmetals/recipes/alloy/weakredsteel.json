@@ -20,13 +20,13 @@
         },
         {
             "type": "item",
-            "code": "canadditionalmetals:ingot-blacksteel",
+            "code": "game:ingot-blacksteel",
             "minratio": 0.5,
             "maxratio": 0.55
         }
     ],
     output: {
         "type": "item",
-        "code": "canadditionalmetals:ingot-weakredsteel"
+        "code": "game:ingot-weakredsteel"
     }
 }

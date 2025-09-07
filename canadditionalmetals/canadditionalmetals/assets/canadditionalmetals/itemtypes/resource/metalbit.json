@@ -21,7 +21,7 @@
     "variantgroups": [
         {
             "code": "metal",
-            "states": [ "blacksteel", "redsteel", "bluesteel", "weakredsteel", "weakbluesteel", "weakblacksteel", "rosegold", "sterlingsilver" ]
+            "states": [ "rosegold", "sterlingsilver" ]
         }
     ],
     "shape": { "base": "game:item/nugget" },
@@ -84,60 +84,7 @@
                 "code": "ingot-rosegold"
             }
         },
-        "*-weakblacksteel": {
-            "meltingPoint": 1580,
-            "meltingDuration": 30,
-            "smeltedRatio": 20,
-            "smeltedStack": {
-                "type": "item",
-                "code": "ingot-weakblacksteel"
-            }
-        },
-        "*-blacksteel": {
-            "meltingPoint": 1580,
-            "meltingDuration": 30,
-            "smeltedRatio": 20,
-            "smeltedStack": {
-                "type": "item",
-                "code": "ingot-blacksteel"
-            }
-        },
-        "*-weakredsteel": {
-            "meltingPoint": 1620,
-            "meltingDuration": 4,
-            "smeltedRatio": 20,
-            "smeltedStack": {
-                "type": "item",
-                "code": "ingot-weakredsteel"
-            }
-        },
-        "*-redsteel": {
-            "meltingPoint": 1620,
-            "meltingDuration": 4,
-            "smeltedRatio": 20,
-            "smeltedStack": {
-                "type": "item",
-                "code": "ingot-redsteel"
-            }
-        },
-        "*-weakbluesteel": {
-            "meltingPoint": 1680,
-            "meltingDuration": 30,
-            "smeltedRatio": 20,
-            "smeltedStack": {
-                "type": "item",
-                "code": "ingot-weakbluesteel"
-            }
-        },
-        "*-bluesteel": {
-            "meltingPoint": 1680,
-            "meltingDuration": 30,
-            "smeltedRatio": 20,
-            "smeltedStack": {
-                "type": "item",
-                "code": "ingot-bluesteel"
-            }
-        }
+      
     },
     "guiTransform": {
         "translation": {

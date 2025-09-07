@@ -1,0 +1,23 @@
+[
+    {
+        "file": "game:blocktypes/metal/anvilpart.json",
+        "op": "addmerge",
+        "path": "/variantgroups/1/states/-",
+        "value": "redsteel"
+
+    },
+    {
+        "file": "game:blocktypes/metal/anvilpart.json",
+        "op": "addmerge",
+        "path": "/variantgroups/1/states/-",
+        "value": "bluesteel"
+
+    },
+    {
+        "file": "game:blocktypes/metal/anvilpart.json",
+        "op": "addmerge",
+        "path": "/variantgroups/1/states/-",
+        "value": "blacksteel"
+
+    }
+]

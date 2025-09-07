@@ -1,0 +1,32 @@
+[
+	{
+		"file": "game:itemtypes/tool/shears.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/shears.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"shears-blacksteel": 3.75,
+			"shears-redsteel": 4.1,
+			"shears-bluesteel": 4
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/shears.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"shears-blacksteel": 10200,
+			"shears-redsteel": 12500,
+			"shears-bluesteel": 12800
+		}
+	}
+]

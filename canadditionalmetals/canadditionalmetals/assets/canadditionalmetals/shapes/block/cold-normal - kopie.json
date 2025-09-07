@@ -9,7 +9,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"inside": "/Users/koeni/Desktop/tex/inside"
+		"inside": "game:block/clay/ceramic"
 	},
 	"elements": [
 		{

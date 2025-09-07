@@ -1,0 +1,86 @@
+[
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "weakblacksteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 5
+        }
+    },
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "weakredsteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        }
+    },
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "weakbluesteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        }
+    },
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "redsteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        }
+    },
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "bluesteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        }
+    },
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "blacksteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 5
+        }
+    }
+]

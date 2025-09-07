@@ -1,0 +1,36 @@
+[
+    {
+        "ingredientPattern": "PRP,LLL",
+        "ingredients": {
+            "P": {
+                "type": "item",
+                "code": "game:metalplate-*",
+                "name": "metal-type",
+                "allowedVariants": [ "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel", "copper" ]
+            },
+            "R": {
+                "type": "item",
+                "code": "game:resin",
+                "quantity": 2
+            },
+
+            "L": {
+                "type": "item",
+                "code": "game:leather-normal-*",
+                "allowedVariants": [ "plain", "orange", "black", "red", "blue", "purple", "pink", "white", "yellow", "gray", "green" ],
+                "quantity": 3
+            }
+        },
+        "name": "bellows",
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "bellows-south",
+            "quantity": 1,
+            "attributes": {
+                "type": "{metal-type}"
+            }
+        }
+    }
+]

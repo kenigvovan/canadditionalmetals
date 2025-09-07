@@ -39,7 +39,7 @@
     "shape": { "base": "block/extinct-normal" },
     "faceCullMode": "NeverCull",
     "textures": {
-        "ceramic": { "base": "block/clay/ceramic" },
+        "ceramic": { "base": "game:block/clay/ceramic" },
         "tinder": { "base": "game:block/hay/normal-side" },
         "log": { "base": "game:block/wood/firepit/log" },
         "birch": { "base": "game:block/wood/debarked/birch" },
@@ -51,7 +51,7 @@
         "ember": { "base": "game:block/coal/ember" },
         "fire-orange": { "base": "block/fire-orange" },
         "black": { "base": "block/black" },
-        "iron": { "base": "block/metal/ingot/iron" },
+        "iron": { "base": "game:block/metal/ingot/iron" },
         "inside": {
             "base": "game:block/clay/bloomery/inside"
         },
@@ -419,17 +419,22 @@
         "z2": 1
     },
     "guiTransform": {
+        "rotation": {
+            "x": -29,
+            "y": -136,
+            "z": -4
+        },
         "origin": {
             "x": 0.5,
-            "y": 0.0625,
+            "y": 0.4625,
             "z": 0.5
         },
-        "scale": 1.5
+        "scale": 0.91
     },
     "materialDensity": 600,
     "sounds": {
         "place": "game:block/planks",
-        "hit": "block/planks",
-        "break": "block/planks"
+        "hit": "game:block/planks",
+        "break": "game:block/planks"
     }
 }

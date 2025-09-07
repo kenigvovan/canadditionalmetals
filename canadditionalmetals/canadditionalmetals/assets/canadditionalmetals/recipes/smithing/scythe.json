@@ -1,0 +1,24 @@
+{
+	"ingredient": {
+		"type": "item",
+		"code": "game:ingot-*", 
+		"name": "metal",
+		"allowedVariants": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		] 
+	},
+	"pattern": [
+		[
+			"###########____",
+			"_______########",
+			"____________###"
+		]
+	],
+	"name": "Scythe",
+	"output": {
+		"type": "item",
+		"code": "scythehead-{metal}"  
+	}
+}

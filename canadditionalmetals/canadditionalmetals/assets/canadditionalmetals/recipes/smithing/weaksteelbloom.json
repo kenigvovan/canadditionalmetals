@@ -2,7 +2,7 @@
     {
         "ingredient": {
             "type": "item",
-            "code": "canadditionalmetals:ingot-weakredsteel"
+            "code": "game:ingot-weakredsteel"
         },
         "pattern": [
             [
@@ -19,7 +19,53 @@
         "name": "Colored steel ingot",
         "output": {
             "type": "item",
-            "code": "canadditionalmetals:ingot-redsteel"
+            "code": "game:ingot-redsteel"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-weakbluesteel"
+        },
+        "pattern": [
+            [
+                "#######",
+                "#######",
+                "#######"
+            ],
+            [
+                "#######",
+                "#######",
+                "#######"
+            ]
+        ],
+        "name": "Colored steel ingot",
+        "output": {
+            "type": "item",
+            "code": "game:ingot-bluesteel"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-weakblacksteel"
+        },
+        "pattern": [
+            [
+                "#######",
+                "#######",
+                "#######"
+            ],
+            [
+                "#######",
+                "#######",
+                "#######"
+            ]
+        ],
+        "name": "Colored steel ingot",
+        "output": {
+            "type": "item",
+            "code": "game:ingot-blacksteel"
         }
     }
 ]

@@ -9,6 +9,9 @@
 	"textureSizes": {
 	},
 	"textures": {
+		"tinbronze": "game:block/clay/ceramic",
+		"plain": "game:block/clay/ceramic",
+		"inside": "game:block/clay/ceramic"
 	},
 	"elements": [
 		{

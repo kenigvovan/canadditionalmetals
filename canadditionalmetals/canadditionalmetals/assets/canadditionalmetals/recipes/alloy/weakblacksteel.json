@@ -21,6 +21,6 @@
     ],
     output: {
         "type": "item",
-        "code": "canadditionalmetals:ingot-weakblacksteel"
+        "code": "game:ingot-weakblacksteel"
     }
 }

@@ -1,0 +1,21 @@
+{
+  "ingredientPattern": "T\tS",
+  "ingredients": {
+    "T": {
+      "type": "item",
+      "code": "hoehead-*",
+      "name": "metal"
+    },
+    "S": {
+      "type": "item",
+      "code": "game:stick"
+    }
+  },
+  "width": 1,
+  "height": 2,
+  "output": {
+    "type": "item",
+    "code": "game:hoe-{metal}",
+    "quantity": 1
+  }
+}

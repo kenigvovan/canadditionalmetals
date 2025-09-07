@@ -1,0 +1,62 @@
+[
+	{
+		"file": "game:itemtypes/tool/prospectingpick.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/prospectingpick.json",
+		"op": "addmerge",
+		"path": "/tooltierbytype",
+		"value": {
+			"*-blacksteel": 5,
+			"*-redsteel": 6,
+			"*-bluesteel": 6
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/prospectingpick.json",
+		"op": "addmerge",
+		"path": "/miningspeedbytype",
+		"value": {
+			"prospectingpick-blacksteel": {
+				"stone": 5.75,
+				"ore": 5.75,
+				"metal": 5.75
+			},
+			"prospectingpick-redsteel": {
+				"stone": 6.6,
+				"ore": 6.6
+			},
+			"prospectingpick-bluesteel": {
+				"stone": 6.5,
+				"ore": 6.5
+			}
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/prospectingpick.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"prospectingpick-blacksteel": 2.65,
+			"prospectingpick-redsteel": 2.85,
+			"prospectingpick-bluesteel": 2.75
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/prospectingpick.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"prospectingpick-blacksteel": 2250,
+			"prospectingpick-redsteel": 3500,
+			"prospectingpick-bluesteel": 3800
+		}
+	}
+]

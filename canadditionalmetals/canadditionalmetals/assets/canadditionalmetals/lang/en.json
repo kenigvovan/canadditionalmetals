@@ -1,24 +1,136 @@
 {
-    "item-ingot-weakredsteel": "Weak red steel ingot",
-    "item-ingot-weakbluesteel": "Weak blue steel ingot",
-    "item-ingot-weakblacksteel": "Weak black steel ingot",
+    "game:item-ingot-weakredsteel": "Weak red steel ingot",
+    "game:item-ingot-weakbluesteel": "Weak blue steel ingot",
+    "game:item-ingot-weakblacksteel": "Weak black steel ingot",
 
-    "item-ingot-redsteel": "Red steel ingot",
-    "item-ingot-bluesteel": "Blue steel ingot",
-    "item-ingot-blacksteel": "Black steel ingot",
+    "game:item-ingot-redsteel": "Red steel ingot",
+    "game:item-ingot-bluesteel": "Blue steel ingot",
+    "game:item-ingot-blacksteel": "Black steel ingot",
 
     "item-ingot-sterlingsilver": "Sterling silver ingot",
     "item-ingot-rosegold": "Rose gold ingot",
 
-    "item-metalbit-weakredsteel": "Weak red steel bits",
-    "item-metalbit-weakbluesteel": "Weak blue steel bits",
-    "item-metalbit-weakblacksteel": "Weak black steel bits",
-    "item-metalbit-redsteel": "Red steel bits",
-    "item-metalbit-blacksteel": "Black steel bits",
-    "item-metalbit-bluesteel": "Blue steel bits",
+    "game:item-metalbit-weakredsteel": "Weak red steel bits",
+    "game:item-metalbit-weakbluesteel": "Weak blue steel bits",
+    "game:item-metalbit-weakblacksteel": "Weak black steel bits",
+    "game:item-metalbit-redsteel": "Red steel bits",
+    "game:item-metalbit-blacksteel": "Black steel bits",
+    "game:item-metalbit-bluesteel": "Blue steel bits",
     "item-metalbit-sterlingsilver": "Steerling silver bits",
     "item-metalbit-rosegold": "Rose gold bits",
-    "block-anvil-blacksteel": "Black steel anvil",
-    "block-anvil-redsteel": "Red steel anvil",
-    "block-anvil-bluesteel": "Blue steel anvil"
+    "game:block-anvil-blacksteel": "Black steel anvil",
+    "game:block-anvil-redsteel": "Red steel anvil",
+    "game:block-anvil-bluesteel": "Blue steel anvil",
+
+    "material-weakredsteel": "Weak red steel",
+    "material-weakbluesteel": "Weak blue steel",
+    "material-weakblacksteel": "Weak black steel",
+    "material-redsteel": "Red steel",
+    "material-bluesteel": "Blue steel",
+    "material-blacksteel": "Black steel",
+    "material-sterlingsilver": "Sterling silver",
+    "material-rosegold": "Rose gold",
+
+    "game:block-anvilpart-base-redsteel": "Anvil base (Red steel)",
+    "game:block-anvilpart-top-redsteel": "Anvil top (Red steel)",
+
+    "game:block-anvilpart-base-blacksteel": "Anvil base (Black steel)",
+    "game:block-anvilpart-top-blacksteel": "Anvil top (Black steel)",
+
+    "game:block-anvilpart-base-bluesteel": "Anvil base (Blue steel)",
+    "game:block-anvilpart-top-bluesteel": "Anvil top (Blue steel)",
+
+    "game:item-axe-felling-redsteel": "Red steel axe",
+    "game:item-axe-felling-blacksteel": "Black steel axe",
+    "game:item-axe-felling-bluesteel": "Blue steel axe",
+
+    "item-axehead-redsteel": "Red steel axe head",
+    "item-axehead-blacksteel": "Black steel axe head",
+    "item-axehead-bluesteel": "Blue steel axe head",
+
+    "game:item-wrench-redsteel": "Red steel wrench",
+    "game:item-wrench-blacksteel": "Black steel wrench",
+    "game:item-wrench-bluesteel": "Blue steel wrench",
+
+    "game:item-hammer-redsteel": "Red steel hammer",
+    "game:item-hammer-blacksteel": "Black steel hammer",
+    "game:item-hammer-bluesteel": "Blue steel hammer",
+
+    "item-hammerhead-redsteel": "Red steel hammer head",
+    "item-hammerhead-blacksteel": "Black steel hammer head",
+    "item-hammerhead-bluesteel": "Blue steel hammer head",
+
+    "item-knifeblade-redsteel": "Red steel knife blade",
+    "item-knifeblade-blacksteel": "Black steel knife blade",
+    "item-knifeblade-bluesteel": "Blue steel knife blade",
+
+    "game:item-knife-generic-redsteel": "Red steel knife",
+    "game:item-knife-generic-blacksteel": "Black steel knife",
+    "game:item-knife-generic-bluesteel": "Blue steel iron knife",
+
+    "game:item-pickaxe-redsteel": "Red steel pickaxe",
+    "game:item-pickaxe-blacksteel": "Black steel pickaxe",
+    "game:item-pickaxe-bluesteel": "Blue steel pickaxe",
+
+    "item-pickaxehead-redsteel": "Red steel pickaxe head",
+    "item-pickaxehead-blacksteel": "Black steel pickaxe head",
+    "item-pickaxehead-bluesteel": "Blue steel pickaxe head",
+
+    "game:item-cleaver-redsteel": "Red steel cleaver",
+    "game:item-cleaver-blacksteel": "Black steel cleaver",
+    "game:item-cleaver-bluesteel": "Blue steel cleaver",
+
+    "game:item-prospectingpick-redsteel": "Red steel prospecting pick",
+    "game:item-prospectingpick-blacksteel": "Black steel prospecting pick",
+    "game:item-prospectingpick-bluesteel": "Blue steel prospecting pick",
+
+    "item-prospectingpickhead-redsteel": "Red steel prospecting pick head",
+    "item-prospectingpickhead-blacksteel": "Black steel prospecting pick head",
+    "item-prospectingpickhead-bluesteel": "Blue steel prospecting pick head",
+
+    "item-sawblade-redsteel": "Red steel saw blade",
+    "item-sawblade-blacksteel": "Black steel saw blade",
+    "item-sawblade-bluesteel": "Blue steel saw blade",
+
+    "game:item-saw-redsteel": "Red steel saw",
+    "game:item-saw-blacksteel": "Black steel saw",
+    "game:item-saw-bluesteel": "Blue steel saw",
+
+    "game:item-shears-redsteel": "Red steel shears",
+    "game:item-shears-blacksteel": "Black steel shears",
+    "game:item-shears-bluesteel": "Blue steel shears",
+
+    "game:item-chisel-redsteel": "Red steel chisel",
+    "game:item-chisel-blacksteel": "Black steel chisel",
+    "game:item-chisel-bluesteel": "Blue steel chisel",
+
+    "game:item-scythe-redsteel": "Red steel scythe",
+    "game:item-scythe-blacksteel": "Black steel scythe",
+    "game:item-scythe-bluesteel": "Blue steel scythe",
+
+    "item-scythehead-redsteel": "Red steel scythe head",
+    "item-scythehead-blacksteel": "Black steel scythe head",
+    "item-scythehead-bluesteel": "Blue steel scythe head",
+
+    "game:item-hoe-redsteel": "Red steel hoe",
+    "game:item-hoe-blacksteel": "Black steel hoe",
+    "game:item-hoe-bluesteel": "Blue steel hoe",
+
+    "item-hoehead-redsteel": "Red steel hoe head",
+    "item-hoehead-blacksteel": "Black steel hoe head",
+    "item-hoehead-bluesteel": "Blue steel hoe head",
+
+    "block-bloomery-extinct": "Bloomery (Extinguished)",
+    "block-bloomery-lit": "Bloomery (Lit)",
+
+    "block-bellows-*": "Bellows",
+
+    "game:item-shovel-redsteel": "Red steel shovel",
+    "game:item-shovel-blacksteel": "Black steel shovel",
+    "game:item-shovel-bluesteel": "Blue steel shovel",
+
+    "item-shovelhead-redsteel": "Red steel shovel head",
+    "item-shovelhead-blacksteel": "Black steel shovel head",
+    "item-shovelhead-bluesteel": "Blue steel shovel head"
+
 }

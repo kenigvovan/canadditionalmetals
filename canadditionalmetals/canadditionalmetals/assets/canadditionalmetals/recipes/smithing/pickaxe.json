@@ -1,0 +1,24 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "game:ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+        "blacksteel",
+        "redsteel",
+        "bluesteel"
+    ]
+  },
+  "pattern": [
+    [
+      "_____####_____",
+      "__##########__",
+      "#####____#####"
+    ]
+  ],
+  "name": "Pickaxe",
+  "output": {
+    "type": "item",
+    "code": "pickaxehead-{metal}"
+  }
+}

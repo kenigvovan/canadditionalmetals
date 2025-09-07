@@ -1,0 +1,20 @@
+[
+    {
+        "ingredientPattern": "R_R,RRR",
+        "ingredients": {
+            "R": {
+                "type": "item",
+                "code": "game:refractorybrick-fired-tier2",
+                "quantity": 2
+            }
+        },
+        "name": "bloomery",
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "bloomery-extinct",
+            "quantity": 1
+        }
+    }
+]

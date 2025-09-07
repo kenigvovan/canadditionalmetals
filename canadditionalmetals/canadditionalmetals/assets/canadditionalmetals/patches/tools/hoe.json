@@ -1,0 +1,115 @@
+[
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "add",
+		"path": "/shapeByType/*-blacksteel",
+		"value": {
+			"base": "item/tool/hoe-copper"
+
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "add",
+		"path": "/shapeByType/*-redsteel",
+		"value": {
+			"base": "item/tool/hoe-copper"
+
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "add",
+		"path": "/shapeByType/*-bluesteel",
+		"value": {
+			"base": "item/tool/hoe-copper"
+
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "addmerge",
+		"path": "/miningspeedbytype",
+		"value": {
+			"hoe-blacksteel": {
+				"soil": 5.5
+			},
+			"hoe-redsteel": {
+				"soil": 6.1
+			},
+			"hoe-bluesteel": {
+				"soil": 6.0
+			}
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"hoe-blacksteel": 1800,
+			"hoe-redsteel": 2100,
+			"hoe-bluesteel": 2400
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"hoe-blacksteel": 2.75,
+			"hoe-redsteel": 3.1,
+			"hoe-bluesteel": 3
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "move",
+		"frompath": "/texturesByType/*",
+		"path": "/move-temp"
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "add",
+		"path": "/texturesByType/hoe-blacksteel",
+		"value": {
+			"material": { "base": "game:block/metal/ingot/{material}" }
+
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "add",
+		"path": "/texturesByType/hoe-redsteel",
+		"value": {
+			"material": { "base": "game:block/metal/ingot/{material}" }
+
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "add",
+		"path": "/texturesByType/hoe-bluesteel",
+		"value": {
+			"material": { "base": "game:block/metal/ingot/{material}" }
+
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hoe.json",
+		"op": "move",
+		"path": "/texturesByType/*",
+		"frompath": "/move-temp"
+	}
+
+]

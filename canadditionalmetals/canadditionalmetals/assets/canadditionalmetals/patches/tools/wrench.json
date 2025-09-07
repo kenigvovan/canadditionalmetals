@@ -1,0 +1,40 @@
+[
+	{
+		"file": "game:itemtypes/tool/wrench.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			 "blacksteel", "redsteel", "bluesteel" 
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/wrench.json",
+		"op": "addmerge",
+		"path": "/tooltierbytype",
+		"value": {
+			"*-blacksteel": 5,
+			"*-redsteel": 6,
+			"*-bluesteel": 6
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/wrench.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"wrench-blacksteel": 2.65,
+			"wrench-redsteel": 2.85,
+			"wrench-bluesteel": 2.75
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/wrench.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"wrench-blacksteel": 4800,
+			"wrench-redsteel": 6000,
+			"wrench-bluesteel": 6300
+		}
+	}
+]

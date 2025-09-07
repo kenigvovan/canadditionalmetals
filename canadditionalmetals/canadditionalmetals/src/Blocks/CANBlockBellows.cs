@@ -174,7 +174,10 @@ namespace canadditionalmetals.src.Blocks
             List<JsonItemStack> stacks = new List<JsonItemStack>();
             Dictionary<string, string[]> vg = this.Attributes["variantGroups"].AsObject<Dictionary<string, string[]>>(null);
             Random r = new Random();
-
+            if(this.Variant["side"] != "south")
+            {
+                return;
+            }
             string[] woodType = vg["metalType"];
             foreach (string loop in woodType)
             {

@@ -1,0 +1,27 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "game:ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+        "blacksteel",
+        "redsteel",
+        "bluesteel"
+    ]
+  },
+  "pattern": [
+    [
+      "__#####",
+      "_######",
+      "#######",
+      "#######",
+      "_######",
+      "__#####"
+    ]
+  ],
+  "name": "Shovel",
+  "output": {
+    "type": "item",
+    "code": "shovelhead-{metal}"
+  }
+}

@@ -2,49 +2,106 @@
 	"code": "pickaxehead",
 	"variantgroups": [
 		{
-		"code": "metal", "states": [ "stainlesssteel", "titanium" ]
+			"code": "metal",
+			"states": [ "blacksteel", "redsteel", "bluesteel" ]
 		}
 	],
-	"heldTpUseAnimation": "interactstatic",
-	"maxstacksize": 4,
-	"shape": {
-		"base": "game:item/tool/pickaxe"
-	},
+	"shape": { "base": "game:item/tool/pickaxe" },
 	"textures": {
 		"metal": { "base": "game:block/metal/ingot/{metal}" },
 		"string": { "base": "game:block/transparent" },
 		"handle": { "base": "game:block/transparent" }
 	},
+	"attributes": {
+		"onTongTransform": {
+			"translation": {
+				"x": -0.5,
+				"y": -0.55,
+				"z": -1
+			},
+			"rotation": {
+				"x": 93,
+				"y": 16,
+				"z": 90
+			}
+		}
+	},
 	"creativeinventory": {
-		"general": [ "*" ], "items": [ "*" ], "toolsextended": [ "*" ]
+		"general": [ "*" ],
+		"items": [ "*" ]
 	},
-	"fpHandTransform": {
-		"translation": { "x": 0.2, "y": -0.2, "z": 0 },
-		"rotation": { "x": 15, "y": 15, "z": 90 },
-		"scale": 2.5
-	},
+	"heldTpUseAnimation": "interactstatic",
+	"maxstacksize": 4,
 	"guiTransform": {
-		"translation": { "x": 0, "y": 0, "z": 0 },
-		"rotation": { "x": -89, "y": 47, "z": 33 },
-		"origin": { "x": 1, "y": 0.2, "z": 0.45 },
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": -89,
+			"y": 47,
+			"z": 33
+		},
+		"origin": {
+			"x": 1,
+			"y": 0.2,
+			"z": 0.45
+		},
 		"scale": 2.3
 	},
 	"fpHandTransform": {
-		"translation": { "x": -0.5, "y": -0.2, "z": 0 },
-		"rotation": { "x": 26, "y": 15, "z": 90 },
-		"origin": { "x": 1, "y": 0.4, "z": 0.5 },
+		"translation": {
+			"x": -0.5,
+			"y": -0.2,
+			"z": 0
+		},
+		"rotation": {
+			"x": 26,
+			"y": 15,
+			"z": 90
+		},
+		"origin": {
+			"x": 1,
+			"y": 0.4,
+			"z": 0.5
+		},
 		"scale": 3.4
 	},
 	"groundTransform": {
-		"translation": { "x": 0, "y": 0, "z": 0 },
-		"rotation": { "x": 0, "y": 0, "z": 0 },
-		"origin": { "x": 1, "y": 0, "z": 0.5 },
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"origin": {
+			"x": 1,
+			"y": 0,
+			"z": 0.5
+		},
 		"scale": 4.17
 	},
 	"tpHandTransform": {
-		"translation": { "x": -1.47, "y": -0.01, "z": -0.56 },
-		"rotation": { "x": -95, "y": 66, "z": 0 },
-		"origin": { "x": 1, "y": 0, "z": 0.5 },
+		"translation": {
+			"x": -1.47,
+			"y": -0.01,
+			"z": -0.56
+		},
+		"rotation": {
+			"x": -95,
+			"y": 66,
+			"z": 0
+		},
+		"origin": {
+			"x": 1,
+			"y": 0,
+			"z": 0.5
+		},
 		"scale": 0.8
 	}
 }

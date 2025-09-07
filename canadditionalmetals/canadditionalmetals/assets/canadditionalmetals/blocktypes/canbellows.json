@@ -4,11 +4,12 @@
     "entityClass": "CANBlockEntityBellows",
     "entityBehaviors": [ { "name": "Animatable" } ],
     "creativeinventory": {
-
+        "general": [ "*-south" ],
+        "construction": [ "*-south" ]
     },
     "attributes": {
         "variantGroups": {
-            "metalType": [ "tinbronze", "iron" ]
+            "metalType": [ "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel", "copper" ]
         }
     },
     "variantgroups": [
@@ -46,8 +47,8 @@
     },
     "sideao": { "all": false },
     "sounds": {
-        "place": "block/planks",
-        "walk": "walk/wood"
+        "place": "game:block/planks",
+        "walk": "game:walk/wood"
     },
     "fpHandTransform": {
         "translation": {
@@ -76,16 +77,16 @@
     },
     "guiTransform": {
         "rotation": {
-            "x": -22.6,
-            "y": -45.3,
-            "z": 17
+            "x": -11,
+            "y": -74,
+            "z": 13
         },
         "origin": {
             "x": 0.6,
-            "y": 0.1,
+            "y": 0.3,
             "z": 0.6
         },
-        "scale": 1.84
+        "scale": 1.07
     },
     "groundTransform": {
         "translation": {

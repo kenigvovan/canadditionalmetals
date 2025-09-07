@@ -1,0 +1,70 @@
+[
+	{
+		"file": "game:itemtypes/tool/pickaxe.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/pickaxe.json",
+		"op": "addmerge",
+		"path": "/tooltierbytype",
+		"value": {
+			"pickaxe-blacksteel": 5,
+			"pickaxe-redsteel": 6,
+			"pickaxe-bluesteel": 6
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/pickaxe.json",
+		"op": "addmerge",
+		"path": "/miningspeedbytype",
+		"value": {
+			"pickaxe-blacksteel": {
+				"ceramic": 3.5,
+				"stone": 9.5,
+				"ore": 9.5,
+				"metal": 9.5,
+				"ice": 4.5
+			},
+			"pickaxe-redsteel": {
+				"ceramic": 4.1,
+				"stone": 10.5,
+				"ore": 10.5,
+				"metal": 10.3,
+				"ice": 5.2
+			},
+			"pickaxe-bluesteel": {
+				"ceramic": 4,
+				"stone": 10,
+				"ore": 10,
+				"metal": 10,
+				"ice": 5
+			}
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/pickaxe.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"pickaxe-blacksteel": 2.75,
+			"pickaxe-redsteel": 3.1,
+			"pickaxe-bluesteel": 3
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/pickaxe.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"pickaxe-blacksteel": 2800,
+			"pickaxe-redsteel": 3500,
+			"pickaxe-bluesteel": 3800
+		}
+	}
+]

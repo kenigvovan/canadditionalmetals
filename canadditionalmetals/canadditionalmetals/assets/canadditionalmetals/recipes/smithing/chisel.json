@@ -1,0 +1,24 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "game:ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+        "blacksteel",
+        "redsteel",
+        "bluesteel"
+    ]
+  },
+  "pattern": [
+    [
+      "________###____",
+      "_##########____",
+      "________###____"
+    ]
+  ],
+  "name": "Chisel",
+  "output": {
+    "type": "item",
+    "code": "game:chisel-{metal}"
+  }
+}

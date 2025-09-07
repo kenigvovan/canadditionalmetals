@@ -1,0 +1,25 @@
+{
+	"ingredient": { 
+		"type": "item",
+		"code": "game:ingot-*", 
+		"name": "metal",
+		"allowedVariants": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		] 
+	},
+	"pattern": [
+		[
+			"########____",
+			"############",
+			"########____",
+			"########____"
+		]
+	],
+	"name": "Cleaver",
+	"output": {
+		"type": "item",
+		"code": "game:cleaver-{metal}"  
+	}
+}

@@ -4,7 +4,7 @@
         "op": "addmerge",
         "path": "/textures",
         "value": {
-            "blacksteel": { "base": "canadditionalmetals:block/metal/ingot/blacksteel" }
+            "blacksteel": { "base": "canadditionalmetals:block/metal/ingot/weakredsteel" }
         }
     },
     {
@@ -12,13 +12,79 @@
         "op": "addmerge",
         "path": "/combustiblePropsByType",
         "value": {
-            "*-redsteel": {
-                "meltingPoint": 1530,
+            "*-blacksteel": {
+                "meltingPoint": 1580,
                 "meltingDuration": 30,
                 "smeltedRatio": 20,
                 "smeltedStack": {
                     "type": "item",
-                    "code": "ingot-blacksteel"
+                    "code": "game:ingot-blacksteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-blacksteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "ingot-blacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-blacksteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/attributesByType",
+        "value": {
+            "workitem-blacksteel": {
+                "requiresAnvilTier": 4
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/combustbilePropsByType",
+        "value": {
+            "workitem-blacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-blacksteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-blacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-blacksteel"
                 }
             }
         }

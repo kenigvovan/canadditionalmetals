@@ -1,0 +1,48 @@
+[
+	{
+		"file": "game:itemtypes/tool/knife.json",
+		"op": "addeach",
+		"path": "/variantgroups/1/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/knife.json",
+		"op": "addmerge",
+		"path": "/miningspeedbytype",
+		"value": {
+			"knife-generic-blacksteel": {
+				"plant": 2.6
+			},
+			"knife-generic-redsteel": {
+                "plant": 3.0
+			},
+			"knife-generic-bluesteel": {
+				"plant": 2.8
+			}
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/knife.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"knife-generic-blacksteel": 4.25,
+			"knife-generic-redsteel": 4.60,
+			"knife-generic-bluesteel": 4.50
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/knife.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"knife-generic-blacksteel": 2350,
+			"knife-generic-redsteel": 3300,
+			"knife-generic-bluesteel": 3600
+		}
+	}	
+]

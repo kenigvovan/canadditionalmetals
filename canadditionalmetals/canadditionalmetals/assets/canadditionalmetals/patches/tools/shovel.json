@@ -1,0 +1,111 @@
+[
+	{
+		"file": "game:itemtypes/tool/shovel.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/shovel.json",
+		"op": "addmerge",
+		"path": "/miningspeedbytype",
+		"value": {
+			"shovel-blacksteel": {
+				"soil": 7.5,
+				"sand": 7.5,
+				"gravel": 4.6,
+				"snow": 4.6
+			},
+			"shovel-redsteel": {
+				"soil": 8.1,
+				"sand": 8.1,
+				"gravel": 4.9,
+				"snow": 4.9
+			},
+			"shovel-bluesteel": {
+				"soil": 8,
+				"sand": 8,
+				"gravel": 4.8,
+				"snow": 4.8
+			}
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/shovel.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"shovel-blacksteel": 2.65,
+			"shovel-redsteel": 2.85,
+			"shovel-bluesteel": 2.75
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/shovel.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"shovel-blacksteel": 3400,
+			"shovel-redsteel": 4000,
+			"shovel-bluesteel": 4300
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/shovel.json",
+		"op": "addmerge",
+		"path": "/attributes/groundStorageTransformByType/",
+		"value": {
+			"@shovel-(blacksteel|redsteel|bluesteel)": {
+				"translation": {
+					"x": 0,
+					"y": 0.59,
+					"z": -0.15
+				},
+				"rotation": {
+					"x": 13,
+					"y": 88,
+					"z": -87
+				},
+				"scale": 0.88
+			}
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/shovel.json",
+		"op": "addmerge",
+		"path": "/shapeByType",
+		"value": {
+			"shovel-blacksteel": { "base": "game:item/tool/shovel-copper" },
+			"shovel-redsteel": { "base": "game:item/tool/shovel-copper" },
+			"shovel-bluesteel": { "base": "game:item/tool/shovel-copper" }
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/shovel.json",
+		"op": "addmerge",
+		"path": "/guiTransformByType/",
+		"value": {
+			"@shovel-(blacksteel|redsteel|bluesteel)": {
+				"translation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rotation": {
+					"x": -113,
+					"y": -147,
+					"z": 139
+				},
+				"origin": {
+					"x": 0.2,
+					"y": 0.7,
+					"z": 0.8
+				}
+			}
+		}
+	}
+]

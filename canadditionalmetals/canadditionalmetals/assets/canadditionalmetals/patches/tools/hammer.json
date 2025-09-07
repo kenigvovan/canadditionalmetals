@@ -1,0 +1,42 @@
+[
+	{
+		"file": "game:itemtypes/tool/hammer.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/hammer.json",
+		"op": "addmerge",
+		"path": "/tooltierbytype",
+		"value": {
+			"blacksteel": 5,
+			"redsteel": 6,
+			"bluesteel": 6
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hammer.json",
+		"op": "addmerge",
+		"path": "/attackpowerbytype",
+		"value": {
+			"hammer-blacksteel": 2.65,
+			"hammer-redsteel": 2.85,
+			"hammer-bluesteel": 2.75
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/hammer.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"hammer-blacksteel": 4800,
+			"hammer-redsteel": 5500,
+			"hammer-bluesteel": 5800
+		}
+	}
+]

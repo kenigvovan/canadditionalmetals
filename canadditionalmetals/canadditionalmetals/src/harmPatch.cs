@@ -15,8 +15,15 @@ namespace canadditionalmetals.src
     {
         public static bool Prefix_ItemIngot_TryPlaceOn(ItemIngot __instance, ItemStack stack, BlockEntityAnvil beAnvil, ICoreAPI ___api, ref ItemStack __result)
         {
-            if(stack == null || !stack.Collectible.Code.Path.StartsWith("ingot-weak"))
+
+            if (!__instance.CanWork(stack))
             {
+                return true;
+            }
+            //return true;
+            //Item item = beAnvil.Api.World.GetItem(new AssetLocation("workitem-" + __instance.Variant["metal"]));
+            if (stack == null || !stack.Collectible.Code.Path.StartsWith("ingot-weak"))
+            {               
                 return true;
             }
             if (beAnvil.WorkItemStack != null)
@@ -76,6 +83,10 @@ namespace canadditionalmetals.src
                     }
                 }
             }
+        }
+        public static void Postfix_BlockAnvil_OnLoaded(BlockAnvil __instance, ICoreAPI api)
+        {
+        
         }
     }
 }

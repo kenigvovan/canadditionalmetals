@@ -321,14 +321,14 @@ namespace canadditionalmetals.src.be
                 {
                     return;
                 }
-                if(bloomery.inputSlot.Empty)
+                if(!bloomery.inputSlot.Empty)
                 {
                     return;
                 }
                 var fuelStack = bloomery.fuelCombustibleOpts;
                 var maxTemp = fuelStack.BurnTemperature;
                 int additionalPerBlow = maxTemp / 25;
-                int newMaxTemp = (int)(bloomery.furnaceTemperature + additionalPerBlow);
+                int newMaxTemp = (int)(fuelStack.BurnTemperature * 1.5);
 
                 var newTemp = Math.Min((bloomery.furnaceTemperature + additionalPerBlow), newMaxTemp);
                 bloomery.furnaceTemperature = newTemp;

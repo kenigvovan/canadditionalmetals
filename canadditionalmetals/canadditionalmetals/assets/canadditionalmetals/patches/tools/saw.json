@@ -1,0 +1,51 @@
+[
+	{
+		"file": "game:itemtypes/tool/saw.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/saw.json",
+		"op": "addmerge",
+		"path": "/tooltierbytype",
+		"value": {
+			"saw-blacksteel": 5,
+			"saw-redsteel": 6,
+			"saw-bluesteel": 6
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/saw.json",
+		"op": "addmerge",
+		"path": "/miningspeedbytype",
+		"value": {
+			"*-blacksteel": {
+				"wood": 6.5,
+				"leaves": 4.4
+			},
+			"*-redsteel": {
+				"wood": 7.1,
+				"leaves": 5
+			},
+			"*-bluesteel": {
+				"wood": 7,
+				"leaves": 4.8
+			}
+		}
+	},
+	{
+		"file": "game:itemtypes/tool/saw.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"saw-blacksteel": 2600,
+			"saw-redsteel": 3400,
+			"saw-bluesteel": 3700
+		}
+	}
+]

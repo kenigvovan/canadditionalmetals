@@ -1,0 +1,22 @@
+[
+	{
+		"file": "game:itemtypes/tool/scythe.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/scythe.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"scythe-blacksteel": 3900,
+			"scythe-redsteel": 4500,
+			"scythe-bluesteel": 4500
+		}
+	}
+]

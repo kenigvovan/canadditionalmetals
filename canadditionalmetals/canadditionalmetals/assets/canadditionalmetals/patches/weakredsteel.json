@@ -1,0 +1,92 @@
+[
+    {
+        "file": "game:blocktypes/legacy/ingotpile.json",
+        "op": "addmerge",
+        "path": "/textures",
+        "value": {
+            "weakredsteel": { "base": "canadditionalmetals:block/metal/ingot/weakredsteel" }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-weakredsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakredsteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-weakredsteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "ingot-weakredsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakredsteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/attributesByType",
+        "value": {
+            "workitem-weakredsteel": {
+                "requiresAnvilTier": 5
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/combustbilePropsByType",
+        "value": {
+            "workitem-weakredsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakredsteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-weakredsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakredsteel"
+                }
+            }
+        }
+    }
+]

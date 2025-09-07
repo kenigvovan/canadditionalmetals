@@ -1,0 +1,24 @@
+{
+	"ingredient": {
+		"type": "item", 
+		"code": "game:ingot-*",
+		"name": "metal",
+		"allowedVariants": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		] 
+	},
+	"pattern": [
+		[
+			"###########",
+			"#__________",
+			"###########"
+		]
+	],
+	"name": "Shears",
+	"output": {
+		"type": "item", 
+		"code": "game:shears-{metal}" 
+	}
+}

@@ -18,47 +18,6 @@
         "op": "addmerge",
         "path": "/variantgroups/0/states/-",
         "value": "blacksteel"
-    },
-    {
-        "file": "game:worldproperties/block/metal.json",
-        "op": "add",
-        "path": "/variants/-",
-        "value": {
-            "code": "blacksteel",
-            "meltPoint": 1580,
-            "boilPoint": 2900,
-            "density": 7820,
-            "specificHeatCapacity": 0.49,
-            "elemental": false,
-            "tier": 5
-        }
-    },
-    {
-        "file": "game:worldproperties/block/metal.json",
-        "op": "add",
-        "path": "/variants/-",
-        "value": {
-            "code": "redsteel",
-            "meltPoint": 1620,
-            "boilPoint": 2900,
-            "density": 7820,
-            "specificHeatCapacity": 0.49,
-            "elemental": false,
-            "tier": 6
-        }
-    },
-    {
-        "file": "game:worldproperties/block/metal.json",
-        "op": "add",
-        "path": "/variants/-",
-        "value": {
-            "code": "bluesteel",
-            "meltPoint": 1680,
-            "boilPoint": 2900,
-            "density": 7820,
-            "specificHeatCapacity": 0.49,
-            "elemental": false,
-            "tier": 6
-        }
+
     }
 ]

@@ -1,0 +1,92 @@
+[
+    {
+        "file": "game:blocktypes/legacy/ingotpile.json",
+        "op": "addmerge",
+        "path": "/textures",
+        "value": {
+            "weakbluesteel": { "base": "canadditionalmetals:block/metal/ingot/weakbluesteel" }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-weakbluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakbluesteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-weakbluesteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "ingot-weakbluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakbluesteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/attributesByType",
+        "value": {
+            "workitem-weakbluesteel": {
+                "requiresAnvilTier": 5
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/combustbilePropsByType",
+        "value": {
+            "workitem-weakbluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakbluesteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-weakbluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-weakbluesteel"
+                }
+            }
+        }
+    }
+]

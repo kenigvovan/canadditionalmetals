@@ -8,11 +8,85 @@
         }
     },
     {
-        "file": "game:blocktypes/legacy/ingotpile.json",
+        "file": "game:itemtypes/resource/metalbit.json",
         "op": "addmerge",
-        "path": "/textures",
+        "path": "/combustiblePropsByType",
         "value": {
-            "weakredsteel": { "base": "canadditionalmetals:block/metal/ingot/redsteel" }
+            "*-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-redsteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-redsteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "ingot-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-redsteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/attributesByType",
+        "value": {
+            "workitem-redsteel": {
+                "requiresAnvilTier": 6
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/combustbilePropsByType",
+        "value": {
+            "workitem-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-redsteel"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-redsteel"
+                }
+            }
         }
     }
 ]

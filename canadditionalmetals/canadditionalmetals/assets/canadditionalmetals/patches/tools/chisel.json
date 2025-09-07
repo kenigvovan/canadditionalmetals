@@ -1,0 +1,22 @@
+[
+	{
+		"file": "game:itemtypes/tool/chisel.json",
+		"op": "addeach",
+		"path": "/variantgroups/0/states/-",
+		"value": [
+			"blacksteel",
+			"redsteel",
+			"bluesteel"
+		]
+	},
+	{
+		"file": "game:itemtypes/tool/chisel.json",
+		"op": "addmerge",
+		"path": "/durabilitybytype",
+		"value": {
+			"chisel-blacksteel": 6800,
+			"chisel-redsteel": 7500,
+			"chisel-bluesteel": 7800
+		}
+	}
+]

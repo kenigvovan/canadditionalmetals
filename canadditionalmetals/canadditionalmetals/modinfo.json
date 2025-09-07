@@ -3,9 +3,9 @@
     "modid": "canadditionalmetals",
     "name": "canadditionalmetals",
     "authors": [
-        "Unknown"
+        "KenigVovan"
     ],
-    "description": "To be added",
+    "description": "Adds new alloys",
     "version": "1.0.0",
     "dependencies": {
         "game": ""

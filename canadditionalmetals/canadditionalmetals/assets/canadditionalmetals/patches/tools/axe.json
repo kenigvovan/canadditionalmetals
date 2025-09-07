@@ -1,0 +1,74 @@
+[
+    {
+        "file": "game:itemtypes/tool/axe-metal.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel"
+        ]
+    },
+    {
+        "file": "game:itemtypes/tool/axe-metal.json",
+        "op": "addmerge",
+        "path": "/tooltierbytype",
+        "value": {
+            "*-blacksteel": 5,
+            "*-redsteel": 6,
+            "*-bluesteel": 6
+        }
+    },
+    {
+        "file": "game:itemtypes/tool/axe-metal.json",
+        "op": "addmerge",
+        "path": "/miningspeedbytype",
+        "value": {
+            "axe-felling-blacksteel": {
+                "wood": 13,
+                "plant": 6.6,
+                "leaves": 4.5
+            },
+            "axe-felling-redsteel": {
+                "wood": 14,
+                "plant": 7.5,
+                "leaves": 5
+            },
+            "axe-felling-bluesteel": {
+                "wood": 13.6,
+                "plant": 7,
+                "leaves": 4.8
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/tool/axe-metal.json",
+        "op": "addmerge",
+        "path": "/attackpowerbytype",
+        "value": {
+            "axe-felling-blacksteel": 4.5,
+            "axe-felling-redsteel": 5.2,
+            "axe-felling-bluesteel": 5
+        }
+    },
+    {
+        "file": "game:itemtypes/tool/axe-metal.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "axe-felling-blacksteel": 2150,
+            "axe-felling-redsteel": 2700,
+            "axe-felling-bluesteel": 2900
+        }
+    },
+    {
+        "file": "game:itemtypes/tool/axe-metal.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "axe-felling-blacksteel": { "base": "game:item/tool/axe/iron" },
+            "axe-felling-redsteel": { "base": "game:item/tool/axe/iron" },
+            "axe-felling-bluesteel": { "base": "game:item/tool/axe/iron" }
+        }
+    }
+]
