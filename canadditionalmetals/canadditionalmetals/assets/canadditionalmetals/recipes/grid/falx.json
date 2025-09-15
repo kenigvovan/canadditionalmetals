@@ -1,0 +1,74 @@
+[
+    {
+        "ingredientPattern": "T\tS",
+        "ingredients": {
+            "T": {
+                "type": "item",
+                "code": "game:bladehead-falx-*",
+                "name": "metal",
+                "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+            },
+            "S": {
+                "type": "item",
+                "code": "game:stick"
+            }
+        },
+        "width": 1,
+        "height": 2,
+        "output": {
+            "type": "item",
+            "code": "game:blade-falx-{metal}",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "T,P,S",
+        "ingredients": {
+            "T": {
+                "type": "item",
+                "code": "game:bladehead-falx-steel"
+            },
+            "S": {
+                "type": "item",
+                "code": "game:stick"
+            },
+            "P": {
+                "type": "item",
+                "code": "game:metalplate-rosegold",
+                "quantity": 1
+            }
+        },
+        "width": 1,
+        "height": 3,
+        "output": {
+            "type": "item",
+            "code": "game:blade-falx-gold",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "T,P,S",
+        "ingredients": {
+            "T": {
+                "type": "item",
+                "code": "game:bladehead-falx-steel"
+            },
+            "S": {
+                "type": "item",
+                "code": "game:stick"
+            },
+            "P": {
+                "type": "item",
+                "code": "game:metalplate-silver",
+                "quantity": 1
+            }
+        },
+        "width": 1,
+        "height": 3,
+        "output": {
+            "type": "item",
+            "code": "game:blade-falx-sterlingsilver",
+            "quantity": 1
+        }
+    }
+]

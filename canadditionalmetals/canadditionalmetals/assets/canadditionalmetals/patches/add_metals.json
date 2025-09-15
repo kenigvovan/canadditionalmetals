@@ -82,5 +82,33 @@
             "elemental": false,
             "tier": 5
         }
+    },
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "rosegold",
+            "meltPoint": 1064.18,
+            "boilPoint": 2970,
+            "density": 19300,
+            "specificHeatCapacity": 0.13,
+            "elemental": true,
+            "tier": 1
+        }
+    },
+    {
+        "file": "game:worldproperties/block/metal.json",
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "sterlingsilver",
+            "meltPoint": 961.78,
+            "boilPoint": 2162,
+            "density": 10500,
+            "specificHeatCapacity": 0.23,
+            "elemental": true,
+            "tier": 1
+        }
     }
 ]

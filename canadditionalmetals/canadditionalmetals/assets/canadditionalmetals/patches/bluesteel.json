@@ -88,5 +88,105 @@
                 }
             }
         }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalplate-bluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-bluesteel",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-bluesteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalscale-bluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-bluesteel",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-bluesteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalchain-bluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-bluesteel",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-bluesteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metallamellae-bluesteel": {
+                "meltingPoint": 1680,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-bluesteel",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-bluesteel": 7820
+        }
     }
 ]

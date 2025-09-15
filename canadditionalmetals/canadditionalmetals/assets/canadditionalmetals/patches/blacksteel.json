@@ -88,5 +88,105 @@
                 }
             }
         }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalplate-blacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-blacksteel",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-blacksteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalscale-blacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-blacksteel",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-blacksteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalchain-blacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-blacksteel",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-blacksteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metallamellae-blacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-blacksteel",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-blacksteel": 7820
+        }
     }
 ]

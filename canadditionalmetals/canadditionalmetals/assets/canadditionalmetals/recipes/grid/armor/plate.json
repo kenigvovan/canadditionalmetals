@@ -1,0 +1,138 @@
+[
+	{
+		ingredientPattern: "LPL,PCP",
+		recipeGroup: 1,
+		ingredients: {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [
+					"blacksteel",
+					"redsteel",
+					"bluesteel",
+					"rosegold",
+					"sterlingsilver"
+				]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:armor-head-chain-*",
+				"name": "metal",
+				"allowedVariants": [
+					"blacksteel",
+					"redsteel",
+					"bluesteel",
+					"rosegold",
+					"sterlingsilver"
+				],
+				"recipeAttributes": {
+					"repairMat": {
+						"type": "item",
+						"code": "game:metalchain-{metal}",
+						"stacksize": 4
+					}
+				}
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		width: 3,
+		height: 2,
+		name: "plate helmet",
+		output: {
+			"type": "item",
+			"code": "game:armor-head-plate-{metal}"
+		}
+	},
+	{
+		ingredientPattern: "PCP,PPP,PPP",
+		recipeGroup: 1,
+		ingredients: {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [
+					"blacksteel",
+					"redsteel",
+					"bluesteel",
+					"rosegold",
+					"sterlingsilver"
+				]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:armor-body-chain-*",
+				"name": "metal",
+				"allowedVariants": [
+					"blacksteel",
+					"redsteel",
+					"bluesteel",
+					"rosegold",
+					"sterlingsilver"
+				],
+				"recipeAttributes": {
+					"repairMat": {
+						"type": "item",
+						"code": "game:metalchain-{metal}",
+						"stacksize": 12
+					}
+				}
+			},
+		},
+		width: 3,
+		height: 3,
+		name: "plate body armor",
+		output: {
+			"type": "item",
+			"code": "game:armor-body-plate-{metal}"
+		}
+	},
+	{
+		ingredientPattern: "PPP,PCP",
+		recipeGroup: 1,
+		ingredients: {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [
+					"blacksteel",
+					"redsteel",
+					"bluesteel",
+					"rosegold",
+					"sterlingsilver"
+				]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:armor-legs-chain-*",
+				"name": "metal",
+				"allowedVariants": [
+					"blacksteel",
+					"redsteel",
+					"bluesteel",
+					"rosegold",
+					"sterlingsilver"
+				],
+				"recipeAttributes": {
+					"repairMat": {
+						"type": "item",
+						"code": "game:metalchain-{metal}",
+						"stacksize": 6
+					}
+				}
+			},
+		},
+		width: 3,
+		height: 2,
+		name: "plate leg armor",
+		output: {
+			"type": "item",
+			"code": "game:armor-legs-plate-{metal}"
+		}
+	}
+]

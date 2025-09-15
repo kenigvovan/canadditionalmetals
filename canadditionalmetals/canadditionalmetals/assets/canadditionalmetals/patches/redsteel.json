@@ -88,5 +88,105 @@
                 }
             }
         }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalplate-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-redsteel",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-redsteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalscale-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-redsteel",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-redsteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalchain-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-redsteel",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-redsteel": 7820
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metallamellae-redsteel": {
+                "meltingPoint": 1620,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-redsteel",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-redsteel": 7820
+        }
     }
 ]

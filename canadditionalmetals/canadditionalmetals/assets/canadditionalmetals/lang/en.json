@@ -7,8 +7,8 @@
     "game:item-ingot-bluesteel": "Blue steel ingot",
     "game:item-ingot-blacksteel": "Black steel ingot",
 
-    "item-ingot-sterlingsilver": "Sterling silver ingot",
-    "item-ingot-rosegold": "Rose gold ingot",
+    "game:item-ingot-sterlingsilver": "Sterling silver ingot",
+    "game:item-ingot-rosegold": "Rose gold ingot",
 
     "game:item-metalbit-weakredsteel": "Weak red steel bits",
     "game:item-metalbit-weakbluesteel": "Weak blue steel bits",
@@ -16,8 +16,8 @@
     "game:item-metalbit-redsteel": "Red steel bits",
     "game:item-metalbit-blacksteel": "Black steel bits",
     "game:item-metalbit-bluesteel": "Blue steel bits",
-    "item-metalbit-sterlingsilver": "Steerling silver bits",
-    "item-metalbit-rosegold": "Rose gold bits",
+    "game:item-metalbit-sterlingsilver": "Steerling silver bits",
+    "game:item-metalbit-rosegold": "Rose gold bits",
     "game:block-anvil-blacksteel": "Black steel anvil",
     "game:block-anvil-redsteel": "Red steel anvil",
     "game:block-anvil-bluesteel": "Blue steel anvil",
@@ -129,8 +129,107 @@
     "game:item-shovel-blacksteel": "Black steel shovel",
     "game:item-shovel-bluesteel": "Blue steel shovel",
 
-    "item-shovelhead-redsteel": "Red steel shovel head",
-    "item-shovelhead-blacksteel": "Black steel shovel head",
-    "item-shovelhead-bluesteel": "Blue steel shovel head"
+    "game:item-shovelhead-redsteel": "Red steel shovel head",
+    "game:item-shovelhead-blacksteel": "Black steel shovel head",
+    "game:item-shovelhead-bluesteel": "Blue steel shovel head",
+
+
+    "game:item-armor-head-plate-redsteel": "Plate helmet (Red steel)",
+    "game:item-armor-body-plate-redsteel": "Plate body armor (Red steel)",
+    "game:item-armor-legs-plate-redsteel": "Plate leg armor (Red steel)",
+
+    "game:item-armor-head-plate-blacksteel": "Plate helmet (Black steel)",
+    "game:item-armor-body-plate-blacksteel": "Plate body armor (Black steel)",
+    "game:item-armor-legs-plate-blacksteel": "Plate leg armor (Black steel)",
+
+    "game:item-armor-head-plate-bluesteel": "Plate helmet (Blue steel)",
+    "game:item-armor-body-plate-bluesteel": "Plate body armor (Blue steel)",
+    "game:item-armor-legs-plate-bluesteel": "Plate leg armor (Blue steel)",
+
+    "game:item-armor-head-plate-rosegold": "Plate helmet (Rose gold)",
+    "game:item-armor-body-plate-rosegold": "Plate body armor (Rose gold)",
+    "game:item-armor-legs-plate-rosegold": "Plate leg armor (Rose gold)",
+
+    "game:item-armor-head-plate-sterlingsilver": "Plate helmet (Sterling silver)",
+    "game:item-armor-body-plate-sterlingsilver": "Plate body armor (Sterling silver)",
+    "game:item-armor-legs-plate-sterlingsilver": "Plate leg armor (Sterling silver)",
+
+    "game:item-armor-head-brigandine-redsteel": "Brigandine helmet (Red steel)",
+    "game:item-armor-body-brigandine-redsteel": "Brigandine body armor (Red steel)",
+    "game:item-armor-legs-brigandine-redsteel": "Brigandine leg armor (Red steel)",
+
+    "game:item-armor-head-brigandine-bluesteel": "Brigandine helmet (Blue steel)",
+    "game:item-armor-body-brigandine-bluesteel": "Brigandine body armor (Blue steel)",
+    "game:item-armor-legs-brigandine-bluesteel": "Brigandine leg armor (Blue steel)",
+
+    "game:item-armor-head-brigandine-blacksteel": "Brigandine helmet (Black steel)",
+    "game:item-armor-body-brigandine-blacksteel": "Brigandine body armor (Black steel)",
+    "game:item-armor-legs-brigandine-blacksteel": "Brigandine leg armor (Black steel)",
+
+    "game:item-armor-head-chain-redsteel": "Chain head armor (Red steel)",
+    "game:item-armor-body-chain-redsteel": "Chain body armor (Red steel)",
+    "game:item-armor-legs-chain-redsteel": "Chain leg armor (Red steel)",
+
+    "game:item-armor-head-chain-blacksteel": "Chain head armor (Black steel)",
+    "game:item-armor-body-chain-blacksteel": "Chain body armor (Black steel)",
+    "game:item-armor-legs-chain-blacksteel": "Chain leg armor (Black steel)",
+
+    "game:item-armor-head-chain-bluesteel": "Chain head armor (Blue steel)",
+    "game:item-armor-body-chain-bluesteel": "Chain body armor (Blue steel)",
+    "game:item-armor-legs-chain-bluesteel": "Chain leg armor (Blue steel)",
+
+    "game:item-armor-head-chain-rosegold": "Chain head armor (Rose gold)",
+    "game:item-armor-body-chain-rosegold": "Chain body armor (Rose gold)",
+    "game:item-armor-legs-chain-rosegold": "Chain leg armor (Rose gold)",
+
+    "game:item-armor-head-chain-sterlingsilver": "Chain head armor (Sterling silver)",
+    "game:item-armor-body-chain-sterlingsilver": "Chain body armor (Sterling silver)",
+    "game:item-armor-legs-chain-sterlingsilver": "Chain leg armor (Sterling silver)",
+
+    "game:item-armor-head-scale-blacksteel": "Scale helmet (Black steel)",
+    "game:item-armor-body-scale-blacksteel": "Scale body armor (Black steel)",
+    "game:item-armor-legs-scale-blacksteel": "Scale leg armor (Black steel)",
+
+    "game:item-armor-head-scale-redsteel": "Scale helmet (Red steel)",
+    "game:item-armor-body-scale-redsteel": "Scale body armor (Red steel)",
+    "game:item-armor-legs-scale-redsteel": "Scale leg armor (Red steel)",
+
+    "game:item-armor-head-scale-bluesteel": "Scale helmet (Blue steel)",
+    "game:item-armor-body-scale-bluesteel": "Scale body armor (Blue steel)",
+    "game:item-armor-legs-scale-bluesteel": "Scale leg armor (Blue steel)",
+
+    "game:item-metalchain-blacksteel": "Black steel chain",
+    "game:item-metalchain-redsteel": "Red steel chain",
+    "game:item-metalchain-bluesteel": "Blue steel chain",
+    "game:item-metalchain-rosegold": "Rose gold chain",
+    "game:item-metalchain-sterlingsilver": "Sterling silver chain",
+
+    "game:item-metalplate-blacksteel": "Black steel plate",
+    "game:item-metalplate-redsteel": "Red steel plate",
+    "game:item-metalplate-bluesteel": "Blue steel plate",
+    "game:item-metalplate-rosegold": "Rose gold plate",
+    "game:item-metalplate-sterlingsilver": "Sterling silver plate",
+
+    "game:item-metalplate-weakblacksteel": "Weak black steel plate",
+    "game:item-metalplate-weakredsteel": "Weak red steel plate",
+    "game:item-metalplate-weakbluesteel": "Weak blue steel plate",
+
+    "game:item-metallamellae-blacksteel": "Black steel lamellae",
+    "game:item-metallamellae-redsteel": "Red steel  lamellae",
+    "game:item-metallamellae-bluesteel": "Blue steel lamellae",
+    "game:item-metallamellae-rosegold": "Rose gold lamellae",
+    "game:item-metallamellae-sterlingsilver": "Sterling silver lamellae",
+
+    "game:item-bladehead-falx-blacksteel": "Black steel falx head",
+    "game:item-bladehead-falx-redsteel": "Red steel falx head",
+    "game:item-bladehead-falx-bluesteel": "Blue steel falx head",
+    "game:item-bladehead-falx-rosegold": "Rose gold falx head",
+    "game:item-bladehead-falx-sterlingsilver": "Sterling silver falx head",
+
+    "game:item-blade-falx-blacksteel": "Black steel falx",
+    "game:item-blade-falx-redsteel": "Red steel falx",
+    "game:item-blade-falx-bluesteel": "Blue steel falx",
+    "game:item-blade-falx-rosegold": "Rose gold falx",
+    "game:item-blade-falx-sterlingsilver": "Sterling silver falx"
 
 }

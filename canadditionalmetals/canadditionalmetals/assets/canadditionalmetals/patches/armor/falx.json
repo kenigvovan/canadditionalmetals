@@ -1,0 +1,145 @@
+[
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel",
+            "rosegold",
+            "sterlingsilver"
+        ]
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/texturesByType",
+        "value": {
+            "blade-falx-blacksteel": {
+                "falxstring": { "base": "game:block/transparent" },
+                "thongs": { "base": "game:block/transparent" },
+                "woodguard": { "base": "game:block/transparent" },
+                "handle": { "base": "game:block/wood/debarked/aged" },
+                "falxblade": { "base": "game:block/metal/ingot/blacksteel" },
+                "cloth": { "base": "game:block/transparent" },
+                "handguard": { "base": "game:block/metal/sheet/steel1" },
+                "spinerivet": { "base": "game:block/metal/sheet/lead1" },
+                "pips": { "base": "game:block/transparent" }
+            }
+        }
+
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/texturesByType",
+        "value": {
+            "blade-falx-redsteel": {
+                "falxstring": { "base": "game:block/transparent" },
+                "thongs": { "base": "game:block/transparent" },
+                "woodguard": { "base": "game:block/transparent" },
+                "handle": { "base": "game:block/wood/debarked/aged" },
+                "falxblade": { "base": "game:block/metal/ingot/redsteel" },
+                "cloth": { "base": "game:block/transparent" },
+                "handguard": { "base": "game:block/metal/sheet/steel1" },
+                "spinerivet": { "base": "game:block/metal/sheet/lead1" },
+                "pips": { "base": "game:block/transparent" }
+            }
+        }
+
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/texturesByType",
+        "value": {
+            "blade-falx-bluesteel": {
+                "falxstring": { "base": "game:block/transparent" },
+                "thongs": { "base": "game:block/transparent" },
+                "woodguard": { "base": "game:block/transparent" },
+                "handle": { "base": "game:block/wood/debarked/aged" },
+                "falxblade": { "base": "game:block/metal/ingot/bluesteel" },
+                "cloth": { "base": "game:block/transparent" },
+                "handguard": { "base": "game:block/metal/sheet/steel1" },
+                "spinerivet": { "base": "game:block/metal/sheet/lead1" },
+                "pips": { "base": "game:block/transparent" }
+            }
+        }
+
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/texturesByType",
+        "value": {
+            "blade-falx-rosegold": {
+                "falxstring": { "base": "game:block/transparent" },
+                "thongs": { "base": "game:block/transparent" },
+                "woodguard": { "base": "game:block/transparent" },
+                "handle": { "base": "game:block/wood/debarked/aged" },
+                "falxblade": { "base": "game:block/metal/ingot/rosegold" },
+                "cloth": { "base": "game:block/transparent" },
+                "handguard": { "base": "game:block/metal/sheet/steel1" },
+                "spinerivet": { "base": "game:block/metal/sheet/lead1" },
+                "pips": { "base": "game:block/transparent" }
+            }
+        }
+
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/texturesByType",
+        "value": {
+            "blade-falx-sterlingsilver": {
+                "falxstring": { "base": "game:block/transparent" },
+                "thongs": { "base": "game:block/transparent" },
+                "woodguard": { "base": "game:block/transparent" },
+                "handle": { "base": "game:block/wood/debarked/aged" },
+                "falxblade": { "base": "game:block/metal/ingot/sterlingsilver" },
+                "cloth": { "base": "game:block/transparent" },
+                "handguard": { "base": "game:block/metal/sheet/steel1" },
+                "spinerivet": { "base": "game:block/metal/sheet/lead1" },
+                "pips": { "base": "game:block/transparent" }
+            }
+        }
+
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/tooltierbytype",
+        "value": {
+            "*-blacksteel": 5,
+            "*-redsteel": 6,
+            "*-bluesteel": 6,
+            "*-rosegold": 5,
+            "*-sterlingsilver": 5
+        }
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/attackpowerbytype",
+        "value": {
+            "blade-falx-redsteel": 5.8,
+            "blade-falx-blacksteel": 5.5,
+            "blade-falx-bluesteel": 5.75,
+            "blade-falx-rosegold": 5.25,
+            "blade-falx-sterlingsilver": 5.25
+        }
+    },
+    {
+        "file": "game:itemtypes/tool/blade.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "blade-falx-redsteel": 2680,
+            "blade-falx-blacksteel": 2325,
+            "blade-falx-bluesteel": 3050,
+            "blade-falx-rosegold": 2125,
+            "blade-falx-sterlingsilver": 2125
+        }
+    }
+]

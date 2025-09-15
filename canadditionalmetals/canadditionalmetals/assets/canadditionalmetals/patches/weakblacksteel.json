@@ -88,5 +88,30 @@
                 }
             }
         }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalplate-weakblacksteel": {
+                "meltingPoint": 1580,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-weakblacksteel",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-weakblacksteel": 7820
+        }
     }
 ]

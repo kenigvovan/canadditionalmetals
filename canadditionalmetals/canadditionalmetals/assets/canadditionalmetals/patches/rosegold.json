@@ -1,0 +1,192 @@
+[
+    {
+        "file": "game:blocktypes/legacy/ingotpile.json",
+        "op": "addmerge",
+        "path": "/textures",
+        "value": {
+            "weakredsteel": { "base": "canadditionalmetals:block/metal/ingot/rosegold" }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-rosegold"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-rosegold": 19300
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "ingot-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-rosegold"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/attributesByType",
+        "value": {
+            "workitem-weakredsteel": {
+                "rosegold": 1
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/workitem.json",
+        "op": "addmerge",
+        "path": "/combustbilePropsByType",
+        "value": {
+            "workitem-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-rosegold"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "*-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 20,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "game:ingot-rosegold"
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalplate-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-rosegold",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalplate.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-rosegold": 19300
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalscale-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-rosegold",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalscale.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-rosegold": 19300
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metalchain-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-rosegold",
+                    "stacksize": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metalchain.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-rosegold": 19300
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType",
+        "value": {
+            "metallamellae-rosegold": {
+                "meltingPoint": 1064,
+                "meltingDuration": 30,
+                "smeltedRatio": 1,
+                "smeltedStack": {
+                    "type": "item",
+                    "code": "ingot-rosegold",
+                    "stacksize": 1
+                }
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/resource/metallamellae.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType",
+        "value": {
+            "*-rosegold": 19300
+        }
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "file": "game:itemtypes/wearable/seraph/armor.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ]
+    },
+    {
+        "file": "game:itemtypes/wearable/seraph/armor.json",
+        "op": "addeach",
+        "path": "/skipVariants/-",
+        "value": [
+            "armor-*-brigandine-rosegold",
+            "armor-*-brigandine-sterlingsilver",
+            "armor-*-scale-rosegold",
+            "armor-*-scale-sterlingsilver"
+        ]
+    }
+]

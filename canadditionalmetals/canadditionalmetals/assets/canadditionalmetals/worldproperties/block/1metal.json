@@ -1,0 +1,77 @@
+{
+    "code": "metal",
+    "variants": [
+        {
+            "code": "silver",
+            "meltPoint": 961.78,
+            "boilPoint": 2162,
+            "density": 10500,
+            "specificHeatCapacity": 0.23,
+            "elemental": true,
+            "tier": 1
+        },
+        {
+            "code": "gold",
+            "meltPoint": 1064.18,
+            "boilPoint": 2970,
+            "density": 19300,
+            "specificHeatCapacity": 0.13,
+            "elemental": true,
+            "tier": 1
+        },
+        {
+            "code": "weakblacksteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 5
+        },
+        {
+            "code": "weakredsteel",
+            "meltPoint": 1620,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        },
+        {
+            "code": "weakbluesteel",
+            "meltPoint": 1680,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        },
+        {
+            "code": "blacksteel",
+            "meltPoint": 1580,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 5
+        },
+        {
+            "code": "redsteel",
+            "meltPoint": 1620,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        },
+        {
+            "code": "bluesteel",
+            "meltPoint": 1680,
+            "boilPoint": 2300,
+            "density": 7900,
+            "specificHeatCapacity": 0.435,
+            "elemental": false,
+            "tier": 6
+        }
+    ]
+}

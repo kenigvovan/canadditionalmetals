@@ -1,0 +1,14 @@
+[
+    {
+        "file": "game:recipes/smithing/scale.json",
+        "op": "addeach",
+        "path": "/ingredient/allowedVariants/-",
+        "value": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel",
+            "rosegold",
+            "sterlingsilver"
+        ]
+    }
+]

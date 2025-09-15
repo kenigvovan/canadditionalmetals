@@ -1,0 +1,14 @@
+[
+    {
+        "file": "game:itemtypes/toolhead/bladehead.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel",
+            "rosegold",
+            "sterlingsilver"
+        ]
+    }
+]
