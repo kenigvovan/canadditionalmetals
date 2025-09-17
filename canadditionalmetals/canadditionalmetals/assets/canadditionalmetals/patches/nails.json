@@ -1,0 +1,8 @@
+[
+    {
+        "file": "game:itemtypes/resource/metalnailsandstrips.json",
+        "op": "addeach",
+        "path": "/allowedVariants/-",
+        "value": [ "*-blacksteel", "*-redsteel", "*-bluesteel", "*-rosegold", "*-sterlingsilver" ]
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/sabre.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/sabre.json",
+        "op": "addmerge",
+        "path": "/attributes/OneHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 6,
+                        "Damage": 6.5
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.6, -0.3, 0.5, 3.1, 0.2, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 7,
+                        "Damage": 7
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.6, -0.3, 0.5, 3.1, 0.2, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 7,
+                        "Damage": 7
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.6, -0.3, 0.5, 3.1, 0.2, 0.5 ]
+                }
+            ]
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sabre.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "swords/sabre-steel" },
+            "*-redsteel": { "base": "swords/sabre-steel" },
+            "*-bluesteel": { "base": "swords/sabre-steel" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sabre.json",
+        "op": "addmerge",
+        "path": "/guiTransformByType",
+        "value": {
+            "*-blacksteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 40,
+                    "y": 0,
+                    "z": -52
+                },
+                "origin": {
+                    "x": 0.8,
+                    "y": -0.25,
+                    "z": 0
+                },
+                "scaleXyz": {
+                    "x": -2,
+                    "y": 2,
+                    "z": 2
+                }
+            },
+            "*-redsteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 40,
+                    "y": 0,
+                    "z": -52
+                },
+                "origin": {
+                    "x": 0.8,
+                    "y": -0.25,
+                    "z": 0
+                },
+                "scaleXyz": {
+                    "x": -2,
+                    "y": 2,
+                    "z": 2
+                }
+            },
+            "*-bluesteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 40,
+                    "y": 0,
+                    "z": -52
+                },
+                "origin": {
+                    "x": 0.8,
+                    "y": -0.25,
+                    "z": 0
+                },
+                "scaleXyz": {
+                    "x": -2,
+                    "y": 2,
+                    "z": 2
+                }
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sabre.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/sabre.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2800,
+            "*-redsteel": 3100,
+            "*-bluesteel": 3300
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sabre.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

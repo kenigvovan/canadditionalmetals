@@ -1,0 +1,53 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/quarterstaff.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/quarterstaff.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/Attack/DamageTypes/0/DamageByType",
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 7,
+                "Damage": 5.5
+            },
+            "*-redsteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 6
+            },
+            "*-bluesteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 6
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/quarterstaff.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/quarterstaff.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2100,
+            "*-redsteel": 2700,
+            "*-bluesteel": 3100
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/quarterstaff.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

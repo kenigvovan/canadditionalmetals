@@ -1,0 +1,41 @@
+[
+    {
+        "file": "armory:itemtypes/armor/brigandine.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/armor/brigandine.json",
+        "op": "addmerge",
+        "path": "/behaviors/0/properties/ResistsByType",
+        "value": {
+            "*-blacksteel-*": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 8,
+                "BluntAttack": 6
+            },
+            "*-redsteel-*": {
+                "PiercingAttack": 8,
+                "SlashingAttack": 9,
+                "BluntAttack": 7
+            },
+            "*-bluesteel-*": {
+                "PiercingAttack": 8,
+                "SlashingAttack": 9,
+                "BluntAttack": 7
+            }
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/armor/brigandine.json",
+        "op": "addmerge",
+        "path": "/durabilityByType",
+        "value": {
+            "*-blacksteel-*": 6700,
+            "*-redsteel-*": 7600,
+            "*-bluesteel-*": 8000
+        }
+    }
+] 

@@ -1,0 +1,51 @@
+﻿[
+  {
+    "ingredientPattern": "PPP,M_M",
+    "recipeGroup": 1,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "quantity": 2,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "M": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "name": "riveted armor",
+    "output": {"type": "item", "code": "armory:armor-head-plate-{material}-riveted"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-head-plate-*-riveted",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "quantity": 2,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "riveted armor repair",
+    "output": {"type": "item", "code": "armory:armor-head-plate-{material}-riveted"}
+  }
+]

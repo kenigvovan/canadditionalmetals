@@ -1,0 +1,86 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/sword-great.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-great.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "swords/sword-great-{type}" },
+            "*-redsteel": { "base": "swords/sword-great-{type}" },
+            "*-bluesteel": { "base": "swords/sword-great-{type}" }
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/sword-great.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 7,
+                        "Damage": 7.5
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.8, 0, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 8
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.8, 0, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 8
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.8, 0, 0.5 ]
+                }
+            ]
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/sword-great.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/sword-great.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2800,
+            "*-redsteel": 3100,
+            "*-bluesteel": 3300
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-great.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

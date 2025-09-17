@@ -1,0 +1,23 @@
+﻿[
+  {
+    "ingredientPattern": "S,H",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "game:spearhead-*",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel"
+        ]
+      },
+      "H": {"type": "item", "code": "armory:handle-medium"}
+    },
+    "copyAttributesFrom": "H",
+    "width": 1,
+    "height": 2,
+    "output": {"type": "item", "code": "game:spear-generic-{material}"}
+  }
+]

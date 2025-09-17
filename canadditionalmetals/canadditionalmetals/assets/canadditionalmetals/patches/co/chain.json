@@ -1,0 +1,53 @@
+[
+    {
+        "file": "armory:itemtypes/armor/chain.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ]
+    },
+    {
+        "file": "armory:itemtypes/armor/chain.json",
+        "op": "addmerge",
+        "path": "/behaviors/0/properties/ResistsByType",
+        "value": {
+            "*-blacksteel-*": {
+                "PiercingAttack": 4,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "*-redsteel-*": {
+                "PiercingAttack": 5,
+                "SlashingAttack": 7,
+                "BluntAttack": 4
+            },
+            "*-bluesteel-*": {
+                "PiercingAttack": 5,
+                "SlashingAttack": 7,
+                "BluntAttack": 4
+            },
+            "*-rosegold-*": {
+                "PiercingAttack": 0,
+                "SlashingAttack": 2,
+                "BluntAttack": 0
+            },
+            "*-sterlingsilver-*": {
+                "PiercingAttack": 0,
+                "SlashingAttack": 2,
+                "BluntAttack": 0
+            }
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/armor/chain.json",
+        "op": "addmerge",
+        "path": "/durabilityByType",
+        "value": {
+            "*-blacksteel-*": 5200,
+            "*-redsteel-*": 6700,
+            "*-bluesteel-*": 7200,
+            "*-rosegold-*": 800,
+            "*-sterlingsilver-*": 1400
+        }
+    }
+] 

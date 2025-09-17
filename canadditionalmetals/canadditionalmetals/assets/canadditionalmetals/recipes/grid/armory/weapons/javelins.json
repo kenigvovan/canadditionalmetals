@@ -1,0 +1,24 @@
+﻿[
+  {
+    "ingredientPattern": "S,C",
+    "recipeGroup": 1,
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "armory:part-javelinhead-*",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel"
+        ]
+      },
+      "C": {"type": "item", "code": "game:stick", "quantity": 1}
+    },
+    "width": 1,
+    "height": 2,
+    "name": "javelin",
+    "output": {"type": "item", "code": "armory:javelin-plain-{material}"}
+  }
+]

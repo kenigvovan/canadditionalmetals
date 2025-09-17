@@ -1,0 +1,75 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/pike.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/pike.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "PiercingAttack",
+                        "Tier": 7,
+                        "Damage": 6.5
+                    },
+                    "Knockback": 2,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0, 0, 0.5, 1.2, 0, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "PiercingAttack",
+                        "Tier": 8,
+                        "Damage": 7
+                    },
+                    "Knockback": 2,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0, 0, 0.5, 1.2, 0, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "PiercingAttack",
+                        "Tier": 8,
+                        "Damage": 7
+                    },
+                    "Knockback": 2,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0, 0, 0.5, 1.2, 0, 0.5 ]
+                }
+            ]
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/pike.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/pike.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2800,
+            "*-redsteel": 3100,
+            "*-bluesteel": 3300
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/pike.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

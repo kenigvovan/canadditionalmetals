@@ -1,0 +1,118 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "frompath": "/behaviors/1/properties/stats/DamageStatsByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "addmerge",
+        "path": "/behaviors/1/properties/stats/DamageStatsByType",
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "PiercingAttack",
+                "Damage": 10.5
+            },
+            "*-redsteel": {
+                "DamageType": "PiercingAttack",
+                "Damage": 11
+            },
+            "*-bluesteel": {
+                "DamageType": "PiercingAttack",
+                "Damage": 11
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "path": "/behaviors/1/properties/stats/DamageStatsByType/*",
+        "frompath": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "frompath": "/attributes/OneHandedStance/Attack/DamageTypes/0/DamageByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "addmerge",
+        "path": "/attributes/OneHandedStance/Attack/DamageTypes/0/DamageByType",
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "PiercingAttack",
+                "Tier": 7,
+                "Damage": 5.5
+            },
+            "*-redsteel": {
+                "DamageType": "PiercingAttack",
+                "Tier": 8,
+                "Damage": 6
+            },
+            "*-bluesteel": {
+                "DamageType": "PiercingAttack",
+                "Tier": 8,
+                "Damage": 6
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "path": "/attributes/OneHandedStance/Attack/DamageTypes/0/DamageByType/*",
+        "frompath": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "frompath": "/attributes/ThrowAttack/DamageTierByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "addmerge",
+        "path": "/attributes/ThrowAttack/DamageTierByType",
+        "value": {
+            "*-blacksteel": 7,
+            "*-redsteel": 8,
+            "*-bluesteel": 8
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "path": "/attributes/ThrowAttack/DamageTierByType/*",
+        "frompath": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 580,
+            "*-redsteel": 760,
+            "*-bluesteel": 900
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelin.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

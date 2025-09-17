@@ -1,0 +1,79 @@
+[
+    {
+        "file": "armory:itemtypes/parts/shortsword.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/parts/shortsword.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "swords/parts/sword-arming" },
+            "*-redsteel": { "base": "swords/parts/sword-arming" },
+            "*-bluesteel": { "base": "swords/parts/sword-arming" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/parts/shortsword.json",
+        "op": "addmerge",
+        "path": "/guiTransformByType",
+        "value": {
+            "*-blacksteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": -34,
+                    "y": 129,
+                    "z": -7
+                },
+                "origin": {
+                    "x": 0.9799,
+                    "y": 0.4,
+                    "z": 0.9
+                },
+                "scale": 2.17
+            },
+            "*-redsteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": -34,
+                    "y": 129,
+                    "z": -7
+                },
+                "origin": {
+                    "x": 0.9799,
+                    "y": 0.4,
+                    "z": 0.9
+                },
+                "scale": 2.17
+            },
+            "*-bluesteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": -34,
+                    "y": 129,
+                    "z": -7
+                },
+                "origin": {
+                    "x": 0.9799,
+                    "y": 0.4,
+                    "z": 0.9
+                },
+                "scale": 2.17
+            }
+        }
+    }
+] 

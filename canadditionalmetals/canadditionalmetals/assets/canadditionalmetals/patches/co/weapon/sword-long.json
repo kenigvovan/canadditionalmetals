@@ -1,0 +1,404 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/behaviorsByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "name": "GroundStorable",
+                    "properties": {
+                        "layout": "WallHalves",
+                        "wallOffY": 2,
+                        "sprintKey": true,
+                        "selectionBox": {
+                            "x1": 0,
+                            "y1": 0,
+                            "z1": 0,
+                            "x2": 1,
+                            "y2": 0.1,
+                            "z2": 1
+                        },
+                        "collisionBox": {
+                            "x1": 0,
+                            "y1": 0,
+                            "z1": 0,
+                            "x2": 0,
+                            "y2": 0,
+                            "z2": 0
+                        }
+                    }
+                },
+                {
+                    "name": "CombatOverhaul:TexturesFromAttributes",
+                    "properties": {
+                        "Textures": [
+                            {
+                                "Code": "handle",
+                                "Attribute": "handleTexture",
+                                "Default": "game:block/leather/plain",
+                                "HandbookValues": [
+                                    "game:block/leather/plain",
+                                    "game:block/leather/black",
+                                    "game:block/leather/blue",
+                                    "game:block/leather/chromium",
+                                    "game:block/leather/gray",
+                                    "game:block/leather/green",
+                                    "game:block/leather/orange",
+                                    "game:block/leather/pink",
+                                    "game:block/leather/purple",
+                                    "game:block/leather/red",
+                                    "game:block/leather/white",
+                                    "game:block/leather/yellow"
+                                ]
+                            }
+                        ],
+                        "CreativeTabs": [ "general", "armory-colors" ]
+                    }
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "name": "GroundStorable",
+                    "properties": {
+                        "layout": "WallHalves",
+                        "wallOffY": 2,
+                        "sprintKey": true,
+                        "selectionBox": {
+                            "x1": 0,
+                            "y1": 0,
+                            "z1": 0,
+                            "x2": 1,
+                            "y2": 0.1,
+                            "z2": 1
+                        },
+                        "collisionBox": {
+                            "x1": 0,
+                            "y1": 0,
+                            "z1": 0,
+                            "x2": 0,
+                            "y2": 0,
+                            "z2": 0
+                        }
+                    }
+                },
+                {
+                    "name": "CombatOverhaul:TexturesFromAttributes",
+                    "properties": {
+                        "Textures": [
+                            {
+                                "Code": "handle",
+                                "Attribute": "handleTexture",
+                                "Default": "game:block/leather/plain",
+                                "HandbookValues": [
+                                    "game:block/leather/plain",
+                                    "game:block/leather/black",
+                                    "game:block/leather/blue",
+                                    "game:block/leather/chromium",
+                                    "game:block/leather/gray",
+                                    "game:block/leather/green",
+                                    "game:block/leather/orange",
+                                    "game:block/leather/pink",
+                                    "game:block/leather/purple",
+                                    "game:block/leather/red",
+                                    "game:block/leather/white",
+                                    "game:block/leather/yellow"
+                                ]
+                            }
+                        ],
+                        "CreativeTabs": [ "general", "armory-colors" ]
+                    }
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "name": "GroundStorable",
+                    "properties": {
+                        "layout": "WallHalves",
+                        "wallOffY": 2,
+                        "sprintKey": true,
+                        "selectionBox": {
+                            "x1": 0,
+                            "y1": 0,
+                            "z1": 0,
+                            "x2": 1,
+                            "y2": 0.1,
+                            "z2": 1
+                        },
+                        "collisionBox": {
+                            "x1": 0,
+                            "y1": 0,
+                            "z1": 0,
+                            "x2": 0,
+                            "y2": 0,
+                            "z2": 0
+                        }
+                    }
+                },
+                {
+                    "name": "CombatOverhaul:TexturesFromAttributes",
+                    "properties": {
+                        "Textures": [
+                            {
+                                "Code": "handle",
+                                "Attribute": "handleTexture",
+                                "Default": "game:block/leather/plain",
+                                "HandbookValues": [
+                                    "game:block/leather/plain",
+                                    "game:block/leather/black",
+                                    "game:block/leather/blue",
+                                    "game:block/leather/chromium",
+                                    "game:block/leather/gray",
+                                    "game:block/leather/green",
+                                    "game:block/leather/orange",
+                                    "game:block/leather/pink",
+                                    "game:block/leather/purple",
+                                    "game:block/leather/red",
+                                    "game:block/leather/white",
+                                    "game:block/leather/yellow"
+                                ]
+                            }
+                        ],
+                        "CreativeTabs": [ "general", "armory-colors" ]
+                    }
+                }
+            ]
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/attributes/OneHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 7,
+                        "Damage": 5.5
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.1, 0, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 6
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.1, 0, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 6
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.1, 0, 0.5 ]
+                }
+            ]
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/attributes/OneHandedStance/AttackAnimationByType",
+        "value": {
+            "*-blacksteel": { "Main": [ "armory:sword-long-thrust-1h-1", "armory:sword-long-thrust-1h-2", "armory:sword-long-thrust-1h-3" ] },
+            "*-redsteel": { "Main": [ "armory:sword-long-thrust-1h-1", "armory:sword-long-thrust-1h-2", "armory:sword-long-thrust-1h-3" ] },
+            "*-bluesteel": { "Main": [ "armory:sword-long-thrust-1h-1", "armory:sword-long-thrust-1h-2", "armory:sword-long-thrust-1h-3" ] }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 7,
+                        "Damage": 6.5
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.1, 0, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 7
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.1, 0, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 7
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.5, 0, 0.5, 3.1, 0, 0.5 ]
+                }
+            ]
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/AttackAnimationByType",
+        "value": {
+            "*-blacksteel": {
+                "Top": [ "armory:sword-long-slash-2h-top" ],
+                "Left": [ "armory:sword-long-slash-2h-left" ],
+                "Right": [ "armory:sword-long-slash-2h-right" ],
+                "Bottom": [ "armory:sword-long-thrust-2h-bottom" ]
+            },
+            "*-redsteel": {
+                "Top": [ "armory:sword-long-slash-2h-top" ],
+                "Left": [ "armory:sword-long-slash-2h-left" ],
+                "Right": [ "armory:sword-long-slash-2h-right" ],
+                "Bottom": [ "armory:sword-long-thrust-2h-bottom" ]
+            },
+            "*-bluesteel": {
+                "Top": [ "armory:sword-long-slash-2h-top" ],
+                "Left": [ "armory:sword-long-slash-2h-left" ],
+                "Right": [ "armory:sword-long-slash-2h-right" ],
+                "Bottom": [ "armory:sword-long-thrust-2h-bottom" ]
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "swords/sword-long-plain" },
+            "*-redsteel": { "base": "swords/sword-long-plain" },
+            "*-bluesteel": { "base": "swords/sword-long-plain" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/guiTransformByType",
+        "value": {
+            "*-blacksteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 40,
+                    "y": 0,
+                    "z": -52
+                },
+                "origin": {
+                    "x": 0.7,
+                    "y": -0.25,
+                    "z": 0
+                },
+                "scaleXyz": {
+                    "x": -1.77,
+                    "y": 1.77,
+                    "z": 1.77
+                }
+            },
+            "*-redsteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 40,
+                    "y": 0,
+                    "z": -52
+                },
+                "origin": {
+                    "x": 0.7,
+                    "y": -0.25,
+                    "z": 0
+                },
+                "scaleXyz": {
+                    "x": -1.77,
+                    "y": 1.77,
+                    "z": 1.77
+                }
+            },
+            "*-bluesteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 40,
+                    "y": 0,
+                    "z": -52
+                },
+                "origin": {
+                    "x": 0.7,
+                    "y": -0.25,
+                    "z": 0
+                },
+                "scaleXyz": {
+                    "x": -1.77,
+                    "y": 1.77,
+                    "z": 1.77
+                }
+            }
+        }
+    },
+
+
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2800,
+            "*-redsteel": 3100,
+            "*-bluesteel": 3300
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/sword-long.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

@@ -1,0 +1,23 @@
+[
+  {
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    "name": "poleaxehead",
+    "pattern": [[
+      "_____#_____",
+      "_###_#_###_",
+      "_#########_",
+      "_____#_###_",
+      "_____#_____",
+      "____###____"
+    ]],
+    "output": {
+        "type": "item",
+        "code": "armory:part-poleaxehead-{metal}"
+    }
+  }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "file": "armory:itemtypes/parts/sabre.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/parts/sabre.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "swords/parts/sabre-steel" },
+            "*-redsteel": { "base": "swords/parts/sabre-steel" },
+            "*-bluesteel": { "base": "swords/parts/sabre-steel" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/parts/sabre.json",
+        "op": "addmerge",
+        "path": "/guiTransformByType",
+        "value": {
+            "*-blacksteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": -36,
+                    "y": 135,
+                    "z": -6
+                },
+                "origin": {
+                    "x": 0.9799,
+                    "y": 0.6,
+                    "z": 0.9
+                },
+                "scale": 2.1
+            },
+            "*-redsteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": -36,
+                    "y": 135,
+                    "z": -6
+                },
+                "origin": {
+                    "x": 0.9799,
+                    "y": 0.6,
+                    "z": 0.9
+                },
+                "scale": 2.1
+            },
+            "*-bluesteel": {
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": -36,
+                    "y": 135,
+                    "z": -6
+                },
+                "origin": {
+                    "x": 0.9799,
+                    "y": 0.6,
+                    "z": 0.9
+                },
+                "scale": 2.1
+            }
+        }
+    }
+] 

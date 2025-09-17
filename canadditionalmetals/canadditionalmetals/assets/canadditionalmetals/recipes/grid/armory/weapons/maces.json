@@ -1,0 +1,31 @@
+﻿[
+  {
+    "ingredientPattern": "S,H",
+    "recipeGroup": 1,
+    "ingredients": {
+        "S": {
+            "type": "item",
+            "code": "armory:part-hammerhead-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ],
+            "quantity": 1
+        },
+        "H": {
+            "type": "item",
+            "code": "armory:handle-short"
+        }
+    },
+    "copyAttributesFrom": "H",
+    "width": 1,
+    "height": 2,
+    "name": "club",
+    "output": {
+        "type": "item",
+        "code": "armory:mace-plain-{material}"
+    }
+  }
+]

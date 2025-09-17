@@ -1,0 +1,8 @@
+[
+    {
+        "file": "game:itemtypes/part/boss.json",
+        "op": "addeach",
+        "path": "/variantgroups/0/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    }
+]

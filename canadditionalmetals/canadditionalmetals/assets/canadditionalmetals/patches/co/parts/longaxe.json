@@ -1,0 +1,18 @@
+[
+    {
+        "file": "armory:itemtypes/parts/longaxe.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/parts/longaxe.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "axes/parts/long-steel" },
+            "*-redsteel": { "base": "axes/parts/long-steel" },
+            "*-bluesteel": { "base": "axes/parts/long-steel" }
+        }
+    }
+] 

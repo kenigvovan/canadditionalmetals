@@ -1,0 +1,236 @@
+﻿[
+  {
+    "ingredientPattern": "TAH",
+    "recipeGroup": 1,
+    "ingredients": {
+      "T": {
+        "type": "item",
+        "code": "armory:armor-torso-plate-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "A": {
+        "type": "item",
+        "code": "armory:armor-arms-plate-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "H": {
+        "type": "item",
+        "code": "armory:armor-hands-plate-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": true,
+    "name": "plate armor",
+    "copyAttributesFrom": "T",
+    "output": {"type": "item", "code": "game:armor-body-plate-{material}"}
+  },
+  {
+    "ingredientPattern": "L,F",
+    "recipeGroup": 1,
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "armory:armor-legs-plate-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "F": {
+        "type": "item",
+        "code": "armory:armor-feet-plate-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "shapeless": true,
+    "name": "plate armor",
+    "copyAttributesFrom": "L",
+    "output": {"type": "item", "code": "game:armor-legs-plate-{material}"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-head-plate-*-open",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "plate armor repair",
+    "output": {"type": "item", "code": "armory:armor-head-plate-{material}-open"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-head-plate-*-light",
+        "name": "material",
+        "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "plate armor repair",
+    "output": {"type": "item", "code": "armory:armor-head-plate-{material}-light"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-torso-plate-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "plate armor repair",
+    "output": {"type": "item", "code": "armory:armor-torso-plate-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-arms-plate-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "plate armor repair",
+    "output": {"type": "item", "code": "armory:armor-arms-plate-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-hands-plate-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "plate armor repair",
+    "output": {"type": "item", "code": "armory:armor-hands-plate-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-legs-plate-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "plate armor repair",
+    "output": {"type": "item", "code": "armory:armor-legs-plate-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-feet-plate-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "plate armor repair",
+    "output": {"type": "item", "code": "armory:armor-feet-plate-{material}-vanilla"}
+  }
+]

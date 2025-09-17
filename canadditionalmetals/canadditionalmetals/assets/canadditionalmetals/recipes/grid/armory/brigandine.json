@@ -1,0 +1,271 @@
+﻿[
+  {
+    "ingredientPattern": "TAH",
+    "recipeGroup": 1,
+    "ingredients": {
+      "T": {
+        "type": "item",
+        "code": "armory:armor-torso-brigandine-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+      },
+      "A": {
+        "type": "item",
+        "code": "armory:armor-arms-brigandine-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+      },
+      "H": {
+        "type": "item",
+        "code": "armory:armor-hands-brigandine-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": true,
+    "name": "brigandine armor",
+    "copyAttributesFrom": "T",
+    "output": {"type": "item", "code": "game:armor-body-brigandine-{material}"}
+  },
+  {
+    "ingredientPattern": "L,F",
+    "recipeGroup": 1,
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "armory:armor-legs-brigandine-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+      },
+      "F": {
+        "type": "item",
+        "code": "armory:armor-feet-brigandine-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "shapeless": true,
+    "name": "brigandine armor",
+    "copyAttributesFrom": "L",
+    "output": {"type": "item", "code": "game:armor-legs-brigandine-{material}"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-torso-brigandine-*-vanilla",
+        "name": "material",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "brigandine armor repair",
+    "output": {"type": "item", "code": "armory:armor-torso-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-arms-brigandine-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "brigandine armor repair",
+    "output": {"type": "item", "code": "armory:armor-arms-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-hands-brigandine-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "brigandine armor repair",
+    "output": {"type": "item", "code": "armory:armor-hands-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-legs-brigandine-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "brigandine armor repair",
+    "output": {"type": "item", "code": "armory:armor-legs-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-feet-brigandine-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "brigandine armor repair",
+    "output": {"type": "item", "code": "armory:armor-feet-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "L_L,PLP,LLL",
+    "recipeGroup": 1,
+    "ingredients": {
+      "L": {"type": "item", "code": "game:leather-normal-plain", "quantity": 1},
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "brigandine armor",
+    "output": {"type": "item", "code": "armory:armor-torso-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "LPL,L_L",
+    "recipeGroup": 1,
+    "ingredients": {
+      "L": {"type": "item", "code": "game:leather-normal-plain", "quantity": 1},
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "name": "brigandine armor",
+    "output": {"type": "item", "code": "armory:armor-arms-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "L_L,LPL",
+    "recipeGroup": 1,
+    "ingredients": {
+      "L": {"type": "item", "code": "game:leather-normal-plain", "quantity": 1},
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "name": "brigandine armor",
+    "output": {"type": "item", "code": "armory:armor-hands-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "LPL,L_L,L_L",
+    "recipeGroup": 1,
+    "ingredients": {
+      "L": {"type": "item", "code": "game:leather-normal-plain", "quantity": 1},
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "brigandine armor",
+    "output": {"type": "item", "code": "armory:armor-legs-brigandine-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "L_L,LPL,L_L",
+    "recipeGroup": 1,
+    "ingredients": {
+      "L": {"type": "item", "code": "game:leather-normal-plain", "quantity": 1},
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel" ]
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "brigandine armor",
+    "output": {"type": "item", "code": "armory:armor-feet-brigandine-{material}-vanilla"}
+  }
+]

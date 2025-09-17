@@ -1,0 +1,34 @@
+﻿[
+
+  {
+    "ingredientPattern": "_H_,PBP,CPL",
+    "recipeGroup": 2,
+    "ingredients": {
+      "H": {"type": "item", "code": "game:leather-*", "quantity": 1},
+        "B": {
+            "type": "item",
+            "code": "game:boss-*",
+            "name": "bosstype",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+      "P": {"type": "item", "code": "game:plank-*"},
+      "C": {"type": "item", "code": "game:cloth-*", "name": "color"},
+      "L": {"type": "item", "code": "game:cloth-black", "name": "color2"}
+    },
+    "width": 3,
+    "height": 3,
+    "name": "sheild",
+    "output": {
+        "type": "item",
+        "code": "armory:shield-light-plain-{bosstype}",
+        "attributes": {
+            "cloth1": "game:block/cloth/linen/{color2}",
+            "cloth2": "game:block/cloth/linen/{color}"
+        }
+    }
+  }
+]

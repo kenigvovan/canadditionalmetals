@@ -1,0 +1,18 @@
+[
+  {
+    "ingredient": {
+      "type": "item",
+      "code": "game:ingot-*",
+      "name": "metal",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    "pattern": [[
+      "##############",
+      "#######_______",
+      "#######_______",
+      "#######_______",
+      "#######_______"
+    ]],
+    "output": {"type": "item", "code": "armory:part-halberd-{metal}", "quantity": 1}
+  }
+]

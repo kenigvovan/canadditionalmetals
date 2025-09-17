@@ -1,0 +1,41 @@
+[
+    {
+        "file": "armory:itemtypes/armor/scale.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/armor/scale.json",
+        "op": "addmerge",
+        "path": "/behaviors/0/properties/ResistsByType",
+        "value": {
+            "*-blacksteel-*": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 8,
+                "BluntAttack": 4
+            },
+            "*-redsteel-*": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 9,
+                "BluntAttack": 5
+            },
+            "*-bluesteel-*": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 9,
+                "BluntAttack": 5
+            }
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/armor/scale.json",
+        "op": "addmerge",
+        "path": "/durabilityByType",
+        "value": {
+            "*-blacksteel-*": 14300,
+            "*-redsteel-*": 17400,
+            "*-bluesteel-*": 18100
+        }
+    }
+] 

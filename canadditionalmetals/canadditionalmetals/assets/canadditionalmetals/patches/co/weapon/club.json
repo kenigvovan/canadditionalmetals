@@ -1,0 +1,155 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "addmerge",
+        "path": "/attributes/OneHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 7,
+                        "Damage": 6,
+                        "ArmorPiercingTier": 1
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 1, 0, 0.5, 2.8, -0.3, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 8,
+                        "Damage": 7.5,
+                        "ArmorPiercingTier": 1
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 1, 0, 0.5, 2.8, -0.3, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 8,
+                        "Damage": 7.5,
+                        "ArmorPiercingTier": 1
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 1, 0, 0.5, 2.8, -0.3, 0.5 ]
+                }
+            ]
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 7,
+                        "Damage": 6.5,
+                        "ArmorPiercingTier": 3
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 1, 0, 0.5, 2.8, -0.3, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 8,
+                        "Damage": 7,
+                        "ArmorPiercingTier": 3
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 1, 0, 0.5, 2.8, -0.3, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 8,
+                        "Damage": 7,
+                        "ArmorPiercingTier": 3
+                    },
+                    "Knockback": 1,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 1, 0, 0.5, 2.8, -0.3, 0.5 ]
+                }
+            ]
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "move",
+        "frompath": "/attributes/TwoHandedStance/AttackAnimationByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/AttackAnimationByType",
+        "value": {
+            "*-blacsteel": { "Main": [ "armory:club-strike-2h-3", "armory:club-strike-2h-4" ] },
+            "*-redsteel": { "Main": [ "armory:club-strike-2h-3", "armory:club-strike-2h-4" ] },
+            "*-bluesteel": { "Main": [ "armory:club-strike-2h-3", "armory:club-strike-2h-4" ] }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "move",
+        "path": "/attributes/TwoHandedStance/AttackAnimationByType/*",
+        "frompath": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-redsteel": { "base": "blunt/polehammer-steel" },
+            "*-blacksteel": { "base": "blunt/polehammer-steel" },
+            "*-bluesteel": { "base": "blunt/polehammer-steel" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 1200,
+            "*-redsteel": 1600,
+            "*-bluesteel": 1800
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/club.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

@@ -1,0 +1,25 @@
+﻿[
+  {
+    "ingredientPattern": "S,H",
+    "recipeGroup": 1,
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "game:spearhead-*",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel"
+        ]
+      },
+      "H": {"type": "item", "code": "armory:handle-long"}
+    },
+    "copyAttributesFrom": "H",
+    "width": 1,
+    "height": 2,
+    "name": "pike",
+    "output": {"type": "item", "code": "armory:pike-plain-{material}"}
+  }
+]

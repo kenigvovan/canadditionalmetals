@@ -1,0 +1,208 @@
+﻿[
+  {
+    "ingredientPattern": "S,H",
+    "recipeGroup": 1,
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "armory:part-shortsword-*",
+        "name": "material",
+        "allowedVariants": [
+            "blacksteel",
+            "redsteel",
+            "bluesteel"
+        ]
+      },
+      "H": {"type": "item", "code": "armory:handle-short"}
+    },
+    "copyAttributesFrom": "H",
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {"type": "item", "code": "armory:sword-short-plain-{material}"}
+  },
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-shortsword-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-*",
+            "quantity": 1,
+            "name": "color"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sword-short-plain-{material}",
+        "attributes": { "handleTexture": "game:block/leather/{color}" }
+    }
+  },
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-shortsword-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-plain"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sword-short-plain-{material}"
+    }
+  },
+  {
+    "ingredientPattern": "S,H",
+    "recipeGroup": 1,
+    "ingredients": {
+      "S": {"type": "item", "code": "armory:part-longsword-*", "name": "material", "allowedVariants": ["tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron"]},
+      "H": {"type": "item", "code": "armory:handle-short"}
+    },
+    "copyAttributesFrom": "H",
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {"type": "item", "code": "armory:sword-long-plain-{material}"}
+  },
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-longsword-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-*",
+            "quantity": 1,
+            "name": "color"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sword-long-plain-{material}",
+        "attributes": { "handleTexture": "game:block/leather/{color}" }
+    }
+  },
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-greatsword-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-*",
+            "quantity": 1,
+            "name": "color"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sword-great-plain-{material}",
+        "attributes": { "handleTexture": "game:block/leather/{color}" }
+    }
+  },
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-longsword-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-plain"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sword-long-plain-{material}"
+    }
+  },
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-greatsword-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-plain"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sword-great-plain-{material}"
+    }
+  }
+]

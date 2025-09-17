@@ -1,0 +1,84 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/axe-long.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/axe-long.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 7,
+                        "Damage": 8.5
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.2, 0.5, 0.5, 0.8, 0.5, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 9
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.2, 0.5, 0.5, 0.8, 0.5, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "SlashingAttack",
+                        "Tier": 8,
+                        "Damage": 9
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.2, 0.5, 0.5, 0.8, 0.5, 0.5 ]
+                }
+            ]
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/axe-long.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-redsteel": { "base": "axes/long-steel" },
+            "*-blacksteel": { "base": "axes/long-steel" },
+            "*-bluesteel": { "base": "axes/long-steel" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/axe-long.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/axe-long.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2750,
+            "*-redsteel": 3400,
+            "*-bluesteel": 3900
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/axe-long.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

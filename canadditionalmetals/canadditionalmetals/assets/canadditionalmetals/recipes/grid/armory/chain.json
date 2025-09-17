@@ -1,0 +1,199 @@
+﻿[
+  {
+    "ingredientPattern": "TAH",
+    "recipeGroup": 1,
+    "ingredients": {
+      "T": {
+        "type": "item",
+        "code": "armory:armor-torso-chain-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "A": {
+        "type": "item",
+        "code": "armory:armor-arms-chain-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "H": {
+        "type": "item",
+        "code": "armory:armor-hands-chain-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": true,
+    "name": "chain armor",
+    "copyAttributesFrom": "T",
+    "output": {"type": "item", "code": "game:armor-body-chain-{material}"}
+  },
+  {
+    "ingredientPattern": "P_P,_P_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "name": "chain armor",
+    "output": {"type": "item", "code": "armory:armor-head-chain-{material}-coif"}
+  },
+  {
+    "ingredientPattern": "PPP,_P_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "name": "chain armor",
+    "output": {"type": "item", "code": "armory:armor-torso-chain-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "P_,_P",
+    "recipeGroup": 1,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 2,
+    "name": "chain armor",
+    "output": {"type": "item", "code": "armory:armor-hands-chain-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "_P,P_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 2,
+    "name": "chain armor",
+    "output": {"type": "item", "code": "armory:armor-arms-chain-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-head-chain-*-coif",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "chain armor repair",
+    "output": {"type": "item", "code": "armory:armor-head-chain-{material}-coif"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-torso-chain-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "chain armor repair",
+    "output": {"type": "item", "code": "armory:armor-torso-chain-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-arms-chain-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "chain armor repair",
+    "output": {"type": "item", "code": "armory:armor-arms-chain-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-hands-chain-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "chain armor repair",
+    "output": {"type": "item", "code": "armory:armor-hands-chain-{material}-vanilla"}
+  }
+]

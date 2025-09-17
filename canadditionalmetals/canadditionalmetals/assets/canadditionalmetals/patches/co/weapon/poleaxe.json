@@ -1,0 +1,131 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/Top/DamageTypes/0/DamageByType",
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 7,
+                "Damage": 7.5,
+                "ArmorPiercingTier": 2
+            },
+            "*-redsteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            },
+            "*-bluesteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/Left/DamageTypes/0/DamageByType",
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 7,
+                "Damage": 7.5,
+                "ArmorPiercingTier": 2
+            },
+            "*-redsteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            },
+            "*-bluesteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/Right/DamageTypes/0/DamageByType",
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 7,
+                "Damage": 7.5,
+                "ArmorPiercingTier": 2
+            },
+            "*-redsteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            },
+            "*-bluesteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/Bottom/DamageTypes/0/DamageByType",
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "PiercingAttack",
+                "Tier": 7,
+                "Damage": 7.5,
+                "ArmorPiercingTier": 2
+            },
+            "*-redsteel": {
+                "DamageType": "PiercingAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            },
+            "*-bluesteel": {
+                "DamageType": "PiercingAttack",
+                "Tier": 8,
+                "Damage": 8,
+                "ArmorPiercingTier": 2
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2800,
+            "*-redsteel": 3100,
+            "*-bluesteel": 3300
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/poleaxe.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

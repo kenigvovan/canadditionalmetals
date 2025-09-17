@@ -1,0 +1,116 @@
+[
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "move",
+        "frompath": "/shapeByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "blunt/warhammer-steel" },
+            "*-redsteel": { "base": "blunt/warhammer-steel" },
+            "*-bluesteel": { "base": "blunt/warhammer-steel" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "move",
+        "path": "/shapeByType/*",
+        "frompath": "/temp"
+    },
+
+
+
+
+
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "move",
+        "frompath": "/attributes/OneHandedStance/Attack/DamageTypesByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "addmerge",
+        "path": "/attributes/OneHandedStance/Attack/DamageTypesByType",
+        "value": {
+            "*-blacksteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 7,
+                        "Damage": 5.5,
+                        "ArmorPiercingTier": 3
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.7, -0.1, 0.5, 1.7, -0.2, 0.5 ]
+                }
+            ],
+            "*-redsteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 8,
+                        "Damage": 6,
+                        "ArmorPiercingTier": 3
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.7, -0.1, 0.5, 1.7, -0.2, 0.5 ]
+                }
+            ],
+            "*-bluesteel": [
+                {
+                    "Damage": {
+                        "DamageType": "BluntAttack",
+                        "Tier": 8,
+                        "Damage": 6,
+                        "ArmorPiercingTier": 3
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [ 0.7, -0.1, 0.5, 1.7, -0.2, 0.5 ]
+                }
+            ]
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "move",
+        "path": "/attributes/OneHandedStance/Attack/DamageTypesByType/*",
+        "frompath": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "move",
+        "frompath": "/durabilitybytype/*",
+        "path": "/temp"
+    },
+
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "value": {
+            "*-blacksteel": 2800,
+            "*-redsteel": 3100,
+            "*-bluesteel": 3300
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/mace.json",
+        "op": "move",
+        "path": "/durabilitybytype/*",
+        "frompath": "/temp"
+    }
+] 

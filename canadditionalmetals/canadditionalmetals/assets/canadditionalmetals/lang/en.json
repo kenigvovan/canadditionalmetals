@@ -230,6 +230,195 @@
     "game:item-blade-falx-redsteel": "Red steel falx",
     "game:item-blade-falx-bluesteel": "Blue steel falx",
     "game:item-blade-falx-rosegold": "Rose gold falx",
-    "game:item-blade-falx-sterlingsilver": "Sterling silver falx"
+    "game:item-blade-falx-sterlingsilver": "Sterling silver falx",
 
+    "armory:item-club-*-blacksteel": "Polehammer",
+    "armory:item-club-*-redsteel": "Polehammer",
+    "armory:item-club-*-bluesteel": "Polehammer",
+
+    "armory:item-mace-*-blacksteel": "Warhammer",
+    "armory:item-mace-*-redsteel": "Warhammer",
+    "armory:item-mace-*-bluesteel": "Warhammer",
+
+    "armory:item-javelin-*-blacksteel": "Javelin (Black Steel)",
+    "armory:item-javelin-*-redsteel": "Javelin (Red Steel)",
+    "armory:item-javelin-*-bluesteel": "Javelin (Blue Steel)",
+
+    "armory:item-pike-*-blacksteel": "Pike (Black Steel)",
+    "armory:item-pike-*-redsteel": "Pike (Red Steel)",
+    "armory:item-pike-*-bluesteel": "Pike (Blue Steel)",
+
+    "armory:item-sword-short-*-blacksteel": "Short sword (Black Steel)",
+    "armory:item-sword-short-*-redsteel": "Short sword (Red Steel)",
+    "armory:item-sword-short-*-bluesteel": "Short sword (Blue Steel)",
+
+    "armory:item-sword-long-*-blacksteel": "Long sword (Black Steel)",
+    "armory:item-sword-long-*-redsteel": "Long sword (Red Steel)",
+    "armory:item-sword-long-*-bluesteel": "Long sword (Blue Steel)",
+
+    "armory:item-sword-great-*-blacksteel": "Great sword (Black Steel)",
+    "armory:item-sword-great-*-redsteel": "Great sword (Red Steel)",
+    "armory:item-sword-great-*-bluesteel": "Great sword (Blue Steel)",
+
+    "armory:item-sabre-*-blacksteel": "Sabre (Black Steel)",
+    "armory:item-sabre-*-redsteel": "Sabre (Red Steel)",
+    "armory:item-sabre-*-bluesteel": "Sabre (Blue Steel)",
+
+    "armory:item-halberd-*-blacksteel": "Halberd (Black Steel)",
+    "armory:item-halberd-*-redsteel": "Halberd (Red Steel)",
+    "armory:item-halberd-*-bluesteel": "Halberd (Blue Steel)",
+
+    "armory:item-axe-long-*-blacksteel": "Long axe (Black Steel)",
+    "armory:item-axe-long-*-redsteel": "Long axe (Red Steel)",
+    "armory:item-axe-long-*-bluesteel": "Long axe (Blue Steel)",
+
+    "armory:item-quarterstaff-*-blacksteel": "Quarterstaff (Black Steel)",
+    "armory:item-quarterstaff-*-redsteel": "Quarterstaff (Red Steel)",
+    "armory:item-quarterstaff-*-bluesteel": "Quarterstaff (Blue Steel)",
+
+    "armory:item-part-hammerhead-blacksteel": "Black Steel battle hammer head",
+    "armory:item-part-hammerhead-redsteel": "Red Steel battle hammer head",
+    "armory:item-part-hammerhead-bluesteel": "Blue Steel battle hammer head",
+
+    "armory:item-part-javelinhead-blacksteel": "Black Steel javelin head",
+    "armory:item-part-javelinhead-redsteel": "Red Steel javelin head",
+    "armory:item-part-javelinhead-bluesteel": "Blue Steel javelin head",
+
+    "armory:item-part-shortsword-blacksteel": "Black Steel short sword parts",
+    "armory:item-part-shortsword-redsteel": "Red Steel short sword parts",
+    "armory:item-part-shortsword-bluesteel": "Blue Steel short sword parts",
+
+    "armory:item-part-longsword-blacksteel": "Black Steel long sword parts",
+    "armory:item-part-longsword-redsteel": "Red Steel long sword parts",
+    "armory:item-part-longsword-bluesteel": "Blue Steel long sword parts",
+
+    "armory:item-part-greatsword-blacksteel": "Black Steel great sword parts",
+    "armory:item-part-greatsword-redsteel": "Red Steel great sword parts",
+    "armory:item-part-greatsword-bluesteel": "Blue Steel great sword parts",
+
+    "armory:item-part-sabre-blacksteel": "Black Steel sabre parts",
+    "armory:item-part-sabre-redsteel": "Red Steel sabre parts",
+    "armory:item-part-sabre-bluesteel": "Blue Steel sabre parts",
+
+    "armory:item-part-halberd-blacksteel": "Black Steel halberd parts",
+    "armory:item-part-halberd-redsteel": "Red Steel halberd parts",
+    "armory:item-part-halberd-bluesteel": "Blue Steel halberd parts",
+
+    "armory:item-part-longaxehead-blacksteel": "Black Steel long axe head",
+    "armory:item-part-longaxehead-redsteel": "Red Steel long axe head",
+    "armory:item-part-longaxehead-bluesteel": "Blue Steel long axe head",
+
+    "armory:item-part-poleaxehead-blacksteel": "Black Steel poleaxe head",
+    "armory:item-part-poleaxehead-redsteel": "Red Steel poleaxe head",
+    "armory:item-part-poleaxehead-bluesteel": "Blue Steel poleaxe head",
+
+    "armory:item-armor-torso-plate-blacksteel-vanilla": "Black Steel cuirass",
+    "armory:item-armor-torso-plate-redsteel-vanilla": "Red Steel cuirass",
+    "armory:item-armor-torso-plate-bluesteel-vanilla": "Blue Steel cuirass",
+    "armory:item-armor-torso-plate-rosegold-vanilla": "Rose gold cuirass",
+    "armory:item-armor-torso-plate-sterlingsilver-vanilla": "Sterling silver cuirass",
+
+    "armory:item-armor-arms-plate-blacksteel-vanilla": "Black Steel pauldrons",
+    "armory:item-armor-arms-plate-redsteel-vanilla": "Red Steel pauldrons",
+    "armory:item-armor-arms-plate-bluesteel-vanilla": "Blue Steel pauldrons",
+    "armory:item-armor-arms-plate-rosegold-vanilla": "Rose gold pauldrons",
+    "armory:item-armor-arms-plate-sterlingsilver-vanilla": "Sterling silver pauldrons",
+
+    "armory:item-armor-hands-plate-blacksteel-vanilla": "Black Steel vambraces",
+    "armory:item-armor-hands-plate-redsteel-vanilla": "Red Steel vambraces",
+    "armory:item-armor-hands-plate-bluesteel-vanilla": "Blue Steel vambraces",
+    "armory:item-armor-hands-plate-rosegold-vanilla": "Rose gold vambraces",
+    "armory:item-armor-hands-plate-sterlingsilver-vanilla": "Sterling silver vambraces",
+
+    "armory:item-armor-legs-plate-blacksteel-vanilla": "Black Steel cuisses",
+    "armory:item-armor-legs-plate-redsteel-vanilla": "Red Steel cuisses",
+    "armory:item-armor-legs-plate-bluesteel-vanilla": "Blue Steel cuisses",
+    "armory:item-armor-legs-plate-rosegold-vanilla": "Rose gold cuisses",
+    "armory:item-armor-legs-plate-sterlingsilver-vanilla": "Sterling silver cuisses",
+
+    "armory:item-armor-feet-plate-blacksteel-vanilla": "Black Steel greaves",
+    "armory:item-armor-feet-plate-redsteel-vanilla": "Red Steel greaves",
+    "armory:item-armor-feet-plate-bluesteel-vanilla": "Blue Steel greaves",
+    "armory:item-armor-feet-plate-rosegold-vanilla": "Rose gold greaves",
+    "armory:item-armor-feet-plate-sterlingsilver-vanilla": "Sterling silver greaves",
+
+    "armory:item-armor-head-plate-blacksteel-open": "Black Steel open helmet",
+    "armory:item-armor-head-plate-redsteel-open": "Red Steel open helmet",
+    "armory:item-armor-head-plate-bluesteel-open": "Blue Steel open helmet",
+    "armory:item-armor-head-plate-rosegold-open": "Rose gold open helmet",
+    "armory:item-armor-head-plate-sterlingsilver-open": "Sterling silver open helmet",
+
+    "armory:item-armor-head-plate-blacksteel-riveted": "Black Steel riveted helmet",
+    "armory:item-armor-head-plate-redsteel-riveted": "Red Steel riveted helmet",
+    "armory:item-armor-head-plate-bluesteel-riveted": "Blue Steel riveted helmet",
+    "armory:item-armor-head-plate-rosegold-riveted": "Rose gold riveted helmet",
+    "armory:item-armor-head-plate-sterlingsilver-riveted": "Sterling silver riveted helmet",
+
+    "armory:item-armor-head-plate-blacksteel-light": "Black Steel light helmet",
+    "armory:item-armor-head-plate-redsteel-light": "Red Steel light helmet",
+    "armory:item-armor-head-plate-bluesteel-light": "Blue Steel light helmet",
+
+    "armory:item-armor-torso-chain-blacksteel-vanilla": "Black Steel chain shirt",
+    "armory:item-armor-torso-chain-redsteel-vanilla": "Red Steel chain shirt",
+    "armory:item-armor-torso-chain-bluesteel-vanilla": "Blue Steel chain shirt",
+    "armory:item-armor-torso-chain-rosegold-vanilla": "Rose gold chain shirt",
+    "armory:item-armor-torso-chain-sterlingsilver-vanilla": "Sterling silver chain shirt",
+
+    "armory:item-armor-head-chain-blacksteel-coif": "Black Steel chain coif",
+    "armory:item-armor-head-chain-redsteel-coif": "Red Steel chain coif",
+    "armory:item-armor-head-chain-bluesteel-coif": "Blue Steel chain coif",
+    "armory:item-armor-head-chain-rosegold-coif": "Rose gold chain coif",
+    "armory:item-armor-head-chain-sterlingsilver-coif": "Sterling silver chain coif",
+
+    "armory:item-armor-arms-chain-blacksteel-vanilla": "Black Steel chain sleeves",
+    "armory:item-armor-arms-chain-redsteel-vanilla": "Red Steel chain sleeves",
+    "armory:item-armor-arms-chain-bluesteel-vanilla": "Blue Steel chain sleeves",
+    "armory:item-armor-arms-chain-rosegold-vanilla": "Rose gold chain sleeves",
+    "armory:item-armor-arms-chain-sterlingsilver-vanilla": "Sterling silver chain sleeves",
+
+    "armory:item-armor-hands-chain-blacksteel-vanilla": "Black Steel chain mittens",
+    "armory:item-armor-hands-chain-redsteel-vanilla": "Red Steel chain mittens",
+    "armory:item-armor-hands-chain-bluesteel-vanilla": "Blue Steel chain mittens",
+    "armory:item-armor-hands-chain-rosegold-vanilla": "Rose gold chain mittens",
+    "armory:item-armor-hands-chain-sterlingsilver-vanilla": "Sterling silver chain mittens",
+
+    "armory:item-armor-torso-brigandine-blacksteel-vanilla": "Black Steel brigandine",
+    "armory:item-armor-torso-brigandine-redsteel-vanilla": "Red Steel brigandine",
+    "armory:item-armor-torso-brigandine-bluesteel-vanilla": "Blue Steel brigandine",
+
+    "armory:item-armor-arms-brigandine-blacksteel-vanilla": "Black Steel brigandine rerebraces",
+    "armory:item-armor-arms-brigandine-redsteel-vanilla": "Red Steel brigandine rerebraces",
+    "armory:item-armor-arms-brigandine-bluesteel-vanilla": "Blue Steel brigandine rerebraces",
+
+    "armory:item-armor-hands-brigandine-blacksteel-vanilla": "Black Steel brigandine vambraces",
+    "armory:item-armor-hands-brigandine-redsteel-vanilla": "Red Steel brigandine vambraces",
+    "armory:item-armor-hands-brigandine-bluesteel-vanilla": "Blue Steel brigandine vambraces",
+
+    "armory:item-armor-legs-brigandine-blacksteel-vanilla": "Black Steel brigandine cuisses",
+    "armory:item-armor-legs-brigandine-redsteel-vanilla": "Red Steel brigandine cuisses",
+    "armory:item-armor-legs-brigandine-bluesteel-vanilla": "Blue Steel brigandine cuisses",
+
+    "armory:item-armor-feet-brigandine-blacksteel-vanilla": "Black Steel brigandine greaves",
+    "armory:item-armor-feet-brigandine-redsteel-vanilla": "Red Steel brigandine greaves",
+    "armory:item-armor-feet-brigandine-bluesteel-vanilla": "Blue Steel brigandine greaves",
+
+    "armory:item-armor-torso-scale-blacksteel-vanilla": "Black Steel scale shirt",
+    "armory:item-armor-torso-scale-redsteel-vanilla": "Red Steel scale shirt",
+    "armory:item-armor-torso-scale-bluesteel-vanilla": "Blue Steel scale shirt",
+    "armory:item-armor-torso-scale-rosegold-vanilla": "Rose gold scale shirt",
+    "armory:item-armor-torso-scale-sterlingsilver-vanilla": "Sterling silver scale shirt",
+
+    "armory:item-armor-armshands-scale-blacksteel-vanilla": "Black Steel scale sleeves",
+    "armory:item-armor-armshands-scale-redsteel-vanilla": "Red Steel scale sleeves",
+    "armory:item-armor-armshands-scale-bluesteel-vanilla": "Blue Steel scale sleeves",
+    "armory:item-armor-armshands-scale-rosegold-vanilla": "Rose gold scale sleeves",
+    "armory:item-armor-armshands-scale-sterlingsilver-vanilla": "Sterling silver scale sleeves",
+
+    "armory:item-shield-light-*-blacksteel": "Light shield (Black Steel)",
+    "armory:item-shield-light-*-redsteel": "Light shield (Red Steel)",
+    "armory:item-shield-light-*-bluesteel": "Light shield (Blue Steel)",
+
+    "armory:item-poleaxe-*-blacksteel": "Poleaxe (Black Steel)",
+    "armory:item-poleaxe-*-redsteel": "Poleaxe (Red Steel)",
+    "armory:item-poleaxe-*-bluesteel": "Poleaxe (Blue Steel)"
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    "name": "sword",
+    "pattern": [[
+      "__#########",
+      "###########",
+      "__#########"
+    ],
+    [
+      "___________",
+      "__#########",
+      "___________"
+    ]],
+    "output": {"type": "item", "code": "armory:part-shortsword-{metal}"}
+  },
+  {
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    "name": "sword",
+    "pattern": [[
+      "__############",
+      "##############",
+      "__############"
+    ],
+    [
+      "______________",
+      "__############",
+      "______________"
+    ]],
+    "output": {"type": "item", "code": "armory:part-longsword-{metal}"}
+  },
+  {
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    "name": "sword",
+    "pattern": [[
+      "___###########",
+      "##############",
+      "#####_________"
+    ],
+    [
+      "______________",
+      "____##########",
+      "_####_________"
+    ]],
+    "output": {"type": "item", "code": "armory:part-sabre-{metal}"}
+  },
+  {
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    "name": "sword",
+    "pattern": [[
+      "__##############",
+      "################",
+      "__##############"
+    ],
+    [
+      "________________",
+      "__##############",
+      "________________"
+    ]],
+    "output": {"type": "item", "code": "armory:part-greatsword-{metal}"}
+  }
+]

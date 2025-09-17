@@ -1,0 +1,81 @@
+﻿[
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-sabre-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-plain"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sabre-plain-{material}"
+    }
+  },
+  {
+    "ingredientPattern": "S,H",
+    "recipeGroup": 1,
+    "ingredients": {
+        "S": {
+            "type": "item",
+            "code": "armory:part-sabre-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+      "H": {"type": "item", "code": "armory:handle-short"}
+    },
+    "copyAttributesFrom": "H",
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {"type": "item", "code": "armory:sabre-plain-{material}"}
+  },
+  {
+    "ingredientPattern": "B,P",
+    "recipeGroup": 1,
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "armory:part-sabre-*",
+            "name": "material",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:leather-normal-*",
+            "quantity": 1,
+            "name": "color"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "name": "sword",
+    "output": {
+        "type": "item",
+        "code": "armory:sabre-plain-{material}",
+        "attributes": { "handleTexture": "game:block/leather/{color}" }
+    }
+  }
+]

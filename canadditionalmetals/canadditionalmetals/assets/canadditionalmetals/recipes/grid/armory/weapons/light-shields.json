@@ -1,0 +1,33 @@
+﻿[
+  {
+    "ingredientPattern": "_H_,PBP,_P_",
+    "recipeGroup": 1,
+    "ingredients": {
+        "H": {
+            "type": "item",
+            "code": "game:leather-*"
+        },
+        "B": {
+            "type": "item",
+            "code": "game:boss-*",
+            "name": "bosstype",
+            "allowedVariants": [
+                "blacksteel",
+                "redsteel",
+                "bluesteel"
+            ]
+        },
+        "P": {
+            "type": "item",
+            "code": "game:plank-*"
+        }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "sheild",
+    "output": {
+        "type": "item",
+        "code": "armory:shield-light-plain-{bosstype}"
+    }
+  }
+]

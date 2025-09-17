@@ -1,0 +1,30 @@
+[
+    {
+        "file": "armory:itemtypes/parts/javelinhead.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelinhead.json",
+        "op": "move",
+        "frompath": "/shapeByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "armory:itemtypes/parts/javelinhead.json",
+        "op": "addmerge",
+        "path": "/shapeByType",
+        "value": {
+            "*-blacksteel": { "base": "spears/parts/javelin-{material}-plain.json" },
+            "*-redsteel": { "base": "spears/parts/javelin-{material}-plain.json" },
+            "*-bluesteel": { "base": "spears/parts/javelin-{material}-plain.json" }
+        }
+    },
+    {
+        "file": "armory:itemtypes/weapons/javelinhead.json",
+        "op": "move",
+        "path": "/shapeByType/*",
+        "frompath": "/temp"
+    }
+] 

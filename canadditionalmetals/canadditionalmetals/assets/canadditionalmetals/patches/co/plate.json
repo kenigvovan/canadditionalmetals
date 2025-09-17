@@ -1,0 +1,53 @@
+[
+    {
+        "file": "armory:itemtypes/armor/plate.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ]
+    },
+    {
+        "file": "armory:itemtypes/armor/plate.json",
+        "op": "addmerge",
+        "path": "/behaviors/0/properties/ResistsByType",
+        "value": {
+            "*-rosegold-*": {
+                "PiercingAttack": 4,
+                "SlashingAttack": 4,
+                "BluntAttack": 3
+            },
+            "*-sterlingsilver-*": {
+                "PiercingAttack": 4,
+                "SlashingAttack": 4,
+                "BluntAttack": 3
+            },
+            "*-blacksteel-*": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 8,
+                "BluntAttack": 6
+            },
+            "*-redsteel-*": {
+                "PiercingAttack": 8,
+                "SlashingAttack": 9,
+                "BluntAttack": 7
+            },
+            "*-bluesteel-*": {
+                "PiercingAttack": 8,
+                "SlashingAttack": 9,
+                "BluntAttack": 7
+            }
+        }
+    },
+
+    {
+        "file": "armory:itemtypes/armor/plate.json",
+        "op": "addmerge",
+        "path": "/durabilityByType",
+        "value": {
+            "*-rosegold-*": 800,
+            "*-sterlingsilver-*": 2000,
+            "*-blacksteel-*": 14300,
+            "*-redsteel-*": 17400,
+            "*-bluesteel-*": 18100
+        }
+    }
+] 

@@ -1,0 +1,61 @@
+[
+    {
+        "file": "armory:itemtypes/armor/plate-helmets.json",
+        "op": "addeach",
+        "path": "/variantgroups/2/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ]
+    },
+    {
+        "file": "armory:itemtypes/armor/plate-helmets.json",
+        "op": "addmerge",
+        "path": "/behaviors/0/properties/ResistsByType",
+        "value": {
+            "*-rosegold-*": {
+                "PiercingAttack": 4,
+                "SlashingAttack": 4,
+                "BluntAttack": 3
+            },
+            "*-sterlingsilver-*": {
+                "PiercingAttack": 4,
+                "SlashingAttack": 4,
+                "BluntAttack": 3
+            },
+            "*-blacksteel-*": {
+                "PiercingAttack": 8,
+                "SlashingAttack": 8,
+                "BluntAttack": 7
+            },
+            "*-redsteel-*": {
+                "PiercingAttack": 9,
+                "SlashingAttack": 9,
+                "BluntAttack": 8
+            },
+            "*-bluesteel-*": {
+                "PiercingAttack": 9,
+                "SlashingAttack": 9,
+                "BluntAttack": 8
+            }
+        }
+    },
+    {
+        "file": "armory:itemtypes/armor/plate-helmets.json",
+        "op": "addmerge",
+        "path": "/durabilityByType",
+        "value": {
+            "*-gold-*": 800,
+            "*-silver-*": 2000,
+            "*-blacksteel-*": 14300,
+            "*-redsteel-*": 17400,
+            "*-bluesteel-*": 18100
+        }
+    },
+    {
+        "file": "armory:itemtypes/armor/plate-helmets.json",
+        "op": "addeach",
+        "path": "/skipVariants/-",
+        "value": [
+            "*-rosegold-light",
+            "*-sterlingsilver-light"
+        ]
+    }
+] 

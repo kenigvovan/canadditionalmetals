@@ -78,10 +78,10 @@
                 "thongs": { "base": "game:block/transparent" },
                 "woodguard": { "base": "game:block/transparent" },
                 "handle": { "base": "game:block/wood/debarked/aged" },
-                "falxblade": { "base": "game:block/metal/ingot/rosegold" },
+                "falxblade": { "base": "game:block/metal/ingot/steel" },
                 "cloth": { "base": "game:block/transparent" },
-                "handguard": { "base": "game:block/metal/sheet/steel1" },
-                "spinerivet": { "base": "game:block/metal/sheet/lead1" },
+                "handguard": { "base": "game:block/metal/sheet/rosegold1" },
+                "spinerivet": { "base": "game:block/metal/sheet/rosegold1" },
                 "pips": { "base": "game:block/transparent" }
             }
         }
@@ -97,10 +97,10 @@
                 "thongs": { "base": "game:block/transparent" },
                 "woodguard": { "base": "game:block/transparent" },
                 "handle": { "base": "game:block/wood/debarked/aged" },
-                "falxblade": { "base": "game:block/metal/ingot/sterlingsilver" },
+                "falxblade": { "base": "game:block/metal/ingot/steel" },
                 "cloth": { "base": "game:block/transparent" },
-                "handguard": { "base": "game:block/metal/sheet/steel1" },
-                "spinerivet": { "base": "game:block/metal/sheet/lead1" },
+                "handguard": { "base": "game:block/metal/sheet/sterlingsilver1" },
+                "spinerivet": { "base": "game:block/metal/sheet/sterlingsilver1" },
                 "pips": { "base": "game:block/transparent" }
             }
         }

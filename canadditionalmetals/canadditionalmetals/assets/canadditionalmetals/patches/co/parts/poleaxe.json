@@ -1,0 +1,8 @@
+[
+    {
+        "file": "armory:itemtypes/parts/poleaxe.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+    }
+] 

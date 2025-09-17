@@ -1,0 +1,112 @@
+﻿[
+  {
+    "ingredientPattern": "TA",
+    "recipeGroup": 1,
+    "ingredients": {
+      "T": {
+        "type": "item",
+        "code": "armory:armor-torso-scale-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      },
+      "A": {
+        "type": "item",
+        "code": "armory:armor-armshands-scale-*-vanilla",
+        "quantity": 1,
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "name": "scale armor",
+    "copyAttributesFrom": "T",
+    "output": {"type": "item", "code": "game:armor-body-scale-{material}"}
+  },
+  {
+    "ingredientPattern": "SSS,FSF",
+    "recipeGroup": 1,
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "game:metalscale-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      },
+      "F": {"type": "item", "code": "game:flaxtwine"}
+    },
+    "width": 3,
+    "height": 2,
+    "name": "scale armor",
+    "output": {"type": "item", "code": "armory:armor-torso-scale-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "SFS",
+    "recipeGroup": 1,
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "game:metalscale-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      },
+      "F": {"type": "item", "code": "game:flaxtwine"}
+    },
+    "width": 3,
+    "height": 1,
+    "name": "scale armor",
+    "output": {"type": "item", "code": "armory:armor-armshands-scale-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-torso-scale-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalscale-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "scale armor repair",
+    "output": {"type": "item", "code": "armory:armor-torso-scale-{material}-vanilla"}
+  },
+  {
+    "ingredientPattern": "AP",
+    "recipeGroup": 2,
+    "ingredients": {
+      "A": {
+        "type": "item",
+        "code": "armory:armor-armshands-scale-*-vanilla",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalscale-*",
+        "name": "material",
+        "allowedVariants": ["blacksteel", "redsteel", "bluesteel"]
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "copyAttributesFrom": "A",
+    "averageDurability": false,
+    "name": "scale armor repair",
+    "output": {"type": "item", "code": "armory:armor-armshands-scale-{material}-vanilla"}
+  }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "file": "armory:entities/javelin.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel"]
+    }
+] 
