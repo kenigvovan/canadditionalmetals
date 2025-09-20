@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "addeach",
         "path": "/variantgroups/1/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/DirectionalAttacks/Top/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "BluntAttack",
@@ -34,6 +36,7 @@
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/DirectionalAttacks/Left/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "SlashingAttack",
@@ -59,6 +62,7 @@
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/DirectionalAttacks/Right/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "SlashingAttack",
@@ -84,6 +88,7 @@
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/DirectionalAttacks/Bottom/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "PiercingAttack",
@@ -109,13 +114,15 @@
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 2800,
             "*-redsteel": 3100,
@@ -126,6 +133,7 @@
         "file": "armory:itemtypes/weapons/poleaxe.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/armor/chain-coif.json",
         "op": "addeach",
         "path": "/variantgroups/2/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ]
     },
     {
         "file": "armory:itemtypes/armor/chain-coif.json",
         "op": "addmerge",
         "path": "/behaviors/0/properties/ResistsByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel-*": {
                 "PiercingAttack": 8,
@@ -42,6 +44,7 @@
         "file": "armory:itemtypes/armor/chain-coif.json",
         "op": "addmerge",
         "path": "/durabilityByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel-*": 14300,
             "*-redsteel-*": 18600,

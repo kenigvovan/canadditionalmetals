@@ -1,0 +1,45 @@
+[
+    {
+        "file": "game:itemtypes/combatoverhaul/sword.json",
+        "op": "addeach",
+        "path": "/variantgroups/1/states/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    },
+    {
+        "file": "game:itemtypes/combatoverhaul/sword.json",
+        "op": "addmerge",
+        "path": "/attributes/OneHandedStanceByType/*-falx-*/Attack/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "combatoverhaul" } ],
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 8,
+                "Damage": 6
+            },
+            "*-redsteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 9,
+                "Damage": 6.5
+            },
+            "*-bluesteel": {
+                "DamageType": "SlashingAttack",
+                "Tier": 9,
+                "Damage": 6.5
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/combatoverhaul/sword.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "combatoverhaul" } ],
+        "value": {
+            "blade-falx-blacksteel": 2800,
+            "blade-falx-redsteel": 3600,
+            "blade-falx-bluesteel": 4000,
+            "blade-falx-rosegold": 2125,
+            "blade-falx-sterlingsilver": 2125
+        }
+    }
+] 

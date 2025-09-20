@@ -59,7 +59,7 @@
             },
             "P": {
                 "type": "item",
-                "code": "game:metalplate-silver",
+                "code": "game:metalplate-sterlingsilver",
                 "quantity": 1
             }
         },
@@ -67,7 +67,7 @@
         "height": 3,
         "output": {
             "type": "item",
-            "code": "game:blade-falx-sterlingsilver",
+            "code": "game:blade-falx-silver",
             "quantity": 1
         }
     }

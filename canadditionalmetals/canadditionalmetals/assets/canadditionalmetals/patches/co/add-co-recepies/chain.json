@@ -1,0 +1,23 @@
+[
+    {
+        "file": "game:recipes/grid/combatoverhaul/armor/chain.json",
+        "op": "addeach",
+        "path": "/0/ingredients/T/allowedVariants/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    },
+    {
+        "file": "game:recipes/grid/combatoverhaul/armor/chain.json",
+        "op": "addeach",
+        "path": "/1/ingredients/T/allowedVariants/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    },
+    {
+        "file": "game:recipes/grid/combatoverhaul/armor/chain.json",
+        "op": "addeach",
+        "path": "/2/ingredients/T/allowedVariants/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    }
+] 

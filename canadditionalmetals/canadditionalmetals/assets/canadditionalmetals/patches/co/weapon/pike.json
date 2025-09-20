@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/weapons/pike.json",
         "op": "addeach",
         "path": "/variantgroups/1/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/pike.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": [
                 {
@@ -53,13 +55,15 @@
         "file": "armory:itemtypes/weapons/pike.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/pike.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 2800,
             "*-redsteel": 3100,
@@ -70,6 +74,7 @@
         "file": "armory:itemtypes/weapons/pike.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

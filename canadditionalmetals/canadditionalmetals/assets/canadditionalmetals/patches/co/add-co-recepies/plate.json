@@ -1,0 +1,30 @@
+[
+    {
+        "file": "game:recipes/grid/combatoverhaul/armor/plate.json",
+        "op": "addeach",
+        "path": "/0/ingredients/P/allowedVariants/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    },
+    {
+        "file": "game:recipes/grid/combatoverhaul/armor/plate.json",
+        "op": "addeach",
+        "path": "/0/ingredients/T/allowedVariants/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    },
+    {
+        "file": "game:recipes/grid/combatoverhaul/armor/plate.json",
+        "op": "addeach",
+        "path": "/1/ingredients/P/allowedVariants/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    },
+    {
+        "file": "game:recipes/grid/combatoverhaul/armor/plate.json",
+        "op": "addeach",
+        "path": "/2/ingredients/P/allowedVariants/-",
+        "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ],
+        "dependsOn": [ { "modid": "combatoverhaul" } ]
+    }
+] 

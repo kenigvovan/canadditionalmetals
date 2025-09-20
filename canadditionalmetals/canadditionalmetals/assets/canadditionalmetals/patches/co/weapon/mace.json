@@ -3,18 +3,21 @@
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "addeach",
         "path": "/variantgroups/1/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "move",
         "frompath": "/shapeByType/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
     {
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "addmerge",
         "path": "/shapeByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": { "base": "blunt/warhammer-steel" },
             "*-redsteel": { "base": "blunt/warhammer-steel" },
@@ -25,6 +28,7 @@
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "move",
         "path": "/shapeByType/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     },
 
@@ -36,12 +40,14 @@
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "move",
         "frompath": "/attributes/OneHandedStance/Attack/DamageTypesByType/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
     {
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "addmerge",
         "path": "/attributes/OneHandedStance/Attack/DamageTypesByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": [
                 {
@@ -88,19 +94,22 @@
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "move",
         "path": "/attributes/OneHandedStance/Attack/DamageTypesByType/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     },
     {
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 2800,
             "*-redsteel": 3100,
@@ -111,6 +120,7 @@
         "file": "armory:itemtypes/weapons/mace.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

@@ -1,0 +1,98 @@
+[
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/1/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/2/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/3/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/4/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/5/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/6/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/armor/plate.json",
+        "op": "add",
+        "path": "/7/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    }
+] 

@@ -1,0 +1,14 @@
+[
+    {
+        "file": "canadditionalmetals:recipes/smithing/armory/longaxehead.json",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    }
+] 

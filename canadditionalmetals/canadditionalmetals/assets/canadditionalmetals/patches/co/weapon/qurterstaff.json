@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/weapons/quarterstaff.json",
         "op": "addeach",
         "path": "/variantgroups/1/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/quarterstaff.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/Attack/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "BluntAttack",
@@ -31,13 +33,15 @@
         "file": "armory:itemtypes/weapons/quarterstaff.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/quarterstaff.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 2100,
             "*-redsteel": 2700,
@@ -48,6 +52,7 @@
         "file": "armory:itemtypes/weapons/quarterstaff.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/weapons/axe-long.json",
         "op": "addeach",
         "path": "/variantgroups/2/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/axe-long.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": [
                 {
@@ -52,6 +54,7 @@
         "file": "armory:itemtypes/weapons/axe-long.json",
         "op": "addmerge",
         "path": "/shapeByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-redsteel": { "base": "axes/long-steel" },
             "*-blacksteel": { "base": "axes/long-steel" },
@@ -62,13 +65,15 @@
         "file": "armory:itemtypes/weapons/axe-long.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/axe-long.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 2750,
             "*-redsteel": 3400,
@@ -79,6 +84,7 @@
         "file": "armory:itemtypes/weapons/axe-long.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "addeach",
         "path": "/variantgroups/2/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "addmerge",
         "path": "/behaviorsByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": [
                 {
@@ -176,6 +178,7 @@
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "addmerge",
         "path": "/attributes/OneHandedStance/Attack/DamageTypesByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": [
                 {
@@ -219,6 +222,7 @@
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "addmerge",
         "path": "/attributes/OneHandedStance/AttackAnimationByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": { "Main": [ "armory:sword-short-thrust-4", "armory:sword-short-thrust-5", "armory:sword-short-thrust-6" ] },
             "*-redsteel": { "Main": [ "armory:sword-short-thrust-4", "armory:sword-short-thrust-5", "armory:sword-short-thrust-6" ] },
@@ -229,6 +233,7 @@
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "addmerge",
         "path": "/shapeByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": { "base": "swords/sword-arming-{type}" },
             "*-redsteel": { "base": "swords/sword-arming-{type}" },
@@ -239,6 +244,7 @@
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "addmerge",
         "path": "/guiTransformByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "translation": {
@@ -314,13 +320,15 @@
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 2800,
             "*-redsteel": 3100,
@@ -331,6 +339,7 @@
         "file": "armory:itemtypes/weapons/sword-short.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

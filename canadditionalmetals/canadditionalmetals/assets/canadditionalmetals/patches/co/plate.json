@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/armor/plate.json",
         "op": "addeach",
         "path": "/variantgroups/2/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel", "rosegold", "sterlingsilver" ]
     },
     {
         "file": "armory:itemtypes/armor/plate.json",
         "op": "addmerge",
         "path": "/behaviors/0/properties/ResistsByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-rosegold-*": {
                 "PiercingAttack": 4,
@@ -42,6 +44,7 @@
         "file": "armory:itemtypes/armor/plate.json",
         "op": "addmerge",
         "path": "/durabilityByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-rosegold-*": 800,
             "*-sterlingsilver-*": 2000,

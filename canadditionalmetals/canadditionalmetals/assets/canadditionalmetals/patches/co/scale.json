@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/armor/scale.json",
         "op": "addeach",
         "path": "/variantgroups/2/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/armor/scale.json",
         "op": "addmerge",
         "path": "/behaviors/0/properties/ResistsByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel-*": {
                 "PiercingAttack": 6,
@@ -32,6 +34,7 @@
         "file": "armory:itemtypes/armor/scale.json",
         "op": "addmerge",
         "path": "/durabilityByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel-*": 14300,
             "*-redsteel-*": 17400,

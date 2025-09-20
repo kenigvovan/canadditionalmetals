@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/weapons/shield-light.json",
         "op": "addeach",
         "path": "/variantgroups/2/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/shield-light.json",
         "op": "addmerge",
         "path": "/attributes/OffHandStanceByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "CanAttack": false,
@@ -181,6 +183,7 @@
         "file": "armory:itemtypes/weapons/shield-light.json",
         "op": "addmerge",
         "path": "/shapeByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": { "base": "shields/buckler" },
             "*-redsteel": { "base": "shields/buckler" },
@@ -191,6 +194,7 @@
         "file": "armory:itemtypes/weapons/shield-light.json",
         "op": "addmerge",
         "path": "/guiTransformByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "translation": {
@@ -252,6 +256,7 @@
         "file": "armory:itemtypes/weapons/shield-light.json",
         "op": "addmerge",
         "path": "/tpHandTransformByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "translation": {
@@ -313,6 +318,7 @@
         "file": "armory:itemtypes/weapons/shield-light.json",
         "op": "addmerge",
         "path": "/tpOffHandTransformByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "translation": {
@@ -374,6 +380,7 @@
         "file": "armory:itemtypes/weapons/shield-light.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 4000,
             "*-redsteel": 4300,

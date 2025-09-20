@@ -8,7 +8,7 @@
         },
         {
             "type": "item",
-            "code": "canadditionalmetals:ingot-rosegold",
+            "code": "game:ingot-rosegold",
             "minratio": 0.1,
             "maxratio": 0.15
         },

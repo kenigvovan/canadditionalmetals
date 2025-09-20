@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/armor/brigandine.json",
         "op": "addeach",
         "path": "/variantgroups/2/states/-",
-        "value": [ "blacksteel", "redsteel", "bluesteel" ]
+        "value": [ "blacksteel", "redsteel", "bluesteel" ],
+        "dependsOn": [ { "modid": "armory" } ]
     },
     {
         "file": "armory:itemtypes/armor/brigandine.json",
         "op": "addmerge",
         "path": "/behaviors/0/properties/ResistsByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel-*": {
                 "PiercingAttack": 7,
@@ -32,6 +34,7 @@
         "file": "armory:itemtypes/armor/brigandine.json",
         "op": "addmerge",
         "path": "/durabilityByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel-*": 6700,
             "*-redsteel-*": 7600,

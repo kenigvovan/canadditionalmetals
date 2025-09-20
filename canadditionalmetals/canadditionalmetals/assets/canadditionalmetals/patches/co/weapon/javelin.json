@@ -3,18 +3,21 @@
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "addeach",
         "path": "/variantgroups/1/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "frompath": "/behaviors/1/properties/stats/DamageStatsByType/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "addmerge",
         "path": "/behaviors/1/properties/stats/DamageStatsByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "PiercingAttack",
@@ -34,18 +37,21 @@
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "path": "/behaviors/1/properties/stats/DamageStatsByType/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     },
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "frompath": "/attributes/OneHandedStance/Attack/DamageTypes/0/DamageByType/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "addmerge",
         "path": "/attributes/OneHandedStance/Attack/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "PiercingAttack",
@@ -68,18 +74,21 @@
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "path": "/attributes/OneHandedStance/Attack/DamageTypes/0/DamageByType/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     },
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "frompath": "/attributes/ThrowAttack/DamageTierByType/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "addmerge",
         "path": "/attributes/ThrowAttack/DamageTierByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 7,
             "*-redsteel": 8,
@@ -90,19 +99,22 @@
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "path": "/attributes/ThrowAttack/DamageTierByType/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     },
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 580,
             "*-redsteel": 760,
@@ -113,6 +125,7 @@
         "file": "armory:itemtypes/weapons/javelin.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

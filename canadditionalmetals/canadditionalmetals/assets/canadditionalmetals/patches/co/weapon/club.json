@@ -3,12 +3,14 @@
         "file": "armory:itemtypes/weapons/club.json",
         "op": "addeach",
         "path": "/variantgroups/1/states/-",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": [ "blacksteel", "redsteel", "bluesteel" ]
     },
     {
         "file": "armory:itemtypes/weapons/club.json",
         "op": "addmerge",
         "path": "/attributes/OneHandedStance/Attack/DamageTypesByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": [
                 {
@@ -55,6 +57,7 @@
         "file": "armory:itemtypes/weapons/club.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/Attack/DamageTypesByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": [
                 {
@@ -101,12 +104,14 @@
         "file": "armory:itemtypes/weapons/club.json",
         "op": "move",
         "frompath": "/attributes/TwoHandedStance/AttackAnimationByType/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
     {
         "file": "armory:itemtypes/weapons/club.json",
         "op": "addmerge",
         "path": "/attributes/TwoHandedStance/AttackAnimationByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacsteel": { "Main": [ "armory:club-strike-2h-3", "armory:club-strike-2h-4" ] },
             "*-redsteel": { "Main": [ "armory:club-strike-2h-3", "armory:club-strike-2h-4" ] },
@@ -117,12 +122,14 @@
         "file": "armory:itemtypes/weapons/club.json",
         "op": "move",
         "path": "/attributes/TwoHandedStance/AttackAnimationByType/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     },
     {
         "file": "armory:itemtypes/weapons/club.json",
         "op": "addmerge",
         "path": "/shapeByType",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-redsteel": { "base": "blunt/polehammer-steel" },
             "*-blacksteel": { "base": "blunt/polehammer-steel" },
@@ -133,13 +140,15 @@
         "file": "armory:itemtypes/weapons/club.json",
         "op": "move",
         "frompath": "/durabilitybytype/*",
-        "path": "/temp"
+        "path": "/temp",
+        "dependsOn": [ { "modid": "armory" } ]
     },
 
     {
         "file": "armory:itemtypes/weapons/club.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
+        "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": 1200,
             "*-redsteel": 1600,
@@ -150,6 +159,7 @@
         "file": "armory:itemtypes/weapons/club.json",
         "op": "move",
         "path": "/durabilitybytype/*",
+        "dependsOn": [ { "modid": "armory" } ],
         "frompath": "/temp"
     }
 ] 

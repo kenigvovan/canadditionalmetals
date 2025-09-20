@@ -1,0 +1,26 @@
+[
+    {
+        "file": "canadditionalmetals:recipes/grid/armory/weapons/light-shields.json",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "canadditionalmetals:recipes/grid/armory/weapons/colored-light-shields.json",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "armory",
+                "invert": true
+            }
+        ]
+    }
+] 

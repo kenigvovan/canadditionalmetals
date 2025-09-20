@@ -8,7 +8,7 @@
         },
         {
             "type": "item",
-            "code": "canadditionalmetals:ingot-sterlingsilver",
+            "code": "game:ingot-sterlingsilver",
             "minratio": 0.1,
             "maxratio": 0.15
         },
