@@ -4,7 +4,7 @@
         "op": "addmerge",
         "path": "/textures",
         "value": {
-            "weakredsteel": { "base": "canadditionalmetals:block/metal/ingot/rosegold" }
+            "rosegold": { "base": "canadditionalmetals:block/metal/ingot/rosegold" }
         }
     },
     {
@@ -52,8 +52,8 @@
         "op": "addmerge",
         "path": "/attributesByType",
         "value": {
-            "workitem-weakredsteel": {
-                "rosegold": 1
+            "workitem-rosegold": {
+                "requiresAnvilTier": 2
             }
         }
     },

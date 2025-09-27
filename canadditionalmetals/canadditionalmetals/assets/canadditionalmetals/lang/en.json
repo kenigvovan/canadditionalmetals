@@ -2,11 +2,9 @@
     "game:item-ingot-weakredsteel": "Weak red steel ingot",
     "game:item-ingot-weakbluesteel": "Weak blue steel ingot",
     "game:item-ingot-weakblacksteel": "Weak black steel ingot",
-
     "game:item-ingot-redsteel": "Red steel ingot",
     "game:item-ingot-bluesteel": "Blue steel ingot",
     "game:item-ingot-blacksteel": "Black steel ingot",
-
     "game:item-ingot-sterlingsilver": "Sterling silver ingot",
     "game:item-ingot-rosegold": "Rose gold ingot",
 
@@ -18,6 +16,16 @@
     "game:item-metalbit-bluesteel": "Blue steel bits",
     "game:item-metalbit-sterlingsilver": "Sterling silver bits",
     "game:item-metalbit-rosegold": "Rose gold bits",
+
+    "game:item-workitem-weakredsteel": "Work item (Weak red steel)",
+    "game:item-workitem-weakbluesteel": "Work item (Weak blue steel)",
+    "game:item-workitem-weakblacksteel": "Work item (Weak black steel)",
+    "game:item-workitem-redsteel": "Work item (Red steel)",
+    "game:item-workitem-blacksteel": "Work item (Black steel)",
+    "game:item-workitem-bluesteel": "Work item (Blue steel)",
+    "game:item-workitem-sterlingsilver": "Work item (Sterling silver)",
+    "game:item-workitem-rosegold": "Work item (Rose gold)",
+
     "game:block-anvil-blacksteel": "Black steel anvil",
     "game:block-anvil-redsteel": "Red steel anvil",
     "game:block-anvil-bluesteel": "Blue steel anvil",
@@ -31,6 +39,15 @@
     "material-sterlingsilver": "Sterling silver",
     "material-rosegold": "Rose gold",
 
+    "game:material-weakredsteel": "Weak red steel",
+    "game:material-weakbluesteel": "Weak blue steel",
+    "game:material-weakblacksteel": "Weak black steel",
+    "game:material-redsteel": "Red steel",
+    "game:material-bluesteel": "Blue steel",
+    "game:material-blacksteel": "Black steel",
+    "game:material-sterlingsilver": "Sterling silver",
+    "game:material-rosegold": "Rose gold",
+
     "game:block-anvilpart-base-redsteel": "Anvil base (Red steel)",
     "game:block-anvilpart-top-redsteel": "Anvil top (Red steel)",
 
@@ -39,6 +56,51 @@
 
     "game:block-anvilpart-base-bluesteel": "Anvil base (Blue steel)",
     "game:block-anvilpart-top-bluesteel": "Anvil top (Blue steel)",
+
+    "game:block-metalsheet-blacksteel-down": "Black steel sheet",
+    "game:block-metalsheet-redsteel-down": "Red steel sheet",
+    "game:block-metalsheet-bluesteel-down": "Blue steel sheet",
+    "game:block-metalsheet-rosegold-down": "Rose gold sheet",
+    "game:block-metalsheet-sterlingsilver-down": "Sterling silver sheet",
+    "game:block-metalsheet-weakblacksteel-down": "Weak black steel sheet",
+    "game:block-metalsheet-weakredsteel-down": "Weak red steel sheet",
+    "game:block-metalsheet-weakbluesteel-down": "Weak blue steel sheet",
+
+    "game:block-metalblock-new-plain-blacksteel": "Black steel block",
+    "game:block-metalblock-new-plain-redsteel": "Red steel block",
+    "game:block-metalblock-new-plain-bluesteel": "Blue steel block",
+    "game:block-metalblock-new-plain-rosegold": "Rose gold block",
+    "game:block-metalblock-new-plain-sterlingsilver": "Sterling silver block",
+    "game:block-metalblock-new-plain-weakblacksteel": "Weak black steel block",
+    "game:block-metalblock-new-plain-weakredsteel": "Weak red steel block",
+    "game:block-metalblock-new-plain-weakbluesteel": "Weak blue steel block",
+
+    "game:block-metalblock-corroded-plain-blacksteel": "Corroded black steel block",
+    "game:block-metalblock-corroded-plain-redsteel": "Corroded red steel block",
+    "game:block-metalblock-corroded-plain-bluesteel": "Corroded blue steel block",
+    "game:block-metalblock-corroded-plain-rosegold": "Corroded rose gold block",
+    "game:block-metalblock-corroded-plain-sterlingsilver": "Corroded sterling silver block",
+    "game:block-metalblock-corroded-plain-weakblacksteel": "Corroded weak black steel block",
+    "game:block-metalblock-corroded-plain-weakredsteel": "Corroded weak red steel block",
+    "game:block-metalblock-corroded-plain-weakbluesteel": "Corroded weak blue steel block",
+
+    "game:block-metalblock-new-riveted-blacksteel": "Black steel block (riveted)",
+    "game:block-metalblock-new-riveted-redsteel": "Red steel block (riveted)",
+    "game:block-metalblock-new-riveted-bluesteel": "Blue steel block (riveted)",
+    "game:block-metalblock-new-riveted-rosegold": "Rose gold block (riveted)",
+    "game:block-metalblock-new-riveted-sterlingsilver": "Sterling silver block (riveted)",
+    "game:block-metalblock-new-riveted-weakblacksteel": "Weak black steel block (riveted)",
+    "game:block-metalblock-new-riveted-weakredsteel": "Weak red steel block (riveted)",
+    "game:block-metalblock-new-riveted-weakbluesteel": "Weak blue steel block (riveted)",
+
+    "game:block-metalblock-corroded-riveted-blacksteel": "Corroded black steel block (riveted)",
+    "game:block-metalblock-corroded-riveted-redsteel": "Corroded red steel block (riveted)",
+    "game:block-metalblock-corroded-riveted-bluesteel": "Corroded blue steel block (riveted)",
+    "game:block-metalblock-corroded-riveted-rosegold": "Corroded rose gold block (riveted)",
+    "game:block-metalblock-corroded-riveted-sterlingsilver": "Corroded sterling silver block (riveted)",
+    "game:block-metalblock-corroded-riveted-weakblacksteel": "Corroded weak black steel block (riveted)",
+    "game:block-metalblock-corroded-riveted-weakredsteel": "Corroded weak red steel block (riveted)",
+    "game:block-metalblock-corroded-riveted-weakbluesteel": "Corroded weak blue steel block (riveted)",
 
     "game:item-axe-felling-redsteel": "Red steel axe",
     "game:item-axe-felling-blacksteel": "Black steel axe",
@@ -129,9 +191,9 @@
     "game:item-shovel-blacksteel": "Black steel shovel",
     "game:item-shovel-bluesteel": "Blue steel shovel",
 
-    "game:item-shovelhead-redsteel": "Red steel shovel head",
-    "game:item-shovelhead-blacksteel": "Black steel shovel head",
-    "game:item-shovelhead-bluesteel": "Blue steel shovel head",
+    "item-shovelhead-redsteel": "Red steel shovel head",
+    "item-shovelhead-blacksteel": "Black steel shovel head",
+    "item-shovelhead-bluesteel": "Blue steel shovel head",
 
 
     "game:item-armor-head-plate-redsteel": "Plate helmet (Red steel)",
@@ -198,27 +260,51 @@
     "game:item-armor-body-scale-bluesteel": "Scale body armor (Blue steel)",
     "game:item-armor-legs-scale-bluesteel": "Scale leg armor (Blue steel)",
 
+    "game:item-boss-blacksteel": "Black steel boss",
+    "game:item-boss-redsteel": "Red steel boss",
+    "game:item-boss-bluesteel": "Blue steel boss",
+
     "game:item-metalchain-blacksteel": "Black steel chain",
     "game:item-metalchain-redsteel": "Red steel chain",
     "game:item-metalchain-bluesteel": "Blue steel chain",
     "game:item-metalchain-rosegold": "Rose gold chain",
     "game:item-metalchain-sterlingsilver": "Sterling silver chain",
+    "game:item-metalchain-weakblacksteel": "Weak black steel chain",
+    "game:item-metalchain-weakredsteel": "Weak red steel chain",
+    "game:item-metalchain-weakbluesteel": "Weak blue steel chain",
 
     "game:item-metalplate-blacksteel": "Black steel plate",
     "game:item-metalplate-redsteel": "Red steel plate",
     "game:item-metalplate-bluesteel": "Blue steel plate",
     "game:item-metalplate-rosegold": "Rose gold plate",
     "game:item-metalplate-sterlingsilver": "Sterling silver plate",
-
     "game:item-metalplate-weakblacksteel": "Weak black steel plate",
     "game:item-metalplate-weakredsteel": "Weak red steel plate",
     "game:item-metalplate-weakbluesteel": "Weak blue steel plate",
+
+    "game:item-metalscale-blacksteel": "Black steel scales",
+    "game:item-metalscale-redsteel": "Red steel scales",
+    "game:item-metalscale-bluesteel": "Blue steel scales",
+    "game:item-metalscale-rosegold": "Rose gold scales",
+    "game:item-metalscale-sterlingsilver": "Sterling silver scales",
+    "game:item-metalscale-weakblacksteel": "Weak black steel scales",
+    "game:item-metalscale-weakredsteel": "Weak red steel scales",
+    "game:item-metalscale-weakbluesteel": "Weak blue steel scales",
 
     "game:item-metallamellae-blacksteel": "Black steel lamellae",
     "game:item-metallamellae-redsteel": "Red steel  lamellae",
     "game:item-metallamellae-bluesteel": "Blue steel lamellae",
     "game:item-metallamellae-rosegold": "Rose gold lamellae",
     "game:item-metallamellae-sterlingsilver": "Sterling silver lamellae",
+    "game:item-metallamellae-weakblacksteel": "Weak black steel lamellae",
+    "game:item-metallamellae-weakredsteel": "Weak red steel lamellae",
+    "game:item-metallamellae-weakbluesteel": "Weak blue steel lamellae",
+
+    "game:item-metalnailsandstrips-blacksteel": "Nails and strips (Black steel)",
+    "game:item-metalnailsandstrips-redsteel": "Nails and strips (Red steel)",
+    "game:item-metalnailsandstrips-bluesteel": "Nails and strips (Blue steel)",
+    "game:item-metalnailsandstrips-rosegold": "Nails and strips (Rose gold)",
+    "game:item-metalnailsandstrips-sterlingsilver": "Nails and strips (Sterling silver)",
 
     "game:item-bladehead-falx-blacksteel": "Black steel falx head",
     "game:item-bladehead-falx-redsteel": "Red steel falx head",

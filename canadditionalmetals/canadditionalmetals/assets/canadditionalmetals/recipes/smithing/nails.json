@@ -1,0 +1,31 @@
+[
+{
+	ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["sterlingsilver", "rosegold", "blacksteel", "redsteel", "bluesteel"] },
+	pattern: [[
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+	]],
+	name: "4 sets of nails",
+	output: { type: "item", code: "game:metalnailsandstrips-{metal}", stacksize: 4  }
+},
+{
+	ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["sterlingsilver", "rosegold", "blacksteel", "redsteel", "bluesteel"] },
+	pattern: [[
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##",
+		"##_##_##"
+	]],
+	name: "8 sets of nails",
+	output: { type: "item", code: "game:metalnailsandstrips-{metal}", stacksize: 8  }
+}
+]

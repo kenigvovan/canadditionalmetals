@@ -4,7 +4,7 @@
         "op": "addmerge",
         "path": "/textures",
         "value": {
-            "weakblacksteel": { "base": "canadditionalmetals:block/metal/ingot/weakredsteel" }
+            "weakblacksteel": { "base": "canadditionalmetals:block/metal/ingot/weakblacksteel" }
         }
     },
     {

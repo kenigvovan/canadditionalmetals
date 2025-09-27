@@ -1,20 +1,21 @@
 {
-    ingredients: [
-        {
-            "type": "item",
-            "code": "game:ingot-silver",
-            "minratio": 0.6,
-            "maxratio": 0.8
-        },
-        {
-            "type": "item",
-            "code": "game:ingot-copper",
-            "minratio": 0.2,
-            "maxratio": 0.4
-        }
-    ],
-    output: {
-        "type": "item",
-        "code": "canadditionalmetals:ingot-sterlingsilver"
-    }
+    	ingredients: 
+	[
+        	{
+			type: "item",
+			code: "game:ingot-silver",
+			minratio: 0.6,
+			maxratio: 0.8
+		},
+		{
+			type: "item",
+			code: "game:ingot-copper",
+			minratio: 0.2,
+			maxratio: 0.4
+		}
+	],
+	output: {
+		type: "item",
+		code: "game:ingot-sterlingsilver"
+	}
 }
