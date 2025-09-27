@@ -706,7 +706,13 @@
             "armor-legs-plate-sterlingsilver": 4000,
 
             "armor-head-chain-rosegold": 1000,
-            "armor-head-chain-sterlingsilver": 1400
+            "armor-head-chain-sterlingsilver": 1400,
+            "armor-head-brigandine-blacksteel": 6700,
+            "armor-head-brigandine-redsteel": 8800,
+            "armor-head-brigandine-bluesteel": 9100,
+            "armor-body-brigandine-blacksteel": 20300,
+            "armor-body-brigandine-redsteel": 26400,
+            "armor-body-brigandine-bluesteel": 27000
 
         }
     },

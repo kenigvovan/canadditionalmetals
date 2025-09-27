@@ -53,6 +53,15 @@ namespace canadditionalmetals.src
             __result = workItemStack.Clone();
             return false;
         }
+        public static bool Prefix_ItemIngot_GetHelveWorkableMode(ItemIngot __instance, ItemStack stack, BlockEntityAnvil beAnvil, ref EnumHelveWorkableMode __result)
+        {
+            if (stack == null || stack.Collectible.Code.Path.StartsWith("ingot-weak"))
+            {
+                __result = EnumHelveWorkableMode.FullyWorkable;
+                return false;
+            }
+            return true;
+        }
         private static void CreateVoxelsFromIronBloom(ItemIngot __instance, ref byte[,,] voxels, ICoreAPI api)
         {
             ItemIngot.CreateVoxelsFromIngot(api, ref voxels, false);

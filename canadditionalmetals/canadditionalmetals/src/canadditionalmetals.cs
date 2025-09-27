@@ -23,13 +23,13 @@ namespace canadditionalmetals.src
 
             harmonyInstance = new Harmony(harmonyID);
             harmonyInstance.Patch(typeof(ItemIngot).GetMethod("TryPlaceOn"), prefix: new HarmonyMethod(typeof(harmPatch).GetMethod("Prefix_ItemIngot_TryPlaceOn")));
-            
+            harmonyInstance.Patch(typeof(ItemIngot).GetMethod("GetHelveWorkableMode"), prefix: new HarmonyMethod(typeof(harmPatch).GetMethod("Prefix_ItemIngot_GetHelveWorkableMode")));
             //harmonyInstance.Patch(typeof(BlockAnvil).GetMethod("OnLoaded"), prefix: new HarmonyMethod(typeof(harmPatch).GetMethod("Prefix_ItemIngot_TryPlaceOn")));
         }
 
         public override void StartServerSide(ICoreServerAPI api)
         {
-            api.Event.ServerRunPhase(EnumServerRunPhase.AssetsFinalize, () =>
+            /*api.Event.ServerRunPhase(EnumServerRunPhase.AssetsFinalize, () =>
             {
                 var c = api.ModLoader.GetModSystem<SurvivalCoreSystem>(true).metalsByCode;
                 //if (!c.TryGetValue("blacksteel", out var _))
@@ -49,12 +49,12 @@ namespace canadditionalmetals.src
                         c.Add(metal.Code.Path, metal);
                     }
                 }
-            });
+            });*/
         }
 
         public override void StartClientSide(ICoreClientAPI api)
         {
-            api.Event.LevelFinalize += () =>
+            /*api.Event.LevelFinalize += () =>
             {
                 var c = api.ModLoader.GetModSystem<SurvivalCoreSystem>(true).metalsByCode;
                 //if (!c.TryGetValue("blacksteel", out var _))
@@ -74,7 +74,7 @@ namespace canadditionalmetals.src
                         c.Add(metal.Code.Path, metal);
                     }
                 }
-            };
+            };*/
         }
 
     }
