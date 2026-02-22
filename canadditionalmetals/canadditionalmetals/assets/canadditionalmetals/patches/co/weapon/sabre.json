@@ -137,14 +137,6 @@
     },
     {
         "file": "armory:itemtypes/weapons/sabre.json",
-        "op": "move",
-        "frompath": "/durabilitybytype/*",
-        "path": "/temp",
-        "dependsOn": [ { "modid": "armory" } ]
-    },
-
-    {
-        "file": "armory:itemtypes/weapons/sabre.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
         "dependsOn": [ { "modid": "armory" } ],
@@ -153,12 +145,5 @@
             "*-redsteel": 3100,
             "*-bluesteel": 3300
         }
-    },
-    {
-        "file": "armory:itemtypes/weapons/sabre.json",
-        "op": "move",
-        "path": "/durabilitybytype/*",
-        "dependsOn": [ { "modid": "armory" } ],
-        "frompath": "/temp"
     }
 ] 

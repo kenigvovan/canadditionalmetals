@@ -63,14 +63,6 @@
     },
     {
         "file": "armory:itemtypes/weapons/axe-long.json",
-        "op": "move",
-        "frompath": "/durabilitybytype/*",
-        "path": "/temp",
-        "dependsOn": [ { "modid": "armory" } ]
-    },
-
-    {
-        "file": "armory:itemtypes/weapons/axe-long.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
         "dependsOn": [ { "modid": "armory" } ],
@@ -79,12 +71,5 @@
             "*-redsteel": 3400,
             "*-bluesteel": 3900
         }
-    },
-    {
-        "file": "armory:itemtypes/weapons/axe-long.json",
-        "op": "move",
-        "path": "/durabilitybytype/*",
-        "dependsOn": [ { "modid": "armory" } ],
-        "frompath": "/temp"
     }
 ] 

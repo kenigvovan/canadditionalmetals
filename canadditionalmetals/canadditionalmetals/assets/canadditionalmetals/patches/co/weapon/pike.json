@@ -50,15 +50,6 @@
             ]
         }
     },
-
-    {
-        "file": "armory:itemtypes/weapons/pike.json",
-        "op": "move",
-        "frompath": "/durabilitybytype/*",
-        "path": "/temp",
-        "dependsOn": [ { "modid": "armory" } ]
-    },
-
     {
         "file": "armory:itemtypes/weapons/pike.json",
         "op": "addmerge",
@@ -69,12 +60,5 @@
             "*-redsteel": 3100,
             "*-bluesteel": 3300
         }
-    },
-    {
-        "file": "armory:itemtypes/weapons/pike.json",
-        "op": "move",
-        "path": "/durabilitybytype/*",
-        "dependsOn": [ { "modid": "armory" } ],
-        "frompath": "/temp"
     }
 ] 

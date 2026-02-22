@@ -101,7 +101,7 @@
     {
         "file": "armory:itemtypes/weapons/halberd.json",
         "op": "addmerge",
-        "path": "/attributes/TwoHandedStance/DirectionalAttacks/Bottom/DamageTypes/1/DamageByType",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/Bottom/DamageTypes/0/DamageByType",
         "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
@@ -123,14 +123,6 @@
     },
     {
         "file": "armory:itemtypes/weapons/halberd.json",
-        "op": "move",
-        "frompath": "/durabilitybytype/*",
-        "path": "/temp",
-        "dependsOn": [ { "modid": "armory" } ]
-    },
-
-    {
-        "file": "armory:itemtypes/weapons/halberd.json",
         "op": "addmerge",
         "path": "/durabilitybytype",
         "dependsOn": [ { "modid": "armory" } ],
@@ -139,12 +131,5 @@
             "*-redsteel": 1500,
             "*-bluesteel": 1900
         }
-    },
-    {
-        "file": "armory:itemtypes/weapons/halberd.json",
-        "op": "move",
-        "path": "/durabilitybytype/*",
-        "dependsOn": [ { "modid": "armory" } ],
-        "frompath": "/temp"
     }
 ] 

@@ -9,58 +9,98 @@
                 "flatDamageReduction": 1.85,
                 "highDamageTierResistant": true,
                 "protectionTier": 5
-            }
-        }
-    },
-    {
-        "file": "game:itemtypes/wearable/seraph/armor.json",
-        "op": "addmerge",
-        "path": "/attributes/protectionModifiersByType",
-        "value": {
+            },
             "armor-*-plate-redsteel": {
                 "relativeProtection": 0.985,
                 "flatDamageReduction": 1.95,
                 "highDamageTierResistant": true,
                 "protectionTier": 6
-            }
-        }
-    },
-    {
-        "file": "game:itemtypes/wearable/seraph/armor.json",
-        "op": "addmerge",
-        "path": "/attributes/protectionModifiersByType",
-        "value": {
+            },
             "armor-*-plate-bluesteel": {
                 "relativeProtection": 0.985,
                 "flatDamageReduction": 1.95,
                 "highDamageTierResistant": true,
                 "protectionTier": 6
-            }
-        }
-    },
-    {
-        "file": "game:itemtypes/wearable/seraph/armor.json",
-        "op": "addmerge",
-        "path": "/attributes/protectionModifiersByType",
-        "value": {
+            },
             "armor-*-plate-rosegold": {
                 "relativeProtection": 0.9,
                 "flatDamageReduction": 1.5,
                 "highDamageTierResistant": true,
                 "protectionTier": 1
-            }
-        }
-    },
-    {
-        "file": "game:itemtypes/wearable/seraph/armor.json",
-        "op": "addmerge",
-        "path": "/attributes/protectionModifiersByType",
-        "value": {
+            },
             "armor-*-plate-sterlingsilver": {
                 "relativeProtection": 0.92,
                 "flatDamageReduction": 1.5,
                 "highDamageTierResistant": true,
                 "protectionTier": 2
+            },
+            "armor-*-brigandine-blacksteel": {
+                "relativeProtection": 0.85,
+                "flatDamageReduction": 1.35,
+                "highDamageTierResistant": true,
+                "protectionTier": 5
+            },
+            "armor-*-brigandine-redsteel": {
+                "relativeProtection": 0.86,
+                "flatDamageReduction": 1.4,
+                "highDamageTierResistant": true,
+                "protectionTier": 6
+            },
+            "armor-*-brigandine-bluesteel": {
+                "relativeProtection": 0.86,
+                "flatDamageReduction": 1.4,
+                "highDamageTierResistant": true,
+                "protectionTier": 6
+            },
+
+            "armor-*-chain-rosegold": {
+                "relativeProtection": 0.82,
+                "flatDamageReduction": 1.2,
+                "highDamageTierResistant": true,
+                "protectionTier": 1
+            },
+            "armor-*-chain-sterlingsilver": {
+                "relativeProtection": 0.82,
+                "flatDamageReduction": 1.2,
+                "highDamageTierResistant": true,
+                "protectionTier": 2
+            },
+            "armor-*-chain-blacksteel": {
+                "relativeProtection": 0.87,
+                "flatDamageReduction": 1.45,
+                "highDamageTierResistant": true,
+                "protectionTier": 5
+            },
+            "armor-*-chain-redsteel": {
+                "relativeProtection": 0.88,
+                "flatDamageReduction": 1.5,
+                "highDamageTierResistant": true,
+                "protectionTier": 6
+            },
+            "armor-*-chain-bluesteel": {
+                "relativeProtection": 0.88,
+                "flatDamageReduction": 1.5,
+                "highDamageTierResistant": true,
+                "protectionTier": 6
+            },
+
+            "armor-*-scale-blacksteel": {
+                "relativeProtection": 0.91,
+                "flatDamageReduction": 1.65,
+                "highDamageTierResistant": true,
+                "protectionTier": 5
+            },
+            "armor-*-scale-redsteel": {
+                "relativeProtection": 0.92,
+                "flatDamageReduction": 1.7,
+                "highDamageTierResistant": true,
+                "protectionTier": 6
+            },
+            "armor-*-scale-bluesteel": {
+                "relativeProtection": 0.92,
+                "flatDamageReduction": 1.7,
+                "highDamageTierResistant": true,
+                "protectionTier": 6
             }
         }
     },
@@ -76,37 +116,22 @@
         "path": "/attributes/statModifiersByType",
         "value": {
             "armor-*-plate-blacksteel": {
-                "rangedWeaponsAcc": -0.4,
-                "rangedWeaponsSpeed": -0.3,
+                "rangedWeaponsAcc": -0.13,
+                "rangedWeaponsSpeed": -0.13,
                 "walkSpeed": -0.15,
                 "healingeffectivness": -0.3334,
                 "hungerrate": 0.26
-            }
-        }
-    },
-
-    {
-        "file": "game:itemtypes/wearable/seraph/armor.json",
-        "op": "addmerge",
-        "path": "/attributes/statModifiersByType",
-        "value": {
+            },
             "armor-*-plate-redsteel": {
-                "rangedWeaponsAcc": -0.45,
-                "rangedWeaponsSpeed": -0.35,
+                "rangedWeaponsAcc": -0.15,
+                "rangedWeaponsSpeed": -0.15,
                 "walkSpeed": -0.14,
                 "healingeffectivness": -0.3334,
                 "hungerrate": 0.25
-            }
-        }
-    },
-    {
-        "file": "game:itemtypes/wearable/seraph/armor.json",
-        "op": "addmerge",
-        "path": "/attributes/statModifiersByType",
-        "value": {
+            },
             "armor-*-plate-bluesteel": {
-                "rangedWeaponsAcc": -0.45,
-                "rangedWeaponsSpeed": -0.35,
+                "rangedWeaponsAcc": -0.17,
+                "rangedWeaponsSpeed": -0.17,
                 "walkSpeed": -0.16,
                 "healingeffectivness": -0.3334,
                 "hungerrate": 0.29
@@ -128,7 +153,18 @@
             "armor-*-plate-redsteel": 6800,
             "armor-*-plate-bluesteel": 7150,
             "armor-*-plate-rosegold": 410,
-            "armor-*-plate-sterlingsilver": 1000
+            "armor-*-plate-sterlingsilver": 1000,
+            "armor-*-brigandine-blacksteel": 3400,
+            "armor-*-brigandine-redsteel": 4200,
+            "armor-*-brigandine-bluesteel": 4240,
+            "armor-*-chain-blacksteel": 2600,
+            "armor-*-chain-redsteel": 3300,
+            "armor-*-chain-bluesteel": 3400,
+            "armor-*-chain-rosegold": 530,
+            "armor-*-chain-sterlingsilver": 750,
+            "armor-*-scale-blacksteel": 4500,
+            "armor-*-scale-redsteel": 5900,
+            "armor-*-scale-bluesteel": 6150
         }
     }
 ]

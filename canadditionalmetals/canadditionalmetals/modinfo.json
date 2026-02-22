@@ -6,8 +6,8 @@
         "KenigVovan"
     ],
     "description": "Adds new alloys",
-    "version": "1.0.9",
-    "contributors": [ "Anhrak" ],
+    "version": "1.0.12",
+    "contributors": [ "Uri" ],
     "dependencies": {
         "game": ""
     }

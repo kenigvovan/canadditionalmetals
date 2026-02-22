@@ -9,34 +9,72 @@
     {
         "file": "armory:itemtypes/weapons/quarterstaff.json",
         "op": "addmerge",
-        "path": "/attributes/TwoHandedStance/Attack/DamageTypes/0/DamageByType",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/Top/DamageTypes/0/DamageByType",
         "dependsOn": [ { "modid": "armory" } ],
         "value": {
             "*-blacksteel": {
                 "DamageType": "BluntAttack",
                 "Tier": 7,
-                "Damage": 5.5
+                "Damage": 8.5
             },
             "*-redsteel": {
                 "DamageType": "BluntAttack",
                 "Tier": 8,
-                "Damage": 6
+                "Damage": 9
             },
             "*-bluesteel": {
                 "DamageType": "BluntAttack",
                 "Tier": 8,
-                "Damage": 6
+                "Damage": 9
             }
         }
     },
     {
         "file": "armory:itemtypes/weapons/quarterstaff.json",
-        "op": "move",
-        "frompath": "/durabilitybytype/*",
-        "path": "/temp",
-        "dependsOn": [ { "modid": "armory" } ]
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/BottomRight/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 7,
+                "Damage": 6.5
+            },
+            "*-redsteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 7
+            },
+            "*-bluesteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 7
+            }
+        }
     },
-
+    {
+        "file": "armory:itemtypes/weapons/quarterstaff.json",
+        "op": "addmerge",
+        "path": "/attributes/TwoHandedStance/DirectionalAttacks/BottomLeft/DamageTypes/0/DamageByType",
+        "dependsOn": [ { "modid": "armory" } ],
+        "value": {
+            "*-blacksteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 7,
+                "Damage": 6.5
+            },
+            "*-redsteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 7
+            },
+            "*-bluesteel": {
+                "DamageType": "BluntAttack",
+                "Tier": 8,
+                "Damage": 7
+            }
+        }
+    },
     {
         "file": "armory:itemtypes/weapons/quarterstaff.json",
         "op": "addmerge",
@@ -47,12 +85,5 @@
             "*-redsteel": 2700,
             "*-bluesteel": 3100
         }
-    },
-    {
-        "file": "armory:itemtypes/weapons/quarterstaff.json",
-        "op": "move",
-        "path": "/durabilitybytype/*",
-        "dependsOn": [ { "modid": "armory" } ],
-        "frompath": "/temp"
     }
 ] 

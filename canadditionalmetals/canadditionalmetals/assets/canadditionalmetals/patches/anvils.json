@@ -13,11 +13,11 @@
         "value": "bluesteel"
 
     },
-    {
-        "file": "game:blocktypes/metal/anvil.json",
-        "op": "addmerge",
-        "path": "/variantgroups/0/states/-",
-        "value": "blacksteel"
+  {
+    "file": "game:blocktypes/metal/anvil.json",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states/-",
+    "value": "blacksteel"
 
-    }
+  }
 ]
