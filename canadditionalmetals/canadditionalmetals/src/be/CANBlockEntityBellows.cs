@@ -373,7 +373,7 @@ namespace canadditionalmetals.src.be
             //lanternMeshes.Clear();
             string orient = block.LastCodePart(0);
             this.tmpAssets["tinbronze"] = new AssetLocation("game:block/metal/sheet/" + this.type + "1.png");
-            this.tmpAssets["plain"] = new AssetLocation("canadditionalmetals:block/plain.png");
+            this.tmpAssets["plain"] = new AssetLocation("canadditionalmetals:block/chromium.png");
             this.tmpAssets["inside"] = new AssetLocation("canadditionalmetals:block/inside.png");
 
             if (lanternMeshes.TryGetValue(string.Concat(new string[]

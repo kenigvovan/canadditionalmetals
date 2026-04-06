@@ -83,7 +83,7 @@ namespace canadditionalmetals.src.be
         {
             get
             {
-                return Lang.Get("Firepit", Array.Empty<object>());
+                return Lang.Get("Bloomery", Array.Empty<object>());
             }
         }
         public override InventoryBase Inventory

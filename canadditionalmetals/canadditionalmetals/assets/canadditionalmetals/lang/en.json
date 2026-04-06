@@ -184,6 +184,7 @@
 
   "block-bloomery-extinct": "Bloomery (Extinguished)",
   "block-bloomery-lit": "Bloomery (Lit)",
+  "block-bloomery-cold": "Bloomery (Cold)",
 
   "block-bellows-*": "Bellows",
 
@@ -508,5 +509,9 @@
   "armory:item-poleaxe-*-redsteel": "Poleaxe (Red Steel)",
   "armory:item-poleaxe-*-bluesteel": "Poleaxe (Blue Steel)",
   "game:block-anvilpart-base-steel": "Anvil base (Steel)",
-  "game:block-anvilpart-top-steel": "Anvil top (Steel)"
+  "game:block-anvilpart-top-steel": "Anvil top (Steel)",
+
+  "blockhelp-canbloomery-ignite": "Ignite",
+  "blockhelp-canbloomery-refuel": "Refuel",
+  "Bloomery": "Bloomery"
 }

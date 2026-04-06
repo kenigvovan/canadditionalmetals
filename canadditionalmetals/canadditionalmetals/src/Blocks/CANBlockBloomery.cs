@@ -67,7 +67,7 @@ namespace canadditionalmetals.src.Blocks
             }
 
 
-            interactions = ObjectCacheUtil.GetOrCreate(api, "firepitInteractions", () =>
+            interactions = ObjectCacheUtil.GetOrCreate(api, "canbloomeryInteractions", () =>
             {
                 List<ItemStack> canIgniteStacks = BlockBehaviorCanIgnite.CanIgniteStacks(api, true);
 
@@ -75,7 +75,7 @@ namespace canadditionalmetals.src.Blocks
                 {
                     new WorldInteraction()
                     {
-                        ActionLangCode = "blockhelp-firepit-ignite",
+                        ActionLangCode = "canadditionalmetals:blockhelp-canbloomery-ignite",
                         MouseButton = EnumMouseButton.Right,
                         Itemstacks = canIgniteStacks.ToArray(),
                         GetMatchingStacks = (wi, bs, es) => {
@@ -89,7 +89,7 @@ namespace canadditionalmetals.src.Blocks
                     },
                     new WorldInteraction()
                     {
-                        ActionLangCode = "blockhelp-firepit-refuel",
+                        ActionLangCode = "canadditionalmetals:blockhelp-canbloomery-refuel",
                         MouseButton = EnumMouseButton.Right,
                         HotKeyCode = "shift"
                     }
@@ -109,8 +109,10 @@ namespace canadditionalmetals.src.Blocks
                     double y = byPlayer.Entity.Pos.X - ((double)targetPos.X + blockSel.HitPosition.X);
                     double dz = (double)((float)byPlayer.Entity.Pos.Z) - ((double)targetPos.Z + blockSel.HitPosition.Z);
                     float angleHor = (float)Math.Atan2(y, dz);
-
-                    string rotatatableInterval = "22.5degnot45deg";
+                    float deg22dot5rad = 1.57f;
+                    float roundRad = (float)((int)Math.Round((double)(angleHor / deg22dot5rad))) * deg22dot5rad;
+                    bect.MeshAngle = roundRad;
+                    /*string rotatatableInterval = "22.5degnot45deg";
                     if (rotatatableInterval == "22.5degnot45deg")
                     {
                         float rounded90degRad = (float)((int)Math.Round((double)(angleHor / 1.5707964f))) * 1.5707964f;
@@ -129,7 +131,7 @@ namespace canadditionalmetals.src.Blocks
                         float deg22dot5rad = 0.3926991f;
                         float roundRad = (float)((int)Math.Round((double)(angleHor / deg22dot5rad))) * deg22dot5rad;
                         bect.MeshAngle = roundRad;
-                    }
+                    }*/
                 }
             }
             return flag;

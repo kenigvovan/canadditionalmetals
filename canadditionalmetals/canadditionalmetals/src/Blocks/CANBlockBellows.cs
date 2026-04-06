@@ -73,6 +73,13 @@ namespace canadditionalmetals.src.Blocks
             })).DoPlaceBlock(world, byPlayer, blockSel, itemstack);
             return true;
         }
+        public override ItemStack[] GetDrops(IWorldAccessor world, BlockPos pos, IPlayer byPlayer, float dropQuantityMultiplier = 1f)
+        {
+            return new ItemStack[]
+            {
+                this.OnPickBlock(world, pos)
+            };
+        }
         public override ItemStack OnPickBlock(IWorldAccessor world, BlockPos pos)
         {
             ItemStack stack = new ItemStack(this, 1);
@@ -265,7 +272,7 @@ namespace canadditionalmetals.src.Blocks
             Dictionary<string, MultiTextureMeshRef> meshrefs = ObjectCacheUtil.GetOrCreate<Dictionary<string, MultiTextureMeshRef>>(capi, cacheKey, () => new Dictionary<string, MultiTextureMeshRef>());
             string woodType = itemstack.Attributes.GetString("type", "tinbronze");
             this.tmpAssets["tinbronze"] = new AssetLocation("game:block/metal/sheet/" + woodType + "1.png");
-            this.tmpAssets["plain"] = new AssetLocation("canadditionalmetals:block/plain.png");
+            this.tmpAssets["plain"] = new AssetLocation("canadditionalmetals:block/chromium.png");
             this.tmpAssets["inside"] = new AssetLocation("canadditionalmetals:block/inside.png");
             string type = itemstack.Attributes.GetString("type", "tinbronze");
             string key = string.Concat(new string[]
