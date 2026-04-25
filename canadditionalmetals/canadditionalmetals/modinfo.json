@@ -6,7 +6,7 @@
         "KenigVovan"
     ],
     "description": "Adds new alloys",
-    "version": "1.0.14",
+    "version": "1.1.0",
     "contributors": [ "Uri" ],
     "dependencies": {
         "game": ""
